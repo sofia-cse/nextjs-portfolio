@@ -32,10 +32,10 @@ const page = () => {
           </p>
         </div>
         <div className="col-span-2"></div>
-        <a href="/#projects" className="underline">
-          Back To Projects
-        </a>
       </div>
+      <a href="/#projects" className="underline">
+        Back To Projects
+      </a>
     </div>
   );
 };

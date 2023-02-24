@@ -17,7 +17,7 @@ const Main = () => {
             height={24}
             priority
           />
-          <h1 className="py-4 mx-auto w-max">Sofia Martin Design</h1>
+          <h1 className="py-4 mx-auto">Sofia Martin Design</h1>
           <p className="text-sm tracking-wide py-4 max-w-[80%] m-auto">
             UX Designer, Researcher, PM, and front-end web developer.
           </p>
@@ -27,17 +27,17 @@ const Main = () => {
                 href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                 target="blank"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn size={18} />
               </a>
             </div>
             <div className="p-3 cursor-pointer">
               <a href="https://github.com/csejbm" target="blank">
-                <FaGithub />
+                <FaGithub size={18} />
               </a>
             </div>
             <div className="p-3 cursor-pointer">
               <a href="/#contact">
-                <AiOutlineMail />
+                <AiOutlineMail size={18} />
               </a>
             </div>
           </div>

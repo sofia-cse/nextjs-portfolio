@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(/typography/Akkurat-Normal.woff);
 
 html  {
   /* commenting out smooth scroll until next/link anchor scroll is fixed */
   /* scroll-behavior: smooth!important;
   --scroll-behavior: smooth!important; */
-  font-family: 'Akkurat', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  font-family: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
   'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
   'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 }
