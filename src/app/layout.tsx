@@ -1,9 +1,12 @@
-import './globals.css'
+import React from "react";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import HashScroll from "./hash-scroll";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -12,7 +15,14 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <HashScroll>
+          <div className="container mx-auto">
+            <Navbar />
+            <div>{children}</div>
+          </div>
+        </HashScroll>
+      </body>
     </html>
-  )
+  );
 }
