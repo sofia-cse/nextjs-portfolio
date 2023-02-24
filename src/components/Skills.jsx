@@ -86,7 +86,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/CSS.png"
+                  src="/assets/skills/css.png"
                   width={64}
                   height={64}
                   alt="CSS logo"
@@ -147,7 +147,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/React.png"
+                  src="/assets/skills/react.png"
                   width={64}
                   height={64}
                   alt="React logo"
