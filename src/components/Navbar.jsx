@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaaedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -117,7 +117,7 @@ const Navbar = () => {
                     href="https://www.aedin.com/in/sofiabrainerdmartin/"
                     target="blank"
                   >
-                    <FaaedinIn />
+                    <FaLinkedinIn />
                   </a>
                 </div>
                 <div className="p-3 cursor-pointer">
