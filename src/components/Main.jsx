@@ -19,7 +19,8 @@ const Main = () => {
           />
           <h1 className="py-4 mx-auto">Sofia Martin Design</h1>
           <p className="text-sm tracking-wide py-4 max-w-[80%] m-auto">
-            UX Designer, Researcher, PM, and front-end web developer.
+            UX Designer, Researcher, PM, and{" "}
+            <span className="inline-block">Web Developer</span>
           </p>
           <div className="flex  items-center justify-between max-w-[330px] m-auto py-4">
             <div className="p-3 cursor-pointer">

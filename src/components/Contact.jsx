@@ -21,7 +21,7 @@ const Contact = () => {
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="co-span-3 lg:col-span-2 w-full h-full p-4">
+          <div className="co-span-3 lg:col-span-2 w-full h-full px-4">
             <div className="lg:p-4 h-full">
               <div>
                 <Image
