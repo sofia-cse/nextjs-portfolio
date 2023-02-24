@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import a from "next/a";
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaaedinIn } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -20,27 +20,27 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#main">Home</Link>
+              <a href="/#main">Home</a>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#about" scroll={false}>
+              <a href="/#about" scroll={false}>
                 About
-              </Link>
+              </a>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#skills" scroll={false}>
+              <a href="/#skills" scroll={false}>
                 Skills
-              </Link>
+              </a>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#projects" scroll={false}>
+              <a href="/#projects" scroll={false}>
                 Projects
-              </Link>
+              </a>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#contact" scroll={false}>
+              <a href="/#contact" scroll={false}>
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
           {/* Mobile Menu */}
@@ -81,32 +81,32 @@ const Navbar = () => {
           <div className="py-4 px-5 flex flex-col">
             <ul>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#main">
+                <a onClick={() => setNav(false)} href="/#main">
                   Home
-                </Link>
+                </a>
               </li>
 
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#about">
+                <a onClick={() => setNav(false)} href="/#about">
                   About
-                </Link>
+                </a>
               </li>
 
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#skills">
+                <a onClick={() => setNav(false)} href="/#skills">
                   Skills
-                </Link>
+                </a>
               </li>
 
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#projects">
+                <a onClick={() => setNav(false)} href="/#projects">
                   Projects
-                </Link>
+                </a>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#contact">
+                <a onClick={() => setNav(false)} href="/#contact">
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
             <div className="pt-40">
@@ -114,10 +114,10 @@ const Navbar = () => {
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="p-3 cursor-pointer">
                   <a
-                    href="https://www.linkedin.com/in/sofiabrainerdmartin/"
+                    href="https://www.aedin.com/in/sofiabrainerdmartin/"
                     target="blank"
                   >
-                    <FaLinkedinIn />
+                    <FaaedinIn />
                   </a>
                 </div>
                 <div className="p-3 cursor-pointer">

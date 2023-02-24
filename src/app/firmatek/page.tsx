@@ -40,9 +40,9 @@ const page = () => {
           </p>
         </div>
         <div className="col-span-2"></div>
-        <Link href="/#projects" className="underline">
+        <a href="/#projects" className="underline">
           Back To Projects
-        </Link>
+        </a>
       </div>
     </div>
   );
