@@ -42,12 +42,10 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <HashScroll>
-          <div className="container mx-auto">
-            <Navbar />
-            <div>{children}</div>
-          </div>
-        </HashScroll>
+        <div className="container mx-auto">
+          <Navbar />
+          <HashScroll>{children}</HashScroll>
+        </div>
       </body>
     </html>
   );
