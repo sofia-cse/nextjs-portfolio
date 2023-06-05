@@ -14,33 +14,33 @@ const Navbar = () => {
   return (
     <div className="w-full h-20 z-[100] sticky top-0 backdrop-blur-md bg-white/70 dark:bg-[#121212]/70">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-8">
-        <a href="/#main">
+        <Link href="/#main">
           <Image src="/assets/florere.svg" alt="logo" width={35} height={35} />
-        </a>
+        </Link>
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text sm hover:border-collapse">
-              <a href="/#main">Home</a>
+              <Link href="/#main">Home</Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <a href="/#about" scroll={false}>
+              <Link href="/#about" scroll={false}>
                 About
-              </a>
+              </Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <a href="/#skills" scroll={false}>
-                Skills
-              </a>
-            </li>
-            <li className="ml-10 text sm hover:border-collapse">
-              <a href="/#projects" scroll={false}>
+              <Link href="/#projects" scroll={false}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <a href="/#contact" scroll={false}>
+              <Link href="/#skills" scroll={false}>
+                Skills
+              </Link>
+            </li>
+            <li className="ml-10 text sm hover:border-collapse">
+              <Link href="/#contact" scroll={false}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
           {/* Mobile Menu */}
@@ -81,54 +81,52 @@ const Navbar = () => {
           <div className="py-4 px-5 flex flex-col">
             <ul>
               <li className="py-4 text-sm">
-                <a onClick={() => setNav(false)} href="/#main">
+                <Link onClick={() => setNav(false)} href="/#main">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="py-4 text-sm">
-                <a onClick={() => setNav(false)} href="/#about">
+                <Link onClick={() => setNav(false)} href="/#about">
                   About
-                </a>
+                </Link>
               </li>
-
               <li className="py-4 text-sm">
-                <a onClick={() => setNav(false)} href="/#skills">
-                  Skills
-                </a>
-              </li>
-
-              <li className="py-4 text-sm">
-                <a onClick={() => setNav(false)} href="/#projects">
+                <Link onClick={() => setNav(false)} href="/#projects">
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="py-4 text-sm">
-                <a onClick={() => setNav(false)} href="/#contact">
+                <Link onClick={() => setNav(false)} href="/#skills">
+                  Skills
+                </Link>
+              </li>
+              <li className="py-4 text-sm">
+                <Link onClick={() => setNav(false)} href="/#contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="pt-40">
               <p>Let&#39;s Connect</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="p-3 cursor-pointer">
-                  <a
-                    href="https://www.aedin.com/in/sofiabrainerdmartin/"
+                  <Link
+                    href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                     target="blank"
                   >
                     <FaLinkedinIn />
-                  </a>
+                  </Link>
                 </div>
                 <div className="p-3 cursor-pointer">
-                  <a href="https://github.com/csejbm" target="blank">
+                  <Link href="https://github.com/sofia-cse" target="blank">
                     <FaGithub />
-                  </a>
+                  </Link>
                 </div>
-                <div className="p-3 cursor-pointer">
-                  <a href="mailto:sofiamartinux@gmail.com" target="blank">
+                <div onClick={handleNav} className="p-3 cursor-pointer">
+                  <Link href="/#contact">
                     <AiOutlineMail />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -12,8 +12,8 @@ export default function Home() {
     <div>
       <Main />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
       <div className="container mx-auto mt-4">
         <div className="mb-4 flex-col items-center">

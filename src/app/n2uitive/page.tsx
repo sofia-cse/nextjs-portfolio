@@ -16,7 +16,7 @@ const page = () => {
         />
         <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
           <h2>Claim Recording and Transcriptions</h2>
-          <h3>UX Researcher</h3>
+          <h3>Product Manager</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">

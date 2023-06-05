@@ -32,7 +32,7 @@ const Main = () => {
               </a>
             </div>
             <div className="p-3 cursor-pointer">
-              <a href="https://github.com/csejbm" target="blank">
+              <a href="https://github.com/sofia-cse" target="blank">
                 <FaGithub size={18} />
               </a>
             </div>

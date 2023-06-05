@@ -12,24 +12,28 @@ const Projects = () => {
         <h2 className="py-8">Recent Work</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Foot Traffic Analytics"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
+            title="n2uitive"
+            role="Product Manager"
+            backgroundImg={n2uitiveImg}
+            projectUrl="/n2uitive"
           />
           <ProjectItem
             title="Firmatek"
+            role="UX Researcher"
             backgroundImg={firmatekImg}
             projectUrl="/firmatek"
           />
           <ProjectItem
             title="Good Days"
+            role="UX Researcher"
             backgroundImg={gdImg}
             projectUrl="/gd"
           />
           <ProjectItem
-            title="n2uitive"
-            backgroundImg={n2uitiveImg}
-            projectUrl="/n2uitive"
+            title="Creditntell"
+            role="UX Researcher"
+            backgroundImg={propertyImg}
+            projectUrl="/property"
           />
         </div>
       </div>

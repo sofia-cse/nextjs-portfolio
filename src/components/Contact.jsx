@@ -49,7 +49,7 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="p-2 px-8 cursor-pointer">
-                    <a href="https://github.com/csejbm" target="blank">
+                    <a href="https://github.com/sofia-cse" target="blank">
                       <FaGithub />
                     </a>
                   </div>

@@ -23,7 +23,7 @@ const page = () => {
         <div className="col-span-3">
           <h2>Project Overview</h2>
           <p className="py-4">
-            The CreditNtell dashboard provides insights into places and
+            The Creditntell dashboard provides insights into places and
             competition allowing discovery of new business opportunities. Users
             can get accurate foot traffic counts and dwell time with the ability
             to filter by time, day of week, and customer segments. This empowers
@@ -33,9 +33,9 @@ const page = () => {
         </div>
         <div className="col-span-2"></div>
       </div>
-      <a href="/#projects" className="underline">
+      <Link href="/#projects" className="underline">
         Back To Projects
-      </a>
+      </Link>
     </div>
   );
 };
