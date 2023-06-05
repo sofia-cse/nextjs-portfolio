@@ -33,9 +33,9 @@ const page = () => {
         </div>
         <div className="col-span-2"></div>
       </div>
-      <a href="/#projects" className="underline">
+      <Link href="/#projects" className="underline">
         Back To Projects
-      </a>
+      </Link>
     </div>
   );
 };
