@@ -54,8 +54,8 @@ const About = () => {
         </div>
         <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
-            className="max-w-[300px]"
-            src="/assets/Sofia_About.png"
+            className="max-w-[300px] rounded-full"
+            src="/assets/sofia_portrait.png"
             alt=""
             width={386}
             height={290}
