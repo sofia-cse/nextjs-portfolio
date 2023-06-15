@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className="w-full">
       <div className="w-full h-[30vh] lg:h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh]  lg:h-[50vh] bg-black/60 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/60 z-10" />
         <Image
           src={bandsImg}
           alt="Header"
@@ -28,7 +28,7 @@ const page = () => {
             musicians to take control of their art, connect with their fan bases
             and monetize their online presence.
           </p>
-          <p>
+          <p className="py-4">
             The app provides a comprehensive suite of tools for music creators
             and listeners. Users can follow their favorite artists to get
             updates about their music releases, tour dates, social media posts,
@@ -38,7 +38,8 @@ const page = () => {
         </div>
         <div className="col-span-2"></div>
       </div>
-      <Link href="/#projects" className="underline">
+      <Link href="/#projects" className="underline py-4 pb-24">
+        <IoChevronBackOutline size={18} className="inline mr-1" />
         Back To Projects
       </Link>
     </div>

@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className="w-full">
       <div className="w-full h-[30vh] lg:h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh]  lg:h-[50vh] bg-black/60 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/60 z-10" />
         <Image
           src={groundImg}
           alt="Header"
@@ -54,6 +54,7 @@ const page = () => {
         <div className="col-span-2"></div>
       </div>
       <Link href="/#projects" className="underline py-4 pb-24">
+        <IoChevronBackOutline size={18} className="inline mr-1" />
         Back To Projects
       </Link>
     </div>
