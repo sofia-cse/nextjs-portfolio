@@ -45,9 +45,9 @@ const page = () => {
         </div>
         <div className="col-span-2"></div>
       </div>
-      <Link href="/#projects" className="underline py-4">
+      <Link href="/#work" className="underline py-4">
         <IoChevronBackOutline size={18} className="inline mr-1" />
-        Back To Projects
+        Back To My Work
       </Link>
     </div>
   );

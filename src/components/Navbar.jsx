@@ -28,8 +28,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#projects" scroll={false}>
-                Projects
+              <Link href="/#work" scroll={false}>
+                Work
               </Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
@@ -92,8 +92,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#projects">
-                  Projects
+                <Link onClick={() => setNav(false)} href="/#work">
+                  Work
                 </Link>
               </li>
               <li className="py-4 text-sm">
