@@ -8,7 +8,7 @@ const ProjectItem = ({ title, role, backgroundImg, projectUrl }) => {
       <Image
         src={backgroundImg}
         alt="Project Image"
-        className="group-hover:opacity-10 h-full object-fill"
+        className="group-hover:opacity-10 h-full object-cover"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center text-white">
         <h3 className="text-2xl">{title}</h3>

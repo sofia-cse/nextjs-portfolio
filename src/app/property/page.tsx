@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import propertyImg from "../../../public/assets/projects/property.png";
+import propertyImg from "../../../public/assets/projects/property_comparison.jpg";
 import Link from "next/link";
 
 const page = () => {
@@ -29,6 +29,14 @@ const page = () => {
             to filter by time, day of week, and customer segments. This empowers
             agents to understand how promotions, holidays, seasonality, and
             events impact business.
+          </p>
+          <p className="py-4">
+            As the only provider in the marketplace to combine foot traffic data
+            / geospatial intelligence with comprehensive financial retail
+            coverage featuring in-house industry experts, proprietary scoring
+            models, predictive measuring tools, and store locational data,
+            Creditntell provides a true 360-degree view of the evolving retail
+            landscape.
           </p>
         </div>
         <div className="col-span-2"></div>

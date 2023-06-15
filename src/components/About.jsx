@@ -3,19 +3,27 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className="w-full md:min-h-screen p-2 flex items-center py-16"
-    >
+    <div id="about" className="w-full md:min-h-screen p-2">
+      <div className="max-w-[1240px] m-auto md:grid">
+        <h2 className="py-6 block">A Little About Me</h2>
+      </div>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <h2 className="py-6">A Little About Me</h2>
+        <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 order-2">
+          <Image
+            className="max-w-[75%] md:max-w-[300px] rounded-full"
+            src="/assets/sofia_avatar.jpeg"
+            alt=""
+            width={2307}
+            height={2307}
+          />
+        </div>
+        <div className="col-span-2 order-1">
           <p className="py-2">
             Hi, I&#39;m Sofia, a passionate UX designer, UX researcher, product
-            manager, and sometimes a developer with over seven years of
-            experience in the tech industry. I&#39;ve had the pleasure of
-            working with startups and enterprises in a variety of industries,
-            ranging from e-commerce to healthcare.
+            manager, and front-end developer with over seven years of experience
+            in the tech industry. I&#39;ve had the pleasure of working with
+            startups and enterprises in a variety of industries, ranging from
+            healthcare to drone flight.
           </p>
           <p className="py-2">
             As a graduate of the University of California, San Diego, with a
@@ -51,15 +59,6 @@ const About = () => {
             meaningful experiences that delight users. I am always looking for
             new challenges and opportunities to grow and expand my skill set.
           </p>
-        </div>
-        <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image
-            className="max-w-[300px] rounded-full"
-            src="/assets/sofia_portrait.png"
-            alt=""
-            width={386}
-            height={290}
-          />
         </div>
       </div>
     </div>
