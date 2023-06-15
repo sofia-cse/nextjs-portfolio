@@ -3,6 +3,13 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import HashScroll from "./hash-scroll";
 import localFont from "@next/font/local";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin",
+  description:
+    "Sofia Martin is a technologist experienced with all parts of the product discovery, design, and development process.",
+};
 
 const akkurat = localFont({
   src: [
