@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import HashScroll from "./hash-scroll";
 import localFont from "@next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );

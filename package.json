@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,6 +14,7 @@
     "@types/node": "18.13.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "@vercel/analytics": "^1.0.1",
     "autoprefixer": "^10.4.13",
     "eslint": "8.34.0",
     "eslint-config-next": "^13.3.0",
