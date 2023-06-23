@@ -82,6 +82,7 @@ const Contact = () => {
                       type="text"
                       className="border-2 rounded-md p-3 border-gray-500"
                       name="name"
+                      id="name"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -92,6 +93,7 @@ const Contact = () => {
                       type="tel"
                       className="border-2 rounded-md p-3 border-gray-500"
                       name="phone number"
+                      id="phone number"
                     />
                   </div>
                 </div>
@@ -103,6 +105,7 @@ const Contact = () => {
                     type="email"
                     className="border-2 rounded-md p-3 border-gray-500"
                     name="email"
+                    id="email"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -113,6 +116,7 @@ const Contact = () => {
                     type="text"
                     className="border-2 rounded-md p-3 border-gray-500"
                     name="subject"
+                    id="subject"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -124,6 +128,7 @@ const Contact = () => {
                     rows="4"
                     className="border-2 rounded-md p-3 border-gray-500"
                     name="message"
+                    id="message"
                   />
                 </div>
                 <input type="hidden" name="_gotcha" className="hidden"></input>
