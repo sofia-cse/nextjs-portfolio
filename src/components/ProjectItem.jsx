@@ -14,7 +14,12 @@ const ProjectItem = ({ title, role, backgroundImg, projectUrl }) => {
         <h3 className="text-2xl">{title}</h3>
         <p className="pt-2 pb-4">{role}</p>
         <Link href={projectUrl}>
-          <p className="py-3 rounded-md bg-white text-gray-800">More Info</p>
+          <p
+            className="py-3 rounded-md bg-white text-gray-800"
+            aria-label="link to the project details"
+          >
+            More Info
+          </p>
         </Link>
       </div>
     </div>

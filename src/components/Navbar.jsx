@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import logo from "../../public/assets/florere.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className="w-full h-20 z-[100] sticky top-0 backdrop-blur-md bg-white/70 dark:bg-[#121212]/70">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-8">
         <Link href="/#main">
-          <Image src="/assets/florere.svg" alt="logo" width={35} height={35} />
+          <Image src={logo} alt="logo" width={35} height={35} />
         </Link>
         <div>
           <ul className="hidden md:flex">

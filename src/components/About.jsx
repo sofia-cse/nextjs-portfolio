@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import avatar from "../../public/assets/sofia_avatar.jpeg";
 
 const About = () => {
   return (
@@ -11,10 +12,8 @@ const About = () => {
         <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 order-2">
           <Image
             className="max-w-[75%] md:max-w-[300px] rounded-full"
-            src="/assets/sofia_avatar.jpeg"
-            alt=""
-            width={2307}
-            height={2307}
+            src={avatar}
+            alt="Photo of the designer"
           />
         </div>
         <div className="col-span-2 order-1">

@@ -5,6 +5,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import logo from "../../public/assets/florere.svg";
 import "./globals.css";
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
       <div className="container mx-auto mt-4">
         <div className="mb-4 flex-col items-center">
           <Image
-            src="/assets/florere.svg"
+            src={logo}
             alt="Sofia Logo"
             className="mx-auto"
             width={60}

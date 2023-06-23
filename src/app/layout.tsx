@@ -1,7 +1,6 @@
 import React from "react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import HashScroll from "./hash-scroll";
 import localFont from "@next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import contactImg from "../../public/assets/contact.jpg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -44,18 +43,21 @@ const Contact = () => {
                     <a
                       href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                       target="blank"
+                      aria-label="Link to the designer's LinkedIn profile"
                     >
                       <FaLinkedinIn />
                     </a>
                   </div>
                   <div className="p-2 px-8 cursor-pointer">
-                    <a href="https://github.com/sofia-cse" target="blank">
+                    <a
+                      href="https://github.com/sofia-cse"
+                      target="blank"
+                      aria-label="Link to the developer's Github profile"
+                    >
                       <FaGithub />
                     </a>
                   </div>
-                  {/*<div className="p-3 cursor-pointer">
-                    <AiOutlineMail />
-                  </div>
+                  {/*
                   <div className="p-3 cursor-pointer">
                     <BsFillPersonLinesFill />
                   </div>*/}
@@ -73,7 +75,9 @@ const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="text-sm py-2">Name</label>
+                    <label className="text-sm py-2" for="name">
+                      Name
+                    </label>
                     <input
                       type="text"
                       className="border-2 rounded-md p-3 border-gray-500"
@@ -81,7 +85,9 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="text-sm py-2">Phone Number</label>
+                    <label className="text-sm py-2" for="phone number">
+                      Phone Number
+                    </label>
                     <input
                       type="tel"
                       className="border-2 rounded-md p-3 border-gray-500"
@@ -90,7 +96,9 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <label className="text-sm py-2">Email</label>
+                  <label className="text-sm py-2" for="email">
+                    Email
+                  </label>
                   <input
                     type="email"
                     className="border-2 rounded-md p-3 border-gray-500"
@@ -98,7 +106,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="text-sm py-2">Subject</label>
+                  <label className="text-sm py-2" for="subject">
+                    Subject
+                  </label>
                   <input
                     type="text"
                     className="border-2 rounded-md p-3 border-gray-500"
@@ -106,7 +116,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="text-sm py-2">Message</label>
+                  <label className="text-sm py-2" for="message">
+                    Message
+                  </label>
                   <textarea
                     type="text"
                     rows="4"
@@ -125,7 +137,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center pt-12">
-          <a href="/#main">
+          <a href="/#main" aria-label="link to top of page">
             <HiOutlineChevronDoubleUp
               className="m-auto text-[#a284fb]"
               size={25}
