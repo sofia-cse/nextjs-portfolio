@@ -26,7 +26,7 @@ const Contact = () => {
                 <Image
                   className="hover:scale-105 ease-in duration-300"
                   src={contactImg}
-                  alt="Contact Image"
+                  alt="Contact image of person sitting at a desk typing on a laptop"
                 />
               </div>
               <div>
@@ -43,18 +43,18 @@ const Contact = () => {
                     <a
                       href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                       target="blank"
-                      aria-label="Link to the designer's LinkedIn profile"
+                      aria-label="Link to Sofia Martin's LinkedIn profile"
                     >
-                      <FaLinkedinIn />
+                      <FaLinkedinIn title="LinkedIn icon" />
                     </a>
                   </div>
                   <div className="p-2 px-8 cursor-pointer">
                     <a
                       href="https://github.com/sofia-cse"
                       target="blank"
-                      aria-label="Link to the developer's Github profile"
+                      aria-label="Link to Sofia Martin's Github profile"
                     >
-                      <FaGithub />
+                      <FaGithub title="Github icon" />
                     </a>
                   </div>
                   {/*
@@ -76,13 +76,15 @@ const Contact = () => {
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="text-sm py-2" for="name">
-                      Name
+                      Name <span className="text-red"> *</span>
                     </label>
                     <input
                       type="text"
                       className="border-2 rounded-md p-3 border-gray-500"
                       name="name"
                       id="name"
+                      required
+                      aria-required="true"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -99,13 +101,15 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col">
                   <label className="text-sm py-2" for="email">
-                    Email
+                    Email <span className="text-red"> *</span>
                   </label>
                   <input
                     type="email"
                     className="border-2 rounded-md p-3 border-gray-500"
                     name="email"
                     id="email"
+                    required
+                    aria-required="true"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -121,7 +125,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col">
                   <label className="text-sm py-2" for="message">
-                    Message
+                    Message <span className="text-red"> *</span>
                   </label>
                   <textarea
                     type="text"
@@ -129,6 +133,8 @@ const Contact = () => {
                     className="border-2 rounded-md p-3 border-gray-500"
                     name="message"
                     id="message"
+                    required
+                    aria-required="true"
                   />
                 </div>
                 <input type="hidden" name="_gotcha" className="hidden"></input>
@@ -142,10 +148,14 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center pt-12">
-          <a href="/#main" aria-label="link to top of page">
+          <a
+            href="/#main"
+            aria-label="link to the top of Sofia Martin's Website"
+          >
             <HiOutlineChevronDoubleUp
               className="m-auto text-[#a284fb]"
               size={25}
+              title="chevron icon"
             />
           </a>
         </div>

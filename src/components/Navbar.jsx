@@ -14,8 +14,17 @@ const Navbar = () => {
   return (
     <div className="w-full h-20 z-[100] sticky top-0 backdrop-blur-md bg-white/70 dark:bg-[#121212]/70">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-8">
-        <Link href="/#main">
-          <Image src={logo} alt="logo" width={35} height={35} />
+        <Link
+          href="/#main"
+          aria-label="link to the top of the homepage for Sofia Martin's profile"
+        >
+          <Image
+            src={logo}
+            alt="Sofia Martin's logo"
+            title="Sofia Martin's logo"
+            width={35}
+            height={35}
+          />
         </Link>
         <div>
           <ul className="hidden md:flex">
@@ -23,13 +32,13 @@ const Navbar = () => {
               <Link href="/#main">Home</Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#about" scroll={false}>
-                About
+              <Link href="/#work" scroll={false}>
+                Work
               </Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#work" scroll={false}>
-                Work
+              <Link href="/#about" scroll={false}>
+                About
               </Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
@@ -45,7 +54,11 @@ const Navbar = () => {
           </ul>
           {/* Mobile Menu */}
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu
+              size={25}
+              title="hamburger menu icon"
+              aria-label="button to open the navigation side menu"
+            />
           </div>
         </div>
       </div>
@@ -67,14 +80,19 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <div className="px-5">
                 <Image
-                  src="/assets/florere.svg"
-                  alt="logo"
+                  src={logo}
+                  alt="Sofia Martin's logo"
+                  title="Sofia Martin's logo"
                   width={35}
                   height={35}
                 />
               </div>
               <div onClick={handleNav} className="cursor-pointer">
-                <AiOutlineClose size={25} />
+                <AiOutlineClose
+                  size={25}
+                  title="close icon"
+                  aria-label="button to close the navigation sidebar"
+                />
               </div>
             </div>
           </div>
@@ -85,15 +103,14 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-
-              <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#about">
-                  About
-                </Link>
-              </li>
               <li className="py-4 text-sm">
                 <Link onClick={() => setNav(false)} href="/#work">
                   Work
+                </Link>
+              </li>
+              <li className="py-4 text-sm">
+                <Link onClick={() => setNav(false)} href="/#about">
+                  About
                 </Link>
               </li>
               <li className="py-4 text-sm">
@@ -114,18 +131,26 @@ const Navbar = () => {
                   <Link
                     href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                     target="blank"
+                    aria-label="link to Sofia Martin's LinkedIn profile"
                   >
-                    <FaLinkedinIn />
+                    <FaLinkedinIn title="LinkedIn icon" />
                   </Link>
                 </div>
                 <div className="p-3 cursor-pointer">
-                  <Link href="https://github.com/sofia-cse" target="blank">
-                    <FaGithub />
+                  <Link
+                    href="https://github.com/sofia-cse"
+                    target="blank"
+                    aria-label="link to Sofia Martin's Github profile"
+                  >
+                    <FaGithub title="Github icon" />
                   </Link>
                 </div>
                 <div onClick={handleNav} className="p-3 cursor-pointer">
-                  <Link href="/#contact">
-                    <AiOutlineMail />
+                  <Link
+                    href="/#contact"
+                    aria-label="anchor link to Sofia Martin's contact form"
+                  >
+                    <AiOutlineMail title="envelope icon" />
                   </Link>
                 </div>
               </div>

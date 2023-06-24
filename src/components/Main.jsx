@@ -27,26 +27,26 @@ const Main = () => {
               <a
                 href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                 target="blank"
-                aria-label="Link to the designer's LinkedIn profile"
+                aria-label="Link to Sofia Martin's LinkedIn profile"
               >
-                <FaLinkedinIn size={18} />
+                <FaLinkedinIn size={18} title="LinkedIn icon" />
               </a>
             </div>
             <div className="p-3 cursor-pointer">
               <a
                 href="https://github.com/sofia-cse"
                 target="blank"
-                aria-label="Link to the developer's Github Profile"
+                aria-label="Link to Sofia Martin's Github Profile"
               >
-                <FaGithub size={18} />
+                <FaGithub size={18} title="Github icon" />
               </a>
             </div>
             <div className="p-3 cursor-pointer">
               <a
                 href="/#contact"
-                aria-label="Anchor Link to the website's contact form"
+                aria-label="Anchor link to Sofia Martin's contact form"
               >
-                <AiOutlineMail size={18} />
+                <AiOutlineMail size={18} title="envelope icon" />
               </a>
             </div>
           </div>

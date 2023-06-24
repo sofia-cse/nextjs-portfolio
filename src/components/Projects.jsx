@@ -20,30 +20,35 @@ const Projects = () => {
             role="UX Researcher"
             backgroundImg={firmatekImg}
             projectUrl="/firmatek"
+            arialabel="Learn more more about Sofia's involvement in the Firmatek project"
           />
           <ProjectItem
             title="Measure Ground Control"
             role="UX Researcher"
             backgroundImg={groundImg}
             projectUrl="/ground_control"
+            arialabel="Learn more more about Sofia's involvement in the Ground Control project"
           />
           <ProjectItem
             title="n2uitive"
             role="Product Manager"
             backgroundImg={n2uitiveImg}
             projectUrl="/n2uitive"
+            arialabel="Learn more more about Sofia's involvement in the n2uitive project"
           />
           <ProjectItem
             title="Good Days"
             role="UX Researcher"
             backgroundImg={gdImg}
             projectUrl="/gd"
+            arialabel="Learn more more about Sofia's involvement in the Good Days project"
           />
           <ProjectItem
             title="Bands App"
             role="UX Researcher"
             backgroundImg={bandsImg}
             projectUrl="/bands"
+            arialabel="Learn more more about Sofia's involvement in the Bands App project"
           />
 
           <ProjectItem
@@ -51,18 +56,21 @@ const Projects = () => {
             role="UX Researcher"
             backgroundImg={assetImg}
             projectUrl="/asset_manager"
+            arialabel="Learn more more about Sofia's involvement in the Asset Manager project"
           />
           <ProjectItem
             title="Coaching to Fidelity"
             role="UX Researcher"
             backgroundImg={c2fImg}
             projectUrl="/c2f"
+            arialabel="Learn more more about Sofia's involvement in the Coaching to Fidelity project"
           />
           <ProjectItem
             title="Creditntell"
             role="UX Researcher"
             backgroundImg={propertyImg}
             projectUrl="/property"
+            arialabel="Learn more more about Sofia's involvement in the Creditntell project"
           />
         </div>
       </div>

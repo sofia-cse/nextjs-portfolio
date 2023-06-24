@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <Main />
-      <About />
       <Projects />
+      <About />
       <Skills />
       <Contact />
       <div className="container mx-auto mt-4">
