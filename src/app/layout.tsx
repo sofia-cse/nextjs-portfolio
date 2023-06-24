@@ -1,7 +1,7 @@
 import React from "react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 
 const akkurat = localFont({

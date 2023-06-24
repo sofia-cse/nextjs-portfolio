@@ -75,7 +75,7 @@ const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="text-sm py-2" for="name">
+                    <label className="text-sm py-2" htmlFor="name">
                       Name <span className="text-red"> *</span>
                     </label>
                     <input
@@ -88,7 +88,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="text-sm py-2" for="phone number">
+                    <label className="text-sm py-2" htmlFor="phone number">
                       Phone Number
                     </label>
                     <input
@@ -100,7 +100,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <label className="text-sm py-2" for="email">
+                  <label className="text-sm py-2" htmlFor="email">
                     Email <span className="text-red"> *</span>
                   </label>
                   <input
@@ -113,7 +113,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="text-sm py-2" for="subject">
+                  <label className="text-sm py-2" htmlFor="subject">
                     Subject
                   </label>
                   <input
@@ -124,7 +124,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="text-sm py-2" for="message">
+                  <label className="text-sm py-2" htmlFor="message">
                     Message <span className="text-red"> *</span>
                   </label>
                   <textarea
