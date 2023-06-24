@@ -3,6 +3,13 @@ import Image from "next/image";
 import n2uitiveImg from "../../../public/assets/projects/n2uitive.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin | n2uitive Portfolio Entry",
+  description:
+    "Sofia Martin was the product manager for the n2uitive platform redesign. n2uitive is an insurtech SaaS platform for recording and transcribing claims.",
+};
 
 const page = () => {
   return (

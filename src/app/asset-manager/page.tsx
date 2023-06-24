@@ -3,6 +3,13 @@ import Image from "next/image";
 import assetImg from "../../../public/assets/projects/assetmanager6.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin | VTS Asset Manager Portfolio Entry",
+  description:
+    "Sofia Martin worked as the UX Researcher on the VTS Asset Manager App, a platform the helps commercial real estate agents manage their property portfolio data.",
+};
 
 const page = () => {
   return (
@@ -14,9 +21,10 @@ const page = () => {
           alt="Header"
           className="absolute z-1 object-cover object-top"
           fill
+          priority
         />
         <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-          <h2>Property Asset Manager</h2>
+          <h2>VTS Property Portfolio Asset Manager</h2>
           <h3>UX Researcher</h3>
         </div>
       </div>

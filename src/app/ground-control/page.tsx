@@ -3,6 +3,13 @@ import Image from "next/image";
 import groundImg from "../../../public/assets/projects/groundcontrol3.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin | Measure Ground Control Portfolio Entry",
+  description:
+    "Sofia Martin was the UX Designer for Measure's Ground Control App, a tool that allows project managers to track their drone fleet, plan and execute automated flights, and gain FAA clearance.",
+};
 
 const page = () => {
   return (
@@ -14,10 +21,11 @@ const page = () => {
           alt="Header"
           className="absolute z-1 object-cover object-top"
           fill
+          priority
         />
         <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-          <h2>Drone Flight Solar Panel Inspector</h2>
-          <h3>UX Researcher</h3>
+          <h2>Measure: Ground Control Drone Flight App</h2>
+          <h3>UX Designer</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">

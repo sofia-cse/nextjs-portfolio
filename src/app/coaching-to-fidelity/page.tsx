@@ -3,6 +3,13 @@ import Image from "next/image";
 import c2fImg from "../../../public/assets/projects/c2f_ipad.jpg";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin | Coaching to Fidelity Portfolio Entry",
+  description:
+    "Sofia Martin was the UX Researcher on the Coaching to Fidelity App, a tool for coaches to guide and monitor the progress of teachers in implementing their curriculum.",
+};
 
 const page = () => {
   return (

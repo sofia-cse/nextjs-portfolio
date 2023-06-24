@@ -3,6 +3,13 @@ import Image from "next/image";
 import firmatekImg from "../../../public/assets/projects/firmatek.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin | Firmatek Portfolio Entry",
+  description:
+    "Sofia Martin was the UX Designer on the Firmatek Data Portal, a platform for construction project managers to process orthophotography, measure stockpile volumes, and manage inventory data and reports.",
+};
 
 const page = () => {
   return (
@@ -14,10 +21,11 @@ const page = () => {
           alt="Header"
           className="absolute z-1 object-cover object-top"
           fill
+          priority
         />
         <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-          <h2>Stockpile Measurement Data</h2>
-          <h3>UX Researcher</h3>
+          <h2>Firmatek Data Portal 2.0: Stockpile Measurement Data</h2>
+          <h3>UX Designer</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">

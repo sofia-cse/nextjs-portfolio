@@ -3,6 +3,13 @@ import Image from "next/image";
 import bandsImg from "../../../public/assets/projects/bands_wide.jpg";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin | Bands App Portfolio Entry",
+  description:
+    "Sofia Martin worked as UX Researcher on the Bands App, a music streaming and social media platform that connects artists directly with their fans.",
+};
 
 const page = () => {
   return (
@@ -16,7 +23,7 @@ const page = () => {
           fill
         />
         <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-          <h2>Music Streaming and Social Media</h2>
+          <h2>Bands App - Music Streaming and Social Media</h2>
           <h3>UX Researcher</h3>
         </div>
       </div>

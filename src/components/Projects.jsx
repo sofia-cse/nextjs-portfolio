@@ -16,38 +16,38 @@ const Projects = () => {
         <h2 className="py-8">Recent Work</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Firmatek"
-            role="UX Researcher"
+            title="Firmatek Data Portal 2.0"
+            role="UX Designer"
             backgroundImg={firmatekImg}
             projectUrl="/firmatek"
             arialabel="Learn more more about Sofia's involvement in the Firmatek project"
           />
           <ProjectItem
-            title="Measure Ground Control"
-            role="UX Researcher"
+            title="Measure: Ground Control"
+            role="UX Designer"
             backgroundImg={groundImg}
-            projectUrl="/ground_control"
+            projectUrl="/ground-control"
             arialabel="Learn more more about Sofia's involvement in the Ground Control project"
           />
           <ProjectItem
-            title="n2uitive"
+            title="n2uitive Insurtech"
             role="Product Manager"
             backgroundImg={n2uitiveImg}
             projectUrl="/n2uitive"
             arialabel="Learn more more about Sofia's involvement in the n2uitive project"
           />
           <ProjectItem
-            title="Good Days"
-            role="UX Researcher"
+            title="Good Days Health"
+            role="UX Designer"
             backgroundImg={gdImg}
-            projectUrl="/gd"
+            projectUrl="/good-days"
             arialabel="Learn more more about Sofia's involvement in the Good Days project"
           />
           <ProjectItem
-            title="Bands App"
+            title="Bands Social Streaming App"
             role="UX Researcher"
             backgroundImg={bandsImg}
-            projectUrl="/bands"
+            projectUrl="/bands-app"
             arialabel="Learn more more about Sofia's involvement in the Bands App project"
           />
 
@@ -55,21 +55,21 @@ const Projects = () => {
             title="VTS Asset Manager"
             role="UX Researcher"
             backgroundImg={assetImg}
-            projectUrl="/asset_manager"
+            projectUrl="/asset-manager"
             arialabel="Learn more more about Sofia's involvement in the Asset Manager project"
           />
           <ProjectItem
-            title="Coaching to Fidelity"
+            title="Coaching to Fidelity App"
             role="UX Researcher"
             backgroundImg={c2fImg}
-            projectUrl="/c2f"
+            projectUrl="/coaching-to-fidelity"
             arialabel="Learn more more about Sofia's involvement in the Coaching to Fidelity project"
           />
           <ProjectItem
-            title="Creditntell"
-            role="UX Researcher"
+            title="Creditntel Property Analytics"
+            role="UX Designer"
             backgroundImg={propertyImg}
-            projectUrl="/property"
+            projectUrl="/creditntell"
             arialabel="Learn more more about Sofia's involvement in the Creditntell project"
           />
         </div>

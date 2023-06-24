@@ -3,6 +3,13 @@ import Image from "next/image";
 import propertyImg from "../../../public/assets/projects/property_comparison.jpg";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sofia Martin | Creditntell Portfolio Entry",
+  description:
+    "Sofia Martin was the UX Designer and UX Researcher on the Creditntell analytics app, a platform that lets commercial leasing agents track and compare the traffic and demographic data for their properties.",
+};
 
 const page = () => {
   return (
@@ -17,7 +24,7 @@ const page = () => {
         />
         <div className="absolute top-[80%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
           <h2>Property Foot Traffic Analytics</h2>
-          <h3>UX Researcher</h3>
+          <h3>UX Designer</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">

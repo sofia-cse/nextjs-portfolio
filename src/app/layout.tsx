@@ -3,13 +3,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import localFont from "@next/font/local";
 import { Analytics } from "@vercel/analytics/react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Sofia Martin",
-  description:
-    "Sofia Martin is a technologist experienced with all parts of the product discovery, design, and development process.",
-};
 
 const akkurat = localFont({
   src: [
