@@ -23,7 +23,7 @@ const page = () => {
           fill
           priority
         />
-        <div className="absolute top-[80%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
+        <div className="absolute bottom-[10%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 p-2 text-white">
           <h2>Good Days: Healthcare Copay Assistance</h2>
           <h3>UX Designer & Researcher</h3>
         </div>

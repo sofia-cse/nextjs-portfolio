@@ -15,14 +15,14 @@ const page = () => {
   return (
     <div className="w-full">
       <div className="w-full h-[30vh] lg:h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh]  lg:h-[50vh] bg-black/60 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/60 z-10" />
         <Image
           src={c2fImg}
           alt="Header"
           className="absolute z-1 object-cover object-top"
           fill
         />
-        <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
+        <div className="absolute bottom-[10%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 p-2 text-white">
           <h2>Coaching to Fidelity</h2>
           <h3>UX Researcher</h3>
         </div>

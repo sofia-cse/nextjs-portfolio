@@ -23,8 +23,8 @@ const page = () => {
           fill
           priority
         />
-        <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-          <h2>Bands App - Music Streaming and Social Media</h2>
+        <div className="absolute bottom-[10%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 p-2 text-white">
+          <h2>Bands App: Music Streaming and Social Media</h2>
           <h3>UX Researcher</h3>
         </div>
       </div>

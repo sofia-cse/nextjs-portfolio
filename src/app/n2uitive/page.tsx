@@ -22,7 +22,7 @@ const page = () => {
           className="absolute z-1 object-cover object-top"
           fill
         />
-        <div className="absolute top-[80%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
+        <div className="absolute bottom-[10%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 p-2 text-white">
           <h2>Claim Recording and Transcriptions</h2>
           <h3>Product Manager</h3>
         </div>
