@@ -24,7 +24,7 @@ const page = () => {
           priority
         />
         <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-          <h2>Firmatek Data Portal: Stockpile Inventroy Data</h2>
+          <h2>Firmatek Data Portal: Stockpile Inventory Data</h2>
           <h3>UX Designer</h3>
         </div>
       </div>
