@@ -20,7 +20,11 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Akkurat, a custom font.
+
+This project uses getform to power the contact form. You can register for a free account at getforrm.io and replace the form action with your own URL to set up your form without any extra JS scripts.
+
+This project uses Vercel analytics. To configure analytics you can go to your vercel project dashboard, enable analytics, and instert the provided recorded in your DNS configuration.
 
 ## Learn More
 
