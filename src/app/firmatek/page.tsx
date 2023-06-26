@@ -42,9 +42,9 @@ const page = () => {
           </p>
           <p className="py-4">
             Orthophotos and LidDAR scans can be used to generate 3D models and
-            accurate volumes of indoor and outdoor stockpiles. Our plafform for
-            Aerial Data reporting helps users survey stockpiles safely,
-            accurately and efficiently to meet reporting and contractor
+            accurate volumes of indoor and outdoor stockpiles. The Firmatek
+            platform for Aerial Data reporting helps users survey stockpiles
+            safely, accurately and efficiently to meet reporting and contractor
             deadlines.
           </p>
         </div>
