@@ -24,12 +24,13 @@ const page = () => {
           priority
         />
         <div className="absolute top-[80%] max-w-[1240px]  w-full left-[50%] right[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-          <h2>Firmatek Data Portal 2.0: Stockpile Measurement Data</h2>
+          <h2>Firmatek Data Portal: Stockpile Inventroy Data</h2>
           <h3>UX Designer</h3>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
-        <div className="col-span-3">
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-8">
+        <div className=""></div>
+        <div className="col-span-8">
           <h2>Project Overview</h2>
           <p className="py-4">
             An orthophoto, orthomosaic or orthoimage is an aerial photograph
@@ -47,7 +48,7 @@ const page = () => {
             deadlines.
           </p>
         </div>
-        <div className="col-span-2"></div>
+        <div className=""></div>
       </div>
       <Link href="/#work" className="underline py-4 pb-24">
         <IoChevronBackOutline size={18} className="inline mr-1" />

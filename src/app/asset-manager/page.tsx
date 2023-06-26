@@ -28,9 +28,10 @@ const page = () => {
           <h3>UX Researcher</h3>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
-        <div className="col-span-3">
-          <h2>Project Overview</h2>
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-8">
+        <div className=""></div>
+        <div className="col-span-8">
+          <h2 className="w-full">Project Overview</h2>
           <p className="py-4">
             Stop wasting time managing your property information. Property
             Capsule makes it simple: Upload your property information in one
@@ -55,7 +56,6 @@ const page = () => {
             touchscreen and PC – you’ve got it.
           </p>
         </div>
-        <div className="col-span-2"></div>
       </div>
       <Link href="/#work" className="underline py-4 pb-24">
         <IoChevronBackOutline size={18} className="inline mr-1" />

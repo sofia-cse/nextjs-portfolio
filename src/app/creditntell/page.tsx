@@ -27,8 +27,9 @@ const page = () => {
           <h3>UX Designer</h3>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
-        <div className="col-span-3">
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-8">
+        <div></div>
+        <div className="col-span-8">
           <h2>Project Overview</h2>
           <p className="py-4">
             The Creditntell dashboard provides insights into places and
@@ -47,7 +48,7 @@ const page = () => {
             landscape.
           </p>
         </div>
-        <div className="col-span-2"></div>
+        <div className=""></div>
       </div>
       <Link href="/#work" className="underline py-4 pb-24">
         <IoChevronBackOutline size={18} className="inline mr-1" />

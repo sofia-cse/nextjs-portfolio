@@ -16,7 +16,7 @@ const Projects = () => {
         <h2 className="py-8">Recent Work</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Firmatek Data Portal 2.0"
+            title="Firmatek Data Portal"
             role="UX Designer"
             backgroundImg={firmatekImg}
             projectUrl="/firmatek"
