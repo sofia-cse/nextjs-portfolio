@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="container mx-auto">
       <Main />
       <Projects />
       <About />

@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <div className="w-full h-20 z-[100] sticky top-0 backdrop-blur-md bg-white/70 dark:bg-[#121212]/70">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-8">
+      <div className="container mx-auto flex justify-between items-center w-full h-full px-2 2xl:px-8">
         <Link
           href="/#main"
           aria-label="link to the top of the homepage for Sofia Martin's profile"

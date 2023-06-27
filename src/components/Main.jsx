@@ -9,15 +9,17 @@ const Main = () => {
     <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="mb-40 flex-col items-center">
-          <Image
-            src={logo}
-            alt="Sofia Logo"
-            className="mx-auto"
-            priority
-            width={100}
-            height={100}
-          />
-          <h1 className="py-4 mx-auto">Sofia Martin Design</h1>
+          <div className="center">
+            <Image
+              src={logo}
+              alt="Sofia Logo"
+              className="mx-auto logo"
+              priority
+              width={100}
+              height={100}
+            />
+          </div>
+          <h1 className="pb-4 pt-10 mx-auto">Sofia Martin Design</h1>
           <p className="text-sm tracking-wide py-4 max-w-[80%] m-auto">
             UX Designer, Researcher, PM, and{" "}
             <span className="inline-block">Web Developer</span>
