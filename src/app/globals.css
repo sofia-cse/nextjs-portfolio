@@ -19,8 +19,8 @@ html  {
   --background-end-rgb: 255, 255, 255;
 */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 194, 175, 253;
-  --background-end-rgb: 237, 231, 255;
+  --background-start-rgb: 162, 132, 251;
+  --background-end-rgb: 194, 175, 253;
 
   /*--primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -40,19 +40,9 @@ html  {
     #a284fb25,
     transparent 
   );
-
-  /*--work-glow: conic-gradient(
-    from 270deg at 50% 50%,
-    transparent,
-    #d3283b25,
-    #d3283b33,
-    #d3283b33,
-    #d3283b25,
-    transparent 
-  );*/
   
-  --work-glow: radial-gradient(
-    #d3283b18,
+  --layout-glow: radial-gradient(
+    #d3283b20,
     #d3283b00 
   );
 
@@ -123,6 +113,7 @@ html  {
 
 .center {
   overflow: hidden;
+  background-clip: content-box;
 }
 
 .center::before {
@@ -163,16 +154,15 @@ html  {
   content: '';
   left: 50%;
   position: absolute;
-  filter: blur(45px);
+  filter: blur(42px);
   transform: translateZ(0);
-  max-width: 100%;
 }
 
 #work::before {
   content: '';
   max-width: 90%;
   border-radius: 50%;
-  background: var(--work-glow);
+  background: var(--layout-glow);
   left: 0%;
   margin-top: -400px;
   margin-left: -17%;
@@ -188,7 +178,7 @@ html  {
   content: '';
   max-width: 90%;
   border-radius: 50%;
-  background: var(--work-glow);
+  background: var(--layout-glow);
   left: 100%;
   margin-top: -200px;
   margin-left: -16%;
@@ -204,7 +194,7 @@ html  {
   content: '';
   max-width: 90%;
   border-radius: 50%;
-  background: var(--work-glow);
+  background: var(--layout-glow);
   left: 0;
   margin-top: -200px;
   margin-left: -16%;
@@ -253,11 +243,14 @@ html  {
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(var(--background-end-rgb), 0.165  )
-    )
-    rgba(var(--background-start-rgb), 0.165);
+    to bottom,
+    rgba(var(--background-start-rgb), 0.175),
+    rgba(var(--background-end-rgb), 0.175));
+}
+
+ol {
+  list-style-type:decimal;
+  padding-left: 40px;
 }
 
 @layer base{

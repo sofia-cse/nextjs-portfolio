@@ -12,7 +12,7 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full h-20 z-[100] sticky top-0 backdrop-blur-md bg-white/30 dark:bg-[#121212]/70">
+    <div className="w-full h-20 z-[100] sticky top-0 backdrop-blur-md bg-white/60 dark:bg-[#121212]/70">
       <div className="container mx-auto flex justify-between items-center w-full h-full px-2 2xl:px-8">
         <Link
           href="/#main"
