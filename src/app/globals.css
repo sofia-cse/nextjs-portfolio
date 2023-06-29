@@ -41,7 +41,14 @@ html  {
     transparent 
   );
   
-  --layout-glow: radial-gradient(
+  --glow-left: radial-gradient(
+    circle farthest-corner at 0% 50%,
+    #d3283b20,
+    #d3283b00 
+  );
+
+    --glow-right: radial-gradient(
+    circle farthest-corner at 100% 50%,
     #d3283b20,
     #d3283b00 
   );
@@ -128,7 +135,7 @@ html  {
 .center::after {
   background: var(--primary-glow);
   border-radius: 50%;
-  margin-top: -150px;
+  margin-top: -200px;
   margin-left: -150px;
   width: 300px;
   height: 300px;
@@ -139,7 +146,7 @@ html  {
 
 .center:hover::after {
   background: var(--primary-glow);
-  margin-top: -150px;
+  margin-top: -200px;
   margin-left: -150px;
   width: 300px;
   height: 300px;
@@ -161,47 +168,45 @@ html  {
   content: '';
   max-width: 90%;
   border-radius: 50%;
-  background: var(--layout-glow);
+  background: var(--glow-left);
   left: 0%;
   margin-top: -400px;
-  margin-left: -17%;
-  width: 33%;
+  margin-left: -33%;
+  width: 66%;
   height: 600px;
   z-index: -1;
   position: absolute;
-  filter: blur(45px);
+  filter: blur(50px);
   transform: translateZ(0);
 }
 
 #about::before {
   content: '';
   max-width: 90%;
-  border-radius: 50%;
-  background: var(--layout-glow);
-  left: 100%;
-  margin-top: -200px;
-  margin-left: -16%;
+  right: 0;
+  margin-top: -4.5rem;
+  border-radius: 50% 0 0 50%;
+  background: var(--glow-right);
   width: 33%;
-  height: 600px;
+  height: 560px;
   z-index: -1;
   position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+  filter: blur(50px);
 }
 
 #skills::before {
   content: '';
   max-width: 90%;
   border-radius: 50%;
-  background: var(--layout-glow);
+  background: var(--glow-left);
   left: 0;
-  margin-top: -200px;
-  margin-left: -16%;
-  width: 33%;
+  margin-top: -150px;
+  margin-left: -33%;
+  width: 66%;
   height: 600px;
   z-index: -1;
   position: absolute;
-  filter: blur(45px);
+  filter: blur(50px);
   transform: translateZ(0);
 }
 
