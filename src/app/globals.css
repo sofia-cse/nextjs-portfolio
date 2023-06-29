@@ -19,8 +19,8 @@ html  {
   --background-end-rgb: 255, 255, 255;
 */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 162, 132, 251;
-  --background-end-rgb: 194, 175, 253;
+  --background-start-rgb: 162, 132, 251, 0.175;
+  --background-end-rgb: 194, 175, 253, 0.175;
 
   /*--primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -82,14 +82,13 @@ html  {
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgba: 0, 0, 0, 0;
+    --background-end-rgba: 0, 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
+    --primary-glow: radial-gradient(#d3283b30, #d3283b00);
+    --secondary-glow: radial-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
     );
 
     --tile-start-rgb: 2, 13, 46;
@@ -244,8 +243,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
     to bottom,
-    rgba(var(--background-start-rgb), 0.175),
-    rgba(var(--background-end-rgb), 0.175));
+    rgba(var(--background-start-rgb)),
+    rgba(var(--background-end-rgb)));
 }
 
 ol {

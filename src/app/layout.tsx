@@ -41,7 +41,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body className="">
         <div className="mx-auto mb-24">
           <Navbar />
           <div className="container mx-auto items-start">{children}</div>
