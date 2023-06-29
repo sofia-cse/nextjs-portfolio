@@ -83,7 +83,7 @@ const page = () => {
             representations allowed me to iterate quickly, gather feedback, and
             refine the user interface. Collaborating closely with the
             development team, I ensured the design was technically feasible and
-            aligned with the project's timeline and constraints.
+            aligned with the project&apos;s timeline and constraints.
           </p>
           <h2 className="pt-6 pb-2">Key Features</h2>
           <p className="py-4">
@@ -96,8 +96,8 @@ const page = () => {
               Orthophoto Viewer: A specialized viewer that allowed users to
               explore high-resolution orthophotos of the surveyed areas. Users
               could zoom, pan, and measure distances accurately, thanks to the
-              orthophotos' uniform scale and correction for lens distortion and
-              topographic relief.
+              orthophotos&apos; uniform scale and correction for lens distortion
+              and topographic relief.
             </li>
             <li className="py-2">
               Lidar Data Integration: The platform seamlessly integrated Lidar
