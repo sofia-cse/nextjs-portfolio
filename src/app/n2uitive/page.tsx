@@ -39,26 +39,113 @@ const page = () => {
         <div className="col-span-8">
           <h2>Project Overview</h2>
           <p className="py-4">
-            n2uitive is a cloud-based claims interview and recorded statement
-            management platform for auto, home and workers compensation
-            insurers. n2uitive provides claims organizations with a unified,
-            secure recorded statement solution that simplifies processes,
-            reduces expenses and supports industry-wide best practices.
+            I served as the Product Manager for n2uitive, a cloud-based claims
+            interview and recorded statement management platform tailored to
+            auto, home, and workers' compensation insurers. The primary
+            objective of this project was to provide claims organizations with a
+            unified, secure, and efficient recorded statement solution that
+            simplifies processes, reduces expenses, and adheres to industry-wide
+            best practices.
           </p>
-          <p className="py-4">
-            n2record™ is n2uitive’s comprehensive, cloud-based recorded
-            statement solution that streamlines the overall statement workflow
-            for insurers by recording, storing and indexing, sharing, and
-            transcribing claims statements.
+          <h2 className="pt-6 pb-2">Responsibilities</h2>
+          <p className="py-2">
+            As the Product Manager for n2uitive, my responsibilities revolved
+            around creating a user-centric platform that met the specific needs
+            of insurance claims professionals. I collaborated closely with
+            stakeholders, domain experts, and the development team to gain a
+            deep understanding of the challenges faced by insurers in managing
+            recorded statements and claims interviews.
           </p>
-          <p className="py-4">
-            Recordings are automatically indexed and stored in a secure
-            statement library, making them easily searchable and accessible. The
-            solution also enables users to share statements quickly and securely
-            from the library to approved external parties and transcription
-            services. Insurers can utilize the solution’s insightful reports and
-            analytics to better understand statement practices, leading to more
-            consistent and accurate claim outcomes.
+          <h2 className="pt-6 pb-2">Design Process</h2>
+          <p className="py-2">
+            The design process for n2uitive involved comprehensive user research
+            and iterative design practices. I conducted in-depth interviews and
+            usability tests with claims professionals to identify pain points
+            and opportunities for improvement in their current recorded
+            statement workflow. Understanding the nuances of the insurance
+            industry was crucial in creating a solution that would resonate with
+            users and enhance their productivity.
+          </p>
+          <p className="py-2">
+            The design process for n2uitive involved comprehensive user research
+            and iterative design practices. I conducted in-depth interviews and
+            usability tests with claims professionals to identify pain points
+            and opportunities for improvement in their current recorded
+            statement workflow. Understanding the nuances of the insurance
+            industry was crucial in creating a solution that would resonate with
+            users and enhance their productivity.
+          </p>
+          <p className="py-2">
+            Based on the insights from user research, I crafted user personas
+            and user journey maps to visualize the typical interactions and
+            workflows of claims professionals using the platform. This process
+            helped me identify key features and functionalities that would
+            streamline their processes and improve their overall experience.
+          </p>
+          <p className="py-2">
+            With the user needs at the forefront, I created user flows and
+            product requirements that effectively translated client and user
+            needs into tangible deliverables for the design and development
+            teams. Th e designs were refined through iterative feedback sessions
+            and usability testing, ensuring that the final solution met the
+            unique requirements of insurance claims organizations.
+          </p>
+          <h2 className="pt-6 pb-2">Key Features:</h2>
+          <p className="py-2">
+            The n2uitive platform offered a comprehensive set of features to
+            support claims interview and recorded statement management
+            effectively. Some of the key features I designed and implemented
+            include:
+          </p>
+          <ol>
+            <li className="py-2">
+              n2record™: The cloud-based recorded statement solution, n2record™,
+              simplified the statement workflow for insurers. Users could
+              effortlessly record, store, and index statements within a secure
+              statement library. The automatic indexing made the statements
+              easily searchable and accessible, saving time and effort for
+              claims professionals.
+            </li>
+            <li className="py-2">
+              Secure Sharing: The platform enabled users to securely share
+              statements with approved external parties and transcription
+              services directly from the statement library. This streamlined the
+              collaboration process, ensuring that stakeholders had access to
+              the necessary information promptly and securely.
+            </li>
+            <li className="py-2">
+              Insightful Reports and Analytics: n2uitive provided insurers with
+              insightful reports and analytics, allowing them to gain valuable
+              insights into statement practices. By analyzing this data, claims
+              organizations could identify patterns, trends, and areas for
+              improvement, leading to more consistent and accurate claim
+              outcomes.
+            </li>
+          </ol>
+          <h2 className="pt-6 pb-2">Impact and Outcome</h2>
+          <p className="py-2">
+            Working on the n2uitive project allowed me to contribute to the
+            development of a cutting-edge platform that addressed the specific
+            needs of auto, home, and workers' compensation insurers. By
+            streamlining the recorded statement workflow and simplifying
+            processes, n2uitive empowered claims professionals to work more
+            efficiently, reduce expenses, and adhere to industry best practices.
+          </p>
+          <p className="py-2">
+            The user-centric design approach ensured that the platform resonated
+            with its target audience, leading to high user adoption and
+            satisfaction. The seamless integration of the n2record™ solution
+            within the cloud-based platform provided claims professionals with a
+            unified and convenient experience.
+          </p>
+          <p className="py-2">
+            Overall, n2uitive's cloud-based claims interview and recorded
+            statement management platform significantly improved the claims
+            process for insurers, fostering better collaboration, transparency,
+            and accuracy in claim outcomes. As the UX Designer for this project,
+            I am proud to have played a pivotal role in enhancing the
+            productivity and effectiveness of insurance claims professionals
+            through thoughtful and innovative design.
           </p>
         </div>
         <div className=""></div>

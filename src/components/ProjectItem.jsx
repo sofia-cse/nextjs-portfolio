@@ -2,9 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectItem = ({ title, role, backgroundImg, projectUrl, arialabel }) => {
+const ProjectItem = ({
+  title,
+  role,
+  backgroundImg,
+  projectUrl,
+  arialabel,
+  identifier,
+}) => {
   return (
-    <div className="projectitem flex justify-center">
+    <div className={identifier}>
       <div className="relative flex items-center justify-center h-auto w-full group hover:bg-gradient-to-b from-[#a284fb] to-[#d3283b] rounded-md">
         <Image
           src={backgroundImg}

@@ -232,6 +232,24 @@ html  {
   top: -40%;
 }
 
+.bands.projectitem:hover::before {
+  animation: 4s rotate linear infinite;
+  width: 200%;
+  height: 400%;
+  background: var(--tile-border);
+  top: -40%;
+}
+
+@media (min-width: 1024px) {
+  .bands.projectitem:hover::before {
+    animation: 4s rotate linear infinite;
+    width: 150%;
+    height: 200%;
+    background: var(--tile-border);
+    top: -40%;
+  }
+}
+
 /* .projectitem::after {
   inset: 100%;
   padding: 10px;

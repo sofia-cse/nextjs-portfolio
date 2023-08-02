@@ -141,7 +141,7 @@ const page = () => {
             design skills to create a platform that addressed the unique
             challenges of the UAV industry. The project reinforced the
             importance of user research, iterative design, and collaboration in
-            developing software solutions that meet
+            developing software solutions that meet.
           </p>
         </div>
         <div className=""></div>
