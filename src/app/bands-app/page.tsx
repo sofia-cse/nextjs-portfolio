@@ -54,8 +54,8 @@ const page = () => {
             My role as the UX Researcher involved conducting in-depth research
             to gain insights into the needs, preferences, and pain points of
             both musicians and music fans. I collaborated closely with the
-            design and development teams to ensure that the app's features and
-            functionalities aligned with the expectations of its target
+            design and development teams to ensure that the app&apos;s features
+            and functionalities aligned with the expectations of its target
             audience.
           </p>
           <h2 className="pt-6 pb-2">Design Process</h2>
@@ -65,7 +65,8 @@ const page = () => {
             musicians and their fans. To achieve this, I conducted a variety of
             research activities, including interviews, surveys, and usability
             tests. I engaged with musicians, music enthusiasts, and industry
-            experts to gather valuable feedback and refine the app's design.
+            experts to gather valuable feedback and refine the app&apos;s
+            design.
           </p>
           <p className="py-2">
             To visualize the user experience, I created user personas and user
@@ -76,10 +77,10 @@ const page = () => {
           </p>
           <p className="py-2">
             Throughout the design process, I conducted iterative usability
-            testing sessions to validate the app's usability and identify areas
-            for improvement. The feedback gathered from these tests guided the
-            refinement of the app's interface and interaction flow, ensuring a
-            smooth and enjoyable user experience.
+            testing sessions to validate the app&apos;s usability and identify
+            areas for improvement. The feedback gathered from these tests guided
+            the refinement of the app&apos;s interface and interaction flow,
+            ensuring a smooth and enjoyable user experience.
           </p>
 
           <h2 className="pt-6 pb-2">Key Features:</h2>
@@ -121,10 +122,10 @@ const page = () => {
           <p className="py-2">
             The Bands app had a significant impact on the music industry by
             empowering musicians to seize control of their artistry and build
-            deeper connections with their fans. The platform's comprehensive
-            suite of tools allowed musicians to monetize their online presence
-            while simultaneously offering music fans an engaging and immersive
-            music experience.
+            deeper connections with their fans. The platform&apos;s
+            comprehensive suite of tools allowed musicians to monetize their
+            online presence while simultaneously offering music fans an engaging
+            and immersive music experience.
           </p>
           <p className="py-2">
             As the UX Researcher on this project, I played a crucial role in

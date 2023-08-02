@@ -68,7 +68,7 @@ const page = () => {
             and other stakeholders and designing a user-centric platform that
             meets those requirements. I collaborated closely with stakeholders,
             medical experts, and the development team to ensure that the
-            platform aligns with the vision of improving patients' lives.
+            platform aligns with the vision of improving patients&apos; lives.
           </p>
           <h2 className="pt-6 pb-2">Design Process</h2>
           <p className="py-2">
@@ -130,7 +130,7 @@ const page = () => {
           <p className="py-2">
             By streamlining the enrollment and claims submission processes, Good
             Days improved operational efficiency and reduced administrative
-            burden for all stakeholders. The platform's transparency and
+            burden for all stakeholders. The platform&apos;s transparency and
             accessibility ensured that patients received the financial and
             emotional support they desperately needed to access life-extending
             and life-saving treatments.
@@ -141,7 +141,7 @@ const page = () => {
             to hundreds of thousands of individuals facing difficult medical
             circumstances. The Good Days platform stands as a testament to the
             power of user-centered design in creating solutions that make a
-            meaningful difference in people's lives.
+            meaningful difference in people&apos;s lives.
           </p>
         </div>
         <div className=""></div>

@@ -41,7 +41,7 @@ const page = () => {
           <p className="py-4">
             I served as the Product Manager for n2uitive, a cloud-based claims
             interview and recorded statement management platform tailored to
-            auto, home, and workers' compensation insurers. The primary
+            auto, home, and workers&apos; compensation insurers. The primary
             objective of this project was to provide claims organizations with a
             unified, secure, and efficient recorded statement solution that
             simplifies processes, reduces expenses, and adheres to industry-wide
@@ -126,7 +126,7 @@ const page = () => {
           <p className="py-2">
             Working on the n2uitive project allowed me to contribute to the
             development of a cutting-edge platform that addressed the specific
-            needs of auto, home, and workers' compensation insurers. By
+            needs of auto, home, and workers&apos; compensation insurers. By
             streamlining the recorded statement workflow and simplifying
             processes, n2uitive empowered claims professionals to work more
             efficiently, reduce expenses, and adhere to industry best practices.
@@ -139,7 +139,7 @@ const page = () => {
             unified and convenient experience.
           </p>
           <p className="py-2">
-            Overall, n2uitive's cloud-based claims interview and recorded
+            Overall, n2uitive&apos;s cloud-based claims interview and recorded
             statement management platform significantly improved the claims
             process for insurers, fostering better collaboration, transparency,
             and accuracy in claim outcomes. As the UX Designer for this project,

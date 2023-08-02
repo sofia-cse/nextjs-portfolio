@@ -50,19 +50,19 @@ const page = () => {
           <p className="py-4">
             Update information easily. For example, you lease a retail space to
             a new tenant and need marketing materials to reflect the change.
-            Just pick the tenant name and you’re done. The plan updates itself -
-            and everything else too. Our system (and database of over 10,000
-            retailers and logos) does the work for you. You don’t need to worry
-            about updating or publishing each document separately, because the
-            system does that - automatically.
+            Just pick the tenant name and you&apos;re done. The plan updates
+            itself - and everything else too. Our system (and database of over
+            10,000 retailers and logos) does the work for you. You don&apos;at
+            need to worry about updating or publishing each document separately,
+            because the system does that - automatically.
           </p>
           <p className="py-4">
-            You’ll find your interactive website, plans, maps and flyers
+            You&apos;ll find your interactive website, plans, maps and flyers
             published with the most recent information - instantly. Your
             documents will even be updated with the latest market research data.
             Now, all your property information is accessible on any platform,
             from any device. Web, mobile phone, iPad app, email, PDF,
-            touchscreen and PC – you’ve got it.
+            touchscreen and PC – you&apos;ve got it.
           </p>
         </div>
       </div>
