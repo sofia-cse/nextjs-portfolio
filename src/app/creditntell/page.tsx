@@ -65,7 +65,7 @@ const page = () => {
             intuitive and user-friendly dashboard that enables businesses to
             harness the power of geospatial insights effectively. I collaborated
             closely with stakeholders, industry experts, and the development
-            team to ensure that the platform's features and functionalities
+            team to ensure that the platform&apos;s features and functionalities
             aligned with the needs of its users.
           </p>
           <h2 className="pt-6 pb-2">Design Process</h2>
@@ -87,10 +87,10 @@ const page = () => {
           </p>
           <p className="py-2">
             Throughout the design process, I created wireframes and interactive
-            prototypes to visualize the dashboard's interface and interaction
-            flow. These designs were continuously refined through iterative
-            feedback sessions and usability testing, ensuring that the final
-            product offers a seamless and efficient user experience.
+            prototypes to visualize the dashboard&apos;s interface and
+            interaction flow. These designs were continuously refined through
+            iterative feedback sessions and usability testing, ensuring that the
+            final product offers a seamless and efficient user experience.
           </p>
           <h2 className="pt-6 pb-2">Key Features:</h2>
           <p className="py-2">
@@ -127,9 +127,9 @@ const page = () => {
             The Creditntell dashboard had a significant impact on businesses in
             the retail industry by providing them with a powerful tool to gain
             actionable insights and discover new business opportunities. The
-            user-centric design approach ensured that the platform's interface
-            and features catered to the unique needs of businesses and retail
-            agents, fostering high user adoption and satisfaction.
+            user-centric design approach ensured that the platform&apos;s
+            interface and features catered to the unique needs of businesses and
+            retail agents, fostering high user adoption and satisfaction.
           </p>
           <p className="py-2">
             By combining foot traffic data, geospatial intelligence, and

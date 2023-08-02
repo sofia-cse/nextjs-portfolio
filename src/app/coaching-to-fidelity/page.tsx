@@ -55,9 +55,9 @@ const page = () => {
             conducting in-depth research to gain insights into the specific
             requirements of coaches, the challenges they face, and their desired
             workflows. I worked closely with the design and development teams to
-            ensure that the app's features and functionalities aligned
+            ensure that the app&apos;s features and functionalities aligned
             seamlessly with the coaching practice and the desired outcomes for
-            children's education.
+            children&apos;s education.
           </p>
           <h2 className="pt-6 pb-2">Design Process</h2>
           <p className="py-2">
@@ -78,10 +78,10 @@ const page = () => {
           </p>
           <p className="py-2">
             Throughout the design process, I conducted iterative usability
-            testing sessions to validate the app's usability and identify areas
-            for improvement. The feedback gathered from these tests guided the
-            refinement of the app's interface and interaction flow, ensuring a
-            seamless and user-friendly experience for coaches.
+            testing sessions to validate the app&apos;s usability and identify
+            areas for improvement. The feedback gathered from these tests guided
+            the refinement of the app&apos;s interface and interaction flow,
+            ensuring a seamless and user-friendly experience for coaches.
           </p>
           <h2 className="pt-6 pb-2">Key Features:</h2>
           <p className="py-2">
@@ -113,7 +113,7 @@ const page = () => {
             <li className="py-2">
               Fidelity Scoring and Reporting: The app provided automatic
               fidelity scoring and reporting tools to track teacher improvement
-              and drive positive outcomes for children's education.
+              and drive positive outcomes for children&apos;s education.
             </li>
           </ol>
           <h2 className="pt-6 pb-2">Impact and Outcome</h2>
@@ -121,7 +121,7 @@ const page = () => {
             The Coaching to Fidelity app had a significant impact on early
             childhood education by empowering coaches with the necessary tools
             to guide teachers towards optimal implementation and best practices.
-            The platform's user-centric design and comprehensive features
+            The platform&apos;s user-centric design and comprehensive features
             provided coaches with efficient workflows and valuable support.
           </p>
           <p className="py-2">
@@ -135,11 +135,11 @@ const page = () => {
           <p className="py-2">
             As the UX Researcher on this project, I am proud to have played a
             role in creating a platform that elevates coaching practices and
-            boosts outcomes for children's education. The Coaching to Fidelity
-            app stands as a testament to the power of user-centered design in
-            creating solutions that positively impact the field of early
-            childhood education and support the growth and development of young
-            learners.
+            boosts outcomes for children&apos;s education. The Coaching to
+            Fidelity app stands as a testament to the power of user-centered
+            design in creating solutions that positively impact the field of
+            early childhood education and support the growth and development of
+            young learners.
           </p>
         </div>
         <div className=""></div>
