@@ -71,8 +71,8 @@ const page = () => {
             research to understand the needs and pain points of commercial
             property professionals. I collaborated closely with stakeholders,
             property managers, and industry experts to ensure that the
-            platform's features and functionalities aligned with their specific
-            requirements.
+            platform&apos;s features and functionalities aligned with their
+            specific requirements.
           </p>
           <h2 className="pt-6 pb-2">Design Process</h2>
           <p className="py-2">
@@ -92,10 +92,10 @@ const page = () => {
           </p>
           <p className="py-2">
             Throughout the design process, I created wireframes and interactive
-            prototypes to visualize the platform's interface and interaction
-            flow. These designs were continuously refined through iterative
-            feedback sessions and usability testing, ensuring that the final
-            product offered a seamless and efficient user experience.
+            prototypes to visualize the platform&apos;s interface and
+            interaction flow. These designs were continuously refined through
+            iterative feedback sessions and usability testing, ensuring that the
+            final product offered a seamless and efficient user experience.
           </p>
           <h2 className="pt-6 pb-2">Key Features:</h2>
           <p className="py-2">
@@ -136,17 +136,17 @@ const page = () => {
             The VTS Asset Manager, or Property Capsule, had a significant impact
             on commercial property professionals by streamlining property
             information management and reporting. The user-centric design
-            approach ensured that the platform's interface and features catered
-            to the specific needs of property managers, fostering high user
-            adoption and satisfaction.
+            approach ensured that the platform&apos;s interface and features
+            catered to the specific needs of property managers, fostering high
+            user adoption and satisfaction.
           </p>
           <p className="py-2">
             By automating the updating and publishing process, the VTS Asset
             Manager saved users valuable time and effort, allowing them to focus
-            on more strategic aspects of property management. The platform's
-            instant accessibility and flexibility across various platforms and
-            devices provided property professionals with greater convenience and
-            accessibility to critical information.
+            on more strategic aspects of property management. The
+            platform&apos;s instant accessibility and flexibility across various
+            platforms and devices provided property professionals with greater
+            convenience and accessibility to critical information.
           </p>
           <p className="py-2">
             As the UX Designer on this project, I am proud to have contributed
