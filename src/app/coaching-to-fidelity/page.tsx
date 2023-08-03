@@ -22,7 +22,7 @@ const page = () => {
           className="absolute z-1 object-cover object-top"
           fill
         />
-        <div className="absolute bottom-[5%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 text-white">
+        <div className="absolute bottom-[8%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 text-white">
           <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-0">
             <div className=""></div>
             <div className="col-span-8">

@@ -54,7 +54,7 @@ const Projects = () => {
 
           <ProjectItem
             title="VTS Asset Manager"
-            role="UX Researcher"
+            role="UX Designer"
             backgroundImg={assetImg}
             projectUrl="/asset-manager"
             arialabel="Learn more more about Sofia's involvement in the Asset Manager project"
