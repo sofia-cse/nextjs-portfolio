@@ -49,7 +49,7 @@ const Projects = () => {
             backgroundImg={bandsImg}
             projectUrl="/bands-app"
             arialabel="Learn more more about Sofia's involvement in the Bands App project"
-            identifier="projectitem flex justify-center bands"
+            identifier="flex justify-center bands"
           />
 
           <ProjectItem
