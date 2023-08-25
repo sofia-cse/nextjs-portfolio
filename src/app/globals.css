@@ -19,8 +19,8 @@ html  {
   --background-end-rgb: 255, 255, 255;
 */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 162, 132, 251, 0.175;
-  --background-end-rgb: 194, 175, 253, 0.175;
+  --background-start-rgb: 162, 132, 251, 0.125;
+  --background-end-rgb: 194, 175, 253, 0.125;
 
   /*--primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -164,6 +164,8 @@ html  {
   transform: translateZ(0);
 }
 
+#work {margin-top: -80px;}
+
 #work::before {
   content: '';
   max-width: 90%;
@@ -298,7 +300,11 @@ ol {
   }
 
   button {
-    @apply shadow-xl rounded-md uppercase bg-gradient-to-b from-[#a284fb] to-[#d3283b] text-white
+    @apply rounded-md uppercase bg-[#a284fb] text-white
+  }
+
+  button:hover  {
+    @apply shadow-xl transition ease-in-out duration-300
   }
 }
 

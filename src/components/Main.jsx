@@ -19,9 +19,10 @@ const Main = () => {
               height={100}
             />
           </div>
-          <h1 className="pb-4 pt-12 mx-auto">Sofia Martin Design</h1>
-          <p className="text-sm tracking-wide py-4 max-w-[80%] m-auto">
-            UX Designer, Researcher, PM, and{" "}
+          <h1 className="pb-4 pt-12 mx-auto">Sofia Martin</h1>
+          <p className="text-lg tracking-wide py-4 max-w-[80%] m-auto">
+            Product Manager, UX Designer,{" "}
+            <span className="inline-block">UX Researcher,</span>{" "}
             <span className="inline-block">Web Developer</span>
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

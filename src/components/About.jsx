@@ -7,17 +7,19 @@ const About = () => {
     <div id="about" className="w-full md:min-h-screen p-2">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <div className="max-w-[1240px] m-auto md:grid">
-          <h2 className="py-6 block">A Little About Me</h2>
+          <h2 className="py-6 block text-center lg:text-left">
+            A Little About Me
+          </h2>
         </div>
-        <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+        <div className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8">
           <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 order-2">
             <Image
-              className="max-w-[75%] md:max-w-[300px] rounded-full"
+              className="max-w-[60%] md:max-w-[200px] lg:max-w-[300px] rounded-full"
               src={avatar}
               alt="Photo of the Sofia Martin"
             />
           </div>
-          <div className="col-span-2 order-1">
+          <div className="col-span-2 order-1 text-lg">
             <p className="py-2">
               Hi, I&#39;m Sofia, a passionate UX designer, UX researcher,
               product manager, and front-end developer with over seven years of

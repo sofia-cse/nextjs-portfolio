@@ -17,14 +17,14 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <h2 className="py-4">Get In Touch</h2>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <h2 className="py-4 pb-8 text-center lg:text-left">Get In Touch</h2>
+        <div className="md:grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="co-span-3 lg:col-span-2 w-full h-full px-4">
-            <div className="lg:p-4 h-full">
-              <div>
+          <div className="co-span-3 lg:col-span-2 w-full h-full px-4 lg:px-0">
+            <div className="h-full">
+              <div className="text-center md:text-left">
                 <Image
-                  className="hover:scale-105 ease-in duration-300"
+                  className="hover:scale-105 ease-in duration-300 m-auto lg:pt-6 pb-4"
                   src={contactImg}
                   alt="Contact image of person sitting at a desk typing on a laptop"
                 />
@@ -37,8 +37,9 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="pt-8">Connect With Me</p>
-                <div className="flex items-center pt-4">
+                <div className="flex items-center pb-4">
+                  <p className="pr-2 pb-2 pt-3">Connect With Me:</p>
+
                   <div className="p-2 cursor-pointer">
                     <a
                       href="https://www.linkedin.com/in/sofiabrainerdmartin/"
@@ -48,7 +49,7 @@ const Contact = () => {
                       <FaLinkedinIn title="LinkedIn icon" />
                     </a>
                   </div>
-                  <div className="p-2 px-8 cursor-pointer">
+                  <div className="p-2 px-4 cursor-pointer">
                     <a
                       href="https://github.com/sofia-cse"
                       target="blank"
@@ -73,7 +74,7 @@ const Contact = () => {
                 method="POST"
                 ref={formRef}
               >
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                <div className="grid md:grid-cols-2 gap-4 w-full">
                   <div className="flex flex-col">
                     <label className="text-sm py-2" htmlFor="name">
                       Name <span className="text-red"> *</span>
@@ -139,7 +140,10 @@ const Contact = () => {
                 </div>
                 <input type="hidden" name="_gotcha" className="hidden"></input>
                 <div className="flex flex-col">
-                  <button onClick={handleButton} className="p-4 mt-4  mx-auto">
+                  <button
+                    onClick={handleButton}
+                    className="p-4 mt-8 mx-auto hover:shadow-xl transition ease-in-out duration-300"
+                  >
                     Send Message
                   </button>
                 </div>

@@ -5,7 +5,9 @@ const Skills = () => {
   return (
     <div id="skills" className="w-full md:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <h2 className="py-8">Tools I&#39;m working with</h2>
+        <h2 className="pb-12 text-center lg:text-left">
+          Tools I&#39;m Working With
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="hover:scale-105 ease-in duration-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">

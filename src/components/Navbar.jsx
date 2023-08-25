@@ -43,7 +43,7 @@ const Navbar = () => {
             </li>
             <li className="ml-10 text sm hover:border-collapse">
               <Link href="/#skills" scroll={false}>
-                Skills
+                Tools
               </Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
@@ -72,7 +72,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed right-0 top-0 px-2 py-6  w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white dark:bg-[#121212] ease-in duration-500"
+              ? "md:hidden fixed right-0 top-0 px-2 py-6  w-[65%] sm:w-[60%] md:w-[45%] h-screen bg-white dark:bg-[#121212] ease-in duration-500"
               : "hidden"
           }
         >
@@ -115,7 +115,7 @@ const Navbar = () => {
               </li>
               <li className="py-4 text-sm">
                 <Link onClick={() => setNav(false)} href="/#skills">
-                  Skills
+                  Tools
                 </Link>
               </li>
               <li className="py-4 text-sm">
