@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div id="work" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 pb-16">
-        <h2 className="pb-12 text-center lg:text-left">Recent Work</h2>
+        <h2 className="pb-12 text-center lg:text-left">Selected Work</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Firmatek Data Portal"
