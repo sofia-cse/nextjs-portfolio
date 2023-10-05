@@ -18,7 +18,7 @@ const ProjectItem = ({
             <Image
               src={backgroundImg}
               alt="Project Image"
-              className="object-contain w-auto h-full max-h-[530px]"
+              className="object-contain h-full max-h-[530px]"
             />
           </div>
           <div className="flex flex-col items-start justify-end text-left h-auto p-6">
