@@ -8,6 +8,7 @@ import bandsImg from "../../public/assets/projects/bands_wide.jpg";
 import assetImg from "../../public/assets/projects/assetmanager6.png";
 import groundImg from "../../public/assets/projects/groundcontrol3.png";
 import c2fImg from "../../public/assets/projects/c2f-android-framed.png";
+import tourImg from "../../public/assets/projects/Tourbooks-Framed.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -64,15 +65,6 @@ const Projects = () => {
             arialabel="Learn more more about Sofia's involvement in the Bands App project"
             identifier="projectitem flex justify-center bands"
           />
-
-          <ProjectItem
-            title="VTS: Property Asset Manager"
-            role="A platform that simplifies property information management for commercial property professionals by centralizing property information, including plans, maps, images, and property characteristics, in one easy-to-use platform."
-            backgroundImg={assetImg}
-            projectUrl="/asset-manager"
-            arialabel="Learn more more about Sofia's involvement in the Asset Manager project"
-            identifier="projectitem"
-          />
           <ProjectItem
             title="Coaching to Fidelity: Education App"
             role="An app for coaches who guide teachers towards optimal implementation of The Creative Curriculum, equipping coaches with comprehensive tools and guidance to improve outcomes for children in early childhood education settings."
@@ -82,11 +74,27 @@ const Projects = () => {
             identifier="projectitem"
           />
           <ProjectItem
+            title="VTS: Property Asset Manager"
+            role="A platform that simplifies property information management for commercial property professionals by centralizing property information, including plans, maps, images, and property characteristics, in one easy-to-use platform."
+            backgroundImg={assetImg}
+            projectUrl="/asset-manager"
+            arialabel="Learn more more about Sofia's involvement in the Asset Manager project"
+            identifier="projectitem"
+          />
+          <ProjectItem
             title="Creditntel: Property Analytics"
             role="A platform that provides offers accurate foot traffic counts and dwell time data, empowering agents to understand how various factors impact businesses in the retail landscape."
             backgroundImg={propertyImg}
             projectUrl="/creditntell"
             arialabel="Learn more more about Sofia's involvement in the Creditntell project"
+            identifier="projectitem"
+          />
+          <ProjectItem
+            title="Property Capsule: Digital Tourbooks"
+            role="A tool for real estate leasing agents that generates real-time, fully interactive and collaborative presentations on demand, saving precious time and increasing deal throughput."
+            backgroundImg={tourImg}
+            projectUrl="/tourbooks"
+            arialabel="Learn more more about Sofia's involvement in the Tourbooks project"
             identifier="projectitem"
           />
         </div>

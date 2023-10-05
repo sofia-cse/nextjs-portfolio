@@ -6,9 +6,9 @@ import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sofia Martin | VTS Asset Manager Portfolio Entry",
+  title: "Sofia Martin | Avinew Portfolio Entry",
   description:
-    "Sofia Martin worked as the UX Researcher on the VTS Asset Manager App, a platform the helps commercial real estate agents manage their property portfolio data.",
+    "Sofia Martin worked as the UX Researcher on the Avinew app, a platform the allows drivers of ADAS equipped vehicles to benefit from savings on their insurance policies.",
 };
 
 const page = () => {
