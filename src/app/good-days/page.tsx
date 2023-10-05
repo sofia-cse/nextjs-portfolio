@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-[30vh] lg:h-[60vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[60vh] bg-black/60 z-10" />
+      <div className="w-full h-[40vh] lg:h-[75vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[75vh] bg-black/60 z-10" />
         <Image
           src={gdImg}
           alt="Header"
@@ -27,7 +27,7 @@ const page = () => {
           <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-0">
             <div className=""></div>
             <div className="col-span-8">
-              <h2>Good Days Health</h2>
+              <h2>Good Days</h2>
               <h3>Patient Copay Assistance</h3>
               <h3 className="pt-2">Role: UX Designer & Researcher</h3>
             </div>

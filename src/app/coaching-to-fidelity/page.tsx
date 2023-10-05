@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import c2fImg from "../../../public/assets/projects/c2f_ipad.jpg";
+import c2fImg from "../../../public/assets/projects/c2f-android-framed.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-[30vh] lg:h-[60vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[60vh] bg-black/60 z-10" />
+      <div className="w-full h-[40vh] lg:h-[75vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[75vh] bg-black/60 z-10" />
         <Image
           src={c2fImg}
           alt="Header"
-          className="absolute z-1 object-cover object-top"
+          className="absolute z-1 object-cover object-center"
           fill
         />
         <div className="absolute bottom-[8%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 text-white">

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import n2uitiveImg from "../../../public/assets/projects/n2uitive.png";
+import n2uitiveImg from "../../../public/assets/projects/n2uitive-add-users-basic.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-[30vh] lg:h-[60vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[60vh] bg-black/60 z-10" />
+      <div className="w-full h-[40vh] lg:h-[75vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[75vh] bg-black/60 z-10" />
         <Image
           src={n2uitiveImg}
           alt="Header"

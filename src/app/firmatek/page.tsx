@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import firmatekImg from "../../../public/assets/projects/firmatek.png";
+import firmatekImg from "../../../public/assets/projects/Firmatek-Stock-Pile-Mark-Ups.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-[30vh] lg:h-[60vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[60vh] bg-black/60 z-10" />
+      <div className="w-full h-[40vh] lg:h-[75vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[75vh] bg-black/60 z-10" />
         <Image
           src={firmatekImg}
           alt="Header"
@@ -27,7 +27,7 @@ const page = () => {
           <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-0">
             <div className=""></div>
             <div className="col-span-8">
-              <h2>Firmatek Data Portal</h2>
+              <h2>Firmatek</h2>
               <h3>
                 Orthophoto and Lidar Scan{" "}
                 <span className="inline-block">Data Reporting Platform</span>

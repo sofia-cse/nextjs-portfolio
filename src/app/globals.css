@@ -19,8 +19,14 @@ html  {
   --background-end-rgb: 255, 255, 255;
 */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 162, 132, 251, 0.125;
-  --background-end-rgb: 194, 175, 253, 0.125;
+  --background-start-rgb: 162, 132, 251, 0.1;
+  --background-end-rgb: 194, 175, 253, 0.1;
+
+  --base: #ffffff;
+
+  --border-color: #222222;
+
+  --backgroundHover: #f2f2f2;
 
   /*--primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -91,6 +97,12 @@ html  {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgba: 0, 0, 0, 0;
     --background-end-rgba: 0, 0, 0, 0;
+
+    --base: #222222;
+
+    --border-color: #ffffff;
+
+    --backgroundHover: rgba(255, 115, 36, 0.01);
 
     --primary-glow: radial-gradient(#d3283b30, #d3283b00);
     --secondary-glow: radial-gradient(
@@ -164,8 +176,6 @@ html  {
   transform: translateZ(0);
 }
 
-#work {margin-top: -80px;}
-
 #work::before {
   content: '';
   max-width: 90%;
@@ -213,10 +223,21 @@ html  {
 }
 
 .projectitem {
+  display: block;
   transform: translateZ(0);
-  border-radius: 8px;
+  border:1px solid;
+  border-color: var(--border-color);
+  border-radius: 0.125rem;
   overflow: hidden;
-  padding: 3px;
+  background-color: var(--base);
+  box-shadow: 4px 4px 0px 0px #d2d2f9;
+}
+
+.projectitem:hover {
+  transform: scale(1.02);
+  transition: transform 0.1s;
+  background-color: var(--backgroundHover);
+  box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
 }
 
 .projectitem::before,
@@ -226,6 +247,20 @@ html  {
   z-index: -1;
 }
 
+.bands .project-image-wrapper {
+  height: 76%;
+}
+
+.bands img {
+  object-fit: cover !important;
+  min-height: 240px !important;
+}
+
+.avinew img {
+  max-height: 466px !important;
+}
+
+/*
 .projectitem:hover::before {
   animation: 4s rotate linear infinite;
   width: 150%;
@@ -233,7 +268,9 @@ html  {
   background: var(--tile-border);
   top: -40%;
 }
+*/
 
+/*
 .bands.projectitem:hover::before {
   animation: 4s rotate linear infinite;
   width: 200%;
@@ -241,8 +278,10 @@ html  {
   background: var(--tile-border);
   top: -40%;
 }
+*/
 
 @media (min-width: 1024px) {
+  /*
   .bands.projectitem:hover::before {
     animation: 4s rotate linear infinite;
     width: 150%;
@@ -250,6 +289,7 @@ html  {
     background: var(--tile-border);
     top: -40%;
   }
+  */
 }
 
 /* .projectitem::after {
