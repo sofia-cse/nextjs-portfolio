@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div id="main" className="w-full h-[75vh] text-center">
       <div className="max-w-[800px] relative w-full h-full mx-auto p-2 flex justify-center items-start">
-        <div className="flex-col items-center mt-32">
+        <div className="flex-col items-center mt-20">
           <div className="center">
             <Image
               src={logo}
