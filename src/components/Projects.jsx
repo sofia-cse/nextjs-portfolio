@@ -75,7 +75,7 @@ const Projects = () => {
           />
           <ProjectItem
             title="VTS: Property Asset Manager"
-            role="A platform that simplifies property information management for commercial property professionals by centralizing property information, including plans, maps, images, and property characteristics, in one easy-to-use platform."
+            role="A platform that simplifies property information management for commercial property professionals by centralizing property information, including plans, maps, images, and property characteristics, in one easy-to-use tool."
             backgroundImg={assetImg}
             projectUrl="/asset-manager"
             arialabel="Learn more more about Sofia's involvement in the Asset Manager project"
@@ -83,7 +83,7 @@ const Projects = () => {
           />
           <ProjectItem
             title="Creditntel: Property Analytics"
-            role="A platform that provides offers accurate foot traffic counts and dwell time data, empowering agents to understand how various factors impact businesses in the retail landscape."
+            role="A platform that provides accurate foot traffic counts and dwell time data, empowering agents to understand how various factors impact businesses in the retail landscape."
             backgroundImg={propertyImg}
             projectUrl="/creditntell"
             arialabel="Learn more more about Sofia's involvement in the Creditntell project"

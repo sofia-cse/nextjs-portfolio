@@ -51,7 +51,7 @@ const page = () => {
             well as downloaded and saved as a PDF.
           </p>
           <h2 className="pt-6 pb-2">Key Features:</h2>
-          <p className="py-2">With TourPoint you can:</p>
+          <p className="py-2">With Tourbooks users can can:</p>
           <ol>
             <li className="py-2">
               Access automated competition maps with logos.
@@ -62,31 +62,6 @@ const page = () => {
             </li>
             <li className="py-2">Capture notes and data during the tour</li>
           </ol>
-          <h2 className="pt-6 pb-2">Impact and Outcome</h2>
-          <p className="py-2">
-            Working on the n2uitive project allowed me to contribute to the
-            development of a cutting-edge platform that addressed the specific
-            needs of auto, home, and workers&apos; compensation insurers. By
-            streamlining the recorded statement workflow and simplifying
-            processes, n2uitive empowered claims professionals to work more
-            efficiently, reduce expenses, and adhere to industry best practices.
-          </p>
-          <p className="py-2">
-            The user-centric design approach ensured that the platform resonated
-            with its target audience, leading to high user adoption and
-            satisfaction. The seamless integration of the n2record™ solution
-            within the cloud-based platform provided claims professionals with a
-            unified and convenient experience.
-          </p>
-          <p className="py-2">
-            Overall, n2uitive&apos;s cloud-based claims interview and recorded
-            statement management platform significantly improved the claims
-            process for insurers, fostering better collaboration, transparency,
-            and accuracy in claim outcomes. As the UX Designer for this project,
-            I am proud to have played a pivotal role in enhancing the
-            productivity and effectiveness of insurance claims professionals
-            through thoughtful and innovative design.
-          </p>
         </div>
         <div className=""></div>
       </div>
