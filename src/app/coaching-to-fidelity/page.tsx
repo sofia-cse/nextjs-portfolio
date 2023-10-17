@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import c2fImg from "../../../public/assets/projects/c2f-android-framed.png";
+import c2fImg from "../../../public/assets/projects/c2f-ios-framed.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";

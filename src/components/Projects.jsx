@@ -1,13 +1,13 @@
 import React from "react";
 import propertyImg from "../../public/assets/projects/creditntell-trade-area.png";
-import gdImg from "../../public/assets/projects/gd.png";
+import gdImg from "../../public/assets/projects/gd-txp-actions.png";
 import avinewImg from "../../public/assets/projects/Avinew-Framed.png";
-import n2uitiveImg from "../../public/assets/projects/n2uitive-add-users-basic.png";
+import n2uitiveImg from "../../public/assets/projects/n2uitive-recording-created.png";
 import firmatekImg from "../../public/assets/projects/Firmatek-Stock-Pile-Mark-Ups.png";
 import bandsImg from "../../public/assets/projects/bands_wide.jpg";
 import assetImg from "../../public/assets/projects/assetmanager6.png";
 import groundImg from "../../public/assets/projects/groundcontrol3.png";
-import c2fImg from "../../public/assets/projects/c2f-android-framed.png";
+import c2fImg from "../../public/assets/projects/c2f-ios-framed.png";
 import tourImg from "../../public/assets/projects/Tourbooks-Framed.png";
 import ProjectItem from "./ProjectItem";
 

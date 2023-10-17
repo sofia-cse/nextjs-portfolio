@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import gdImg from "../../../public/assets/projects/gd.png";
+import gdImg from "../../../public/assets/projects/gd-txp-actions.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";

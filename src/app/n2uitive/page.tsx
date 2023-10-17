@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import n2uitiveImg from "../../../public/assets/projects/n2uitive-add-users-basic.png";
+import n2uitiveImg from "../../../public/assets/projects/n2uitive-recording-created.png";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
