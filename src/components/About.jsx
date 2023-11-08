@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import avatar from "../../public/assets/sofia_avatar.jpeg";
+import avatar from "../../public/assets/sofia.jpeg";
 
 const About = () => {
   return (
     <div id="about" className="w-full md:min-h-screen p-2">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <div className="max-w-[1240px] m-auto md:grid">
-          <h2 className="py-6 block text-center lg:text-left">
+          <h2 className="py-2 md:py-6 block text-center lg:text-left">
             A Little About Me
           </h2>
         </div>
