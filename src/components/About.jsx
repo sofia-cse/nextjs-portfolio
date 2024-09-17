@@ -8,7 +8,7 @@ const About = () => {
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <div className="max-w-[1240px] m-auto md:grid">
           <h2 className="py-2 md:py-6 block text-center lg:text-left">
-            A Little About Me
+            Hi, I&apos;m Sofia!
           </h2>
         </div>
         <div className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8">
@@ -21,29 +21,11 @@ const About = () => {
           </div>
           <div className="col-span-2 order-1 text-lg">
             <p className="py-2">
-              Hi, I&#39;m Sofia, a passionate UX designer, UX researcher,
-              product manager, and front-end developer with over seven years of
-              experience in the tech industry. I&#39;ve had the pleasure of
-              working with startups and enterprises in a variety of industries,
-              ranging from healthcare to drone flight.
+              I&apos;m a native Californian and UCSD alum (go Tritons!).
             </p>
             <p className="py-2">
-              As a graduate of the University of California, San Diego, with a
-              B.S. in Cognitive Science, I specialize in Human-Computer
-              Interaction. I am dedicated to creating user-centered design
-              solutions that provide meaningful and delightful experiences for
-              users. My diverse skill set in UX design, UX research, product
-              management, and front-end development has allowed me to
-              collaborate with cross-functional teams to ensure that product
-              solutions meet business goals, user needs, and technical
-              feasibility.
-            </p>
-            <p className="py-2">
-              Outside of work, I have a variety of interests that keep me busy.
-              I love cooking and experimenting with new recipes, exploring the
-              outdoors, traveling to new destinations, and spending time with my
-              pets. I also have a passion for music and film, which I find
-              inspiring and motivating in my work.
+              I love cooking, hiking with my dog Coco, swimming with the leopard
+              sharks in La Jolla, and collecting vinyl records.
             </p>
             <p className="py-2">
               I am committed to diversity, equity, and inclusion in both my
@@ -58,10 +40,8 @@ const About = () => {
               positively impact the world we live in.
             </p>
             <p className="py-2">
-              Overall, I am a driven and passionate individual who loves
-              creating meaningful experiences that delight users. I am always
-              looking for new challenges and opportunities to grow and expand my
-              skill set.
+              If you&#39;ve made it this far I&#39;m glad I caught your
+              interest! Please reach out so we can chat about your project.
             </p>
           </div>
         </div>
