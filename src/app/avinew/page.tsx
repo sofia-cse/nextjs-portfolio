@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import assetImg from "../../../public/assets/projects/Avinew-Framed.png";
 import Link from "next/link";
-import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
+import ProjectHeader from "@/components/ProjectHeader";
+import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Avinew Portfolio Entry",
@@ -14,29 +15,12 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-[40vh] lg:h-[75vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[75vh] bg-black/60 z-10" />
-        <Image
-          src={assetImg}
-          alt="Header"
-          className="absolute z-1 object-cover object-center"
-          fill
-          priority
-        />
-        <div className="absolute bottom-[8%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 text-white">
-          <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-0">
-            <div className=""></div>
-            <div className="col-span-8">
-              <h2>Avinew</h2>
-              <h3>
-                Customized Insurance for Vehicle Owners with ADAS Equipped EVs
-              </h3>
-              <h3 className="pt-2">Role: UX Researcher</h3>
-            </div>
-            <div className=""></div>
-          </div>
-        </div>
-      </div>
+      <ProjectHeader
+        projectName="Avinew"
+        projectImage={assetImg}
+        shortDescription="Customized Insurance for Vehicle Owners with ADAS Equipped EVs"
+        identifier="project header"
+      />
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-8">
         <div className=""></div>
         <div className="col-span-8">
@@ -122,10 +106,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Link href="/#work" className="underline py-4 pb-24">
-        <IoChevronBackOutline size={18} className="inline mr-1" />
-        Back To My Work
-      </Link>
+      <Back />
     </div>
   );
 };

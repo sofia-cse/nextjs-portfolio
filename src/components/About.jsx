@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import avatar from "../../public/assets/sofia.jpeg";
+import avatar from "../../public/assets/IMG_6195_Light.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:min-h-screen p-2">
+    <div id="about" className="w-full h-[75vh] p-2">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <div className="max-w-[1240px] m-auto md:grid">
           <h2 className="py-2 md:py-6 block text-center lg:text-left">
@@ -25,7 +25,8 @@ const About = () => {
             </p>
             <p className="py-2">
               I love cooking, hiking with my dog Coco, swimming with the leopard
-              sharks in La Jolla, and collecting vinyl records.
+              sharks in La Jolla, yoga & powerlifting workouts, and collecting
+              vinyl records.
             </p>
             <p className="py-2">
               I am committed to diversity, equity, and inclusion in both my

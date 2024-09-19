@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import gdImg from "../../../public/assets/projects/gd-txp-actions.png";
-import Link from "next/link";
-import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
+import ProjectHeader from "@/components/ProjectHeader";
+import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Good Days Portfolio Entry",
@@ -14,27 +14,12 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-[40vh] lg:h-[75vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[75vh] bg-black/60 z-10" />
-        <Image
-          src={gdImg}
-          alt="Header"
-          className="absolute z-1 object-cover object-top"
-          fill
-          priority
-        />
-        <div className="absolute bottom-[8%] max-w-[1240px] w-full left-[50%] right[50%] translate-x-[-50%] z-10 text-white">
-          <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-0">
-            <div className=""></div>
-            <div className="col-span-8">
-              <h2>Good Days</h2>
-              <h3>Patient Copay Assistance</h3>
-              <h3 className="pt-2">Role: UX Designer & Researcher</h3>
-            </div>
-            <div className=""></div>
-          </div>
-        </div>
-      </div>
+      <ProjectHeader
+        projectName="Good Days"
+        projectImage={gdImg}
+        shortDescription="Patient Copay Assistance"
+        identifier="project header"
+      />
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-8">
         <div></div>
         <div className="col-span-8">
@@ -146,10 +131,7 @@ const page = () => {
         </div>
         <div className=""></div>
       </div>
-      <Link href="/#work" className="underline py-4">
-        <IoChevronBackOutline size={18} className="inline mr-1" />
-        Back To My Work
-      </Link>
+      <Back />
     </div>
   );
 };
