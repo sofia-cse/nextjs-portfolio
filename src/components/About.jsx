@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import avatar from "../../public/assets/IMG_6195_Light.jpg";
+import avatar from "../../public/assets/sofia.jpeg";
 
 const About = () => {
   return (
@@ -21,7 +21,7 @@ const About = () => {
           </div>
           <div className="col-span-2 order-1 text-lg">
             <p className="py-2">
-              I&apos;m a native Californian and UCSD alum (go Tritons!).
+              I&apos;m a native Californian and UCSD alu (go Tritons!).
             </p>
             <p className="py-2">
               I love cooking, hiking with my dog Coco, swimming with the leopard
