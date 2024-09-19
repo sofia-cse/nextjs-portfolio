@@ -25,8 +25,8 @@ const About = () => {
             </p>
             <p className="py-2">
               I love cooking, hiking with my dog Coco, swimming with the leopard
-              sharks in La Jolla, yoga & powerlifting workouts, and collecting
-              vinyl records.
+              sharks in La Jolla, yoga & powerlifting workouts, and creating
+              exceptional products using cutting-edge technologies.
             </p>
             <p className="py-2">
               I am committed to diversity, equity, and inclusion in both my
