@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import contactImg from "../../public/assets/contact.jpg";
+import contactImg from "../../public/assets/scream-start.webp";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -26,7 +26,7 @@ const Contact = () => {
                 <Image
                   className="hover:scale-105 ease-in duration-300 m-auto lg:pt-6 pb-4"
                   src={contactImg}
-                  alt="Contact image of person sitting at a desk typing on a laptop"
+                  alt="Contact image of Drew Barrymore on the phone from the opening scene of the original Scream movie"
                 />
               </div>
               <div>
