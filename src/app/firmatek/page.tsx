@@ -43,12 +43,12 @@ const page = () => {
             </p>
             <ol>
               <li className="py-1">
-                A massive number of high resolution images needed to be imported
+                A massive number of high resolution images needed to be copied
                 from the drone&apos;s hard drive to their local machine.
               </li>
               <li className="py-1">
-                All of those images had to be imoprted into a computer program
-                and manually stitched together images.
+                All of those images had to be manually imoprted into a computer
+                program and stitched together.
               </li>
               <li className="py-1">
                 After analyzing the data, final deliverables had to be uploaded
@@ -56,7 +56,7 @@ const page = () => {
               </li>
               <li className="py-1">
                 If any corrections needed to be made, communication with clients
-                happened via email and conversations could be lost.
+                happened via email where conversations could be lost.
               </li>
             </ol>
           </div>

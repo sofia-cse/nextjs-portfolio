@@ -32,24 +32,16 @@ const Navbar = () => {
               <Link href="/#main">Home</Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#work" scroll={false}>
-                Work
-              </Link>
+              <Link href="/#work">Work</Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#about" scroll={false}>
-                About
-              </Link>
+              <Link href="/#about">About</Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#skills" scroll={false}>
-                Tools
-              </Link>
+              <Link href="/#skills">Tools</Link>
             </li>
             <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#contact" scroll={false}>
-                Contact
-              </Link>
+              <Link href="/#contact">Contact</Link>
             </li>
           </ul>
           {/* Mobile Menu */}
