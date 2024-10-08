@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
-
+import ThemeProvider from "./utils/ThemeProvider.js";
 const akkurat = localFont({
   src: [
     {
@@ -43,8 +43,10 @@ export default function RootLayout({
       <head />
       <body className="">
         <div className="mx-auto mb-24">
-          <Navbar />
-          <div className="mx-auto items-start">{children}</div>
+          <ThemeProvider enableSystem={true} defaultTheme="system">
+            <Navbar />
+            <div className="mx-auto items-start">{children}</div>
+          </ThemeProvider>
         </div>
         <Analytics />
       </body>

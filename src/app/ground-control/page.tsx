@@ -27,49 +27,18 @@ const page = () => {
         <div className="col-span-8">
           <h2>Project Overview</h2>
           <p className="py-2">
-            I had the privilege to serve as a UX Designer for the Measure Ground
-            Control project, an all-in-one software solution designed for UAV
-            pilots, small businesses, and large enterprises. The goal of this
-            project was to provide a comprehensive platform that enables users
-            to efficiently manage their drone operations, from mission planning
-            and airspace checking to data processing and reporting. With
-            seamless integration between web and mobile applications, Measure
-            Ground Control empowers users to fly safely within FAA regulations,
-            process image data, create data products, and manage their drone
-            fleet effectively.
-          </p>
-          <h2 className="pt-6 pb-2">Responsibilities</h2>
-          <p className="py-2">
-            As the UX Designer for Measure Ground Control, I was responsible for
-            designing an intuitive and user-friendly interface that catered to
-            the diverse needs of UAV pilots, businesses, and enterprises.
-            Collaborating closely with stakeholders, subject matter experts, and
-            the development team, I strived to understand the requirements,
-            constraints, and technical aspects of drone deployment and data
-            management.
+            Ground Control provides a complete solution for managing drone
+            programs, including team and fleet management, flight planning, data
+            validation, processing and analytics.
           </p>
           <h2 className="pt-6 pb-2">Design Process</h2>
           <p className="py-2">
             To create a user-centric software solution, I followed a
             user-centered design process that prioritized the needs and
-            workflows of the target users. I conducted extensive user research,
-            including interviews, usability testing, and competitor analysis, to
-            gain insights into the challenges and pain points faced by UAV
-            pilots and organizations managing drone operations.
-          </p>
-          <p className="py-2">
-            Based on the research findings, I developed user personas and user
-            journey maps to visualize the typical interactions and tasks
-            performed by different user groups. This enabled me to identify key
-            features and functionalities that would enhance the user experience
-            and streamline the drone deployment process.
-          </p>
-          <p className="py-2">
-            Using the insights gathered from user research, I created wireframes
-            and interactive prototypes that reflected the optimal user flow and
-            addressed user needs effectively. These design artifacts were
-            continuously refined through iterative feedback sessions and
-            usability testing, ensuring a seamless and intuitive user interface.
+            workflows of the UAV Piolots and organizations managing drone
+            operations. I conducted extensive user research, going out in the
+            field to experience firsthand the nuanced requirements and
+            challenges inherent to operating within public airspace.
           </p>
           <h2 className="pt-6 pb-2">Key Features:</h2>
           <p className="py-2">
@@ -105,14 +74,6 @@ const page = () => {
             </li>
           </ol>
           <h2 className="pt-6 pb-2">Impact and Outcome</h2>
-          <p className="py-2">
-            By designing and contributing to the Measure Ground Control project,
-            I played a key role in developing a robust and user-friendly
-            software solution for drone deployment and data management. The
-            platform empowered UAV pilots, small businesses, and large
-            enterprises to optimize their drone operations, adhere to FAA
-            regulations, and leverage advanced image processing capabilities.
-          </p>
           <p className="py-2">
             Through seamless integration between web and mobile applications,
             users could access the software across devices and maintain their

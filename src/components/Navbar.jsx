@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import logo from "../../public/assets/florere.svg";
+import ThemeButton from "./ThemeButton.jsx";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full h-20 z-[100] sticky top-0 backdrop-blur-md bg-white/60 dark:bg-[#121212]/70">
+    <div className="nav-top w-full h-20 z-[100] sticky top-0 backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center w-full h-full px-2 2xl:px-8">
         <Link
           href="/#main"
@@ -27,7 +28,7 @@ const Navbar = () => {
           />
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex items-center">
             <li className="ml-10 text sm hover:border-collapse">
               <Link href="/#main">Home</Link>
             </li>
@@ -42,6 +43,9 @@ const Navbar = () => {
             </li>
             <li className="ml-10 text sm hover:border-collapse">
               <Link href="/#contact">Contact</Link>
+            </li>
+            <li className="ml-10 hover:border-collapse min-w-[24px] max-h-[24px]">
+              <ThemeButton />
             </li>
           </ul>
           {/* Mobile Menu */}
@@ -64,20 +68,14 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed right-0 top-0 px-2 py-6  w-[65%] sm:w-[60%] md:w-[45%] h-screen bg-white dark:bg-[#121212] ease-in duration-500"
+              ? "nav-side md:hidden fixed right-0 top-0 px-2 py-6  w-[65%] sm:w-[60%] md:w-[45%] h-screen ease-in duration-500"
               : "hidden"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
               <div className="px-5">
-                <Image
-                  src={logo}
-                  alt="Sofia Martin's logo"
-                  title="Sofia Martin's logo"
-                  width={35}
-                  height={35}
-                />
+                <ThemeButton />
               </div>
               <div onClick={handleNav} className="cursor-pointer">
                 <AiOutlineClose

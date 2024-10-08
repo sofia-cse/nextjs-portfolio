@@ -23,7 +23,7 @@ html  {
   --background-end-rgb: 194, 175, 253, 0.1;
 
   --base: 255, 255, 255;
-
+  
   --border-color: #222222;
 
   --backgroundHover: #f2f2f2;
@@ -93,7 +93,7 @@ html  {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  html {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgba: 0, 0, 0, 0;
     --background-end-rgba: 0, 0, 0, 0;
@@ -127,6 +127,49 @@ html  {
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
+}
+
+[data-theme='dark'] {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgba: 0, 0, 0, 0;
+  --background-end-rgba: 0, 0, 0, 0;
+
+  --base: 34, 34, 34;
+
+  --border-color: #ffffff;
+
+  --backgroundHover: rgba(255, 115, 36, 0.01);
+
+  --primary-glow: radial-gradient(#d3283b30, #d3283b00);
+  --secondary-glow: radial-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+  );
+
+  --tile-start-rgb: 2, 13, 46;
+  --tile-end-rgb: 2, 5, 19;
+  --tile-border: conic-gradient(
+    #ffffff80,
+    #ffffff40,
+    #ffffff30,
+    #ffffff20,
+    #ffffff10,
+    #ffffff10,
+    #ffffff80
+  );
+
+  --callout-rgb: 20, 20, 20;
+  --callout-border-rgb: 108, 108, 108;
+  --card-rgb: 100, 100, 100;
+  --card-border-rgb: 200, 200, 200;
+}
+
+.nav-top {
+  background-color: rgba(var(--base), 0.2);
+}
+
+.nav-side {
+  background-color: rgb(var(--base));
 }
 
 .center {
@@ -358,11 +401,5 @@ ol {
   }
   to {
     transform: rotate(0deg);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
   }
 }
