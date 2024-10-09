@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import firmatekImg from "../../../public/assets/projects/Firmatek-Stock-Pile-Mark-Ups.png";
+import heroImg from "../../../public/assets/projects/service-drone-solutions-hero.jpg";
 import problemImg from "../../../public/assets/projects/Firmatek-screenshot-6.jpg";
 import solutionImg from "../../../public/assets/projects/Firmatek-screenshot-2-1.jpg";
 import Link from "next/link";
 import { Metadata } from "next";
 import ProjectHeader from "../../components/ProjectHeader";
+import ProjectHeaderWide from "../../components/ProjectHeaderWide";
+
 import Back from "../../components/Back";
 
 export const metadata: Metadata = {
@@ -17,29 +20,23 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full">
-      <ProjectHeader
+      <ProjectHeaderWide
         projectName="Firmatek Cloud"
-        projectImage={firmatekImg}
-        shortDescription="Orthophoto and Lidar Scan Data Reporting Platform"
+        projectImage={heroImg}
+        shortDescription="Firmatek's platform enables users to survey stockpiles,
+                both indoors and outdoors, using orthophotos and Lidar scan
+                data. By leveraging these technologies, the platform provides
+                accurate measurements, generates 3D models, and calculates
+                volumes efficiently and safely."
         identifier="project header"
       />
-      <div className="max-w-[1240px] mx-auto p-2 md:px-16 flex flex-col gap-8 pt-12">
-        <div className="">
-          <h2 className="pt-4 pb-2">Project Overview</h2>
-          <p className="py-2">
-            Firmatek&apos;s platform enables users to survey stockpiles, both
-            indoors and outdoors, using orthophotos and Lidar scan data. By
-            leveraging these technologies, the platform provides accurate
-            measurements, generates 3D models, and calculates volumes
-            efficiently and safely.
-          </p>
-        </div>
-        <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-2 gap-8 pt-8 pb-8 items-center">
+      <div className="max-w-[1240px] mx-auto p-2 flex flex-col gap-12 pt-12">
+        <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-2 gap-9 pt-8 pb-8 items-center">
           <div className="">
             <h2 className="pb-4">The Problem</h2>
             <p className="py-2">
-              Firmatek&apos;s was struggling to scale their business because
-              service delivery relied on manual time-consuming processes.
+              Firmatek faced challenges scaling their business because service
+              delivery relied on manual time-consuming processes.
             </p>
             <ol>
               <li className="py-1">
