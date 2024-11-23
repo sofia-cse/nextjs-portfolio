@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import avatar from "../../public/assets/subject_3.png";
+import avatar from "../../public/assets/cartoon_avatar.png";
 
 const About = () => {
   return (
