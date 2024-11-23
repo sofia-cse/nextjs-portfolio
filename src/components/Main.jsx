@@ -20,9 +20,9 @@ const Main = () => {
             />
           </div>
           <h1 className="pb-4 pt-12 mx-auto">Sofia Martin</h1>
-          <p className="text-lg tracking-wide py-4 max-w-[80%] m-auto">
-            Product Manager, UX Designer,{" "}
-            <span className="inline-block">Web Developer</span>
+          <p className="text-lg tracking-wide py-4 max-w-[100%] m-auto">
+            Product Leader, Design Thinker,{" "}
+            <span className="inline-block">Data Enthusiast</span>
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="p-3 cursor-pointer">

@@ -28,21 +28,6 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/Adobe_Creative_Cloud.png"
-                  width={64}
-                  height={64}
-                  alt="Adobe Creative Cloud logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Adobe Suite</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
                   src="/assets/skills/atlassian_jira.png"
                   width={64}
                   height={64}
@@ -58,6 +43,36 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
+                  src="/assets/skills/google_cloud.png"
+                  width={64}
+                  height={64}
+                  alt="Google Cloud logo"
+                />
+              </div>
+              <div className="flex flex-col items-left justify-left">
+                <h3>Google Cloud</h3>
+              </div>
+            </div>
+          </div>
+          <div className="grid hover:scale-105 ease-in duration-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src="/assets/skills/aws.png"
+                  width={64}
+                  height={64}
+                  alt="AWS logo"
+                />
+              </div>
+              <div className="flex flex-col items-left justify-left">
+                <h3>AWS</h3>
+              </div>
+            </div>
+          </div>
+          <div className="hover:scale-105 ease-in duration-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
                   src="/assets/skills/python.png"
                   width={64}
                   height={64}
@@ -66,36 +81,6 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-left justify-left">
                 <h3>Python</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/html.png"
-                  width={64}
-                  height={64}
-                  alt="html5 logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>HTML</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/css.png"
-                  width={64}
-                  height={64}
-                  alt="CSS logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>CSS</h3>
               </div>
             </div>
           </div>
@@ -119,22 +104,6 @@ const Skills = () => {
               <div className="m-auto">
                 <Image
                   className="dark:invert"
-                  src="/assets/skills/github.svg"
-                  width={64}
-                  height={64}
-                  alt="github logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Github</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  className="dark:invert"
                   src="/assets/skills/nextjs.svg"
                   width={64}
                   height={64}
@@ -150,14 +119,15 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/gatsby.png"
+                  className="dark:invert"
+                  src="/assets/skills/github.svg"
                   width={64}
                   height={64}
-                  alt="gatsby logo"
+                  alt="github logo"
                 />
               </div>
               <div className="flex flex-col items-left justify-left">
-                <h3>Gatsby.js</h3>
+                <h3>Github</h3>
               </div>
             </div>
           </div>
@@ -180,6 +150,21 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
+                  src="/assets/skills/pendo.png"
+                  width={64}
+                  height={64}
+                  alt="Pendo logo"
+                />
+              </div>
+              <div className="flex flex-col items-left justify-left">
+                <h3>Pendo</h3>
+              </div>
+            </div>
+          </div>
+          <div className="hover:scale-105 ease-in duration-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
                   src="/assets/skills/userzoom.png"
                   width={64}
                   height={64}
@@ -188,6 +173,21 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-left justify-left">
                 <h3>UserZoom</h3>
+              </div>
+            </div>
+          </div>
+          <div className="hover:scale-105 ease-in duration-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src="/assets/skills/Adobe_Creative_Cloud.png"
+                  width={64}
+                  height={64}
+                  alt="Adobe Creative Cloud logo"
+                />
+              </div>
+              <div className="flex flex-col items-left justify-left">
+                <h3>Adobe Suite</h3>
               </div>
             </div>
           </div>

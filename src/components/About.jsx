@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import avatar from "../../public/assets/IMG_6213_Light.jpg";
+import avatar from "../../public/assets/subject_3.png";
 
 const About = () => {
   return (
@@ -24,15 +24,20 @@ const About = () => {
               I&apos;m a native Californian and UCSD alum (go Tritons!).
             </p>
             <p className="py-2">
-              I love cooking, hiking with my dog Coco, swimming with the leopard
-              sharks in La Jolla, yoga & powerlifting workouts, and creating
-              exceptional products using cutting-edge technologies.
+              I love cooking, hiking with my dog, swimming with the sea lions in
+              La Jolla, reading, yoga, and creating exceptional products using
+              cutting-edge technologies.
+            </p>
+            <p className="py-2">
+              Recently, I have been focused on the intersection of Product
+              Design with AI/ML and Cloud Computing. I am passionate about
+              helping teams innovate by optimizing pipelines to free their data
+              and enable insightful decisions.
             </p>
             <p className="py-2">
               I am committed to diversity, equity, and inclusion in both my
-              personal and professional life. I believe in creating inclusive
-              design solutions that address the needs of underrepresented
-              communities.
+              personal and professional life. I strive to foster a collaborative
+              environment where all my peers feel valued and supported.
             </p>
             <p className="py-2">
               In addition to my work in tech, I have a strong interest in urban
