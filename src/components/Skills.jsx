@@ -46,7 +46,7 @@ const Skills = () => {
 
   //final output
   return (
-    <div id="skills" className="w-full md:h-screen p-2">
+    <div id="skills" className="w-full md:h-screen p-2 py-20">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <h2 className="pb-12 text-center lg:text-left">
           Tools I&#39;m Working With
