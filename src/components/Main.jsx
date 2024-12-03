@@ -6,9 +6,9 @@ import logo from "../../public/assets/florere.svg";
 
 const Main = () => {
   return (
-    <div id="main" className="w-full h-[75vh] text-center">
-      <div className="max-w-[800px] relative w-full h-full mx-auto p-2 flex justify-center items-start">
-        <div className="flex-col items-center mt-20">
+    <div id="main" className="w-full h-[70vh] text-center">
+      <div className="max-w-[800px] relative w-full h-full mx-auto p-2 flex justify-center items-center">
+        <div className="flex-col items-center">
           <div className="center">
             <Image
               src={logo}

@@ -1,196 +1,61 @@
 import React from "react";
 import Image from "next/image";
+import figma from "@/../public/assets/skills/figma.png";
+import jira from "@/../public/assets/skills/atlassian_jira.png";
+import google from "@/../public/assets/skills/google_cloud.png";
+import aws from "@/../public/assets/skills/aws.png";
+import python from "@/../public/assets/skills/python.png";
+import react from "@/../public/assets/skills/react.png";
+import nextjs from "@/../public/assets/skills/nextjs.png";
+import github from "@/../public/assets/skills/github.png";
+import tailwind from "@/../public/assets/skills/tailwind.png";
+import pendo from "@/../public/assets/skills/pendo.png";
+import userzoom from "@/../public/assets/skills/userzoom.png";
+import adobe from "@/../public/assets/skills/Adobe_Creative_Cloud.png";
 
 const Skills = () => {
+  //store all skills and their corresponding data in an array
+  const skillset = [
+    { name: "Figma", imgSrc: figma },
+    { name: "Jira", imgSrc: jira },
+    { name: "AWS", imgSrc: aws },
+    { name: "Google Cloud", imgSrc: google },
+    { name: "Python", imgSrc: python },
+    { name: "React", imgSrc: react },
+    { name: "Next.js", imgSrc: nextjs },
+    { name: "Github", imgSrc: github },
+    { name: "Tailwind", imgSrc: tailwind },
+    { name: "Pendo", imgSrc: pendo },
+    { name: "UserZoom", imgSrc: userzoom },
+    { name: "Adobe Suite", imgSrc: adobe },
+  ];
+
+  //define the component which displays a given skill
+  const Skill = ({ imgSrc, name }) => {
+    return (
+      <div className="grid grid-cols-2 gap-4 justify-center items-center hover:scale-105 ease-in duration-200">
+        <div className="m-auto">
+          <Image src={imgSrc} width={64} height={64} alt={name + " logo"} />
+        </div>
+        <div className="flex flex-col items-left justify-left">
+          <h3>{name}</h3>
+        </div>
+      </div>
+    );
+  };
+
+  //final output
   return (
     <div id="skills" className="w-full md:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <h2 className="pb-12 text-center lg:text-left">
           Tools I&#39;m Working With
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/figma.png"
-                  width={64}
-                  height={64}
-                  alt="Figma logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Figma</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/atlassian_jira.png"
-                  width={64}
-                  height={64}
-                  alt="Jira logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Jira</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/google_cloud.png"
-                  width={64}
-                  height={64}
-                  alt="Google Cloud logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Google Cloud</h3>
-              </div>
-            </div>
-          </div>
-          <div className="grid hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/aws.png"
-                  width={64}
-                  height={64}
-                  alt="AWS logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>AWS</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/python.png"
-                  width={64}
-                  height={64}
-                  alt="Python logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Python</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/react.png"
-                  width={64}
-                  height={64}
-                  alt="React logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>React</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  className="dark:invert"
-                  src="/assets/skills/nextjs.svg"
-                  width={64}
-                  height={64}
-                  alt="Next.js logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Next.js</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  className="dark:invert"
-                  src="/assets/skills/github.svg"
-                  width={64}
-                  height={64}
-                  alt="github logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Github</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/tailwind.png"
-                  width={64}
-                  height={64}
-                  alt="Tailwind logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Tailwind</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/pendo.png"
-                  width={64}
-                  height={64}
-                  alt="Pendo logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Pendo</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/userzoom.png"
-                  width={64}
-                  height={64}
-                  alt="UserZoom logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>UserZoom</h3>
-              </div>
-            </div>
-          </div>
-          <div className="hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/assets/skills/Adobe_Creative_Cloud.png"
-                  width={64}
-                  height={64}
-                  alt="Adobe Creative Cloud logo"
-                />
-              </div>
-              <div className="flex flex-col items-left justify-left">
-                <h3>Adobe Suite</h3>
-              </div>
-            </div>
-          </div>
+        {/* grid displays each skill in the skillset array using the Skill component */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 min-h-[40%]">
+          {skillset.map((skill) => (
+            <Skill key={skill.name} name={skill.name} imgSrc={skill.imgSrc} />
+          ))}
         </div>
       </div>
     </div>
