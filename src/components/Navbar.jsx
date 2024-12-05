@@ -1,23 +1,30 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import logo from "../../public/assets/florere.svg";
 import ThemeButton from "./ThemeButton.jsx";
+import NavLine from "./NavLine";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [activeTab, setActiveTab] = useState("home");
+
+  const elementsRef = useRef([]);
+
   const handleNav = () => {
     setNav(!nav);
   };
+
   return (
-    <div className="nav-top w-full h-20 z-[100] sticky top-0 backdrop-blur-md">
+    <div className="nav-top w-full h-16 z-[100] sticky top-0 backdrop-blur">
       <div className="container mx-auto flex justify-between items-center w-full h-full px-2 2xl:px-8">
         <Link
-          href="/#main"
+          href="/#"
           aria-label="link to the top of the homepage for Sofia Martin's profile"
+          onClick={() => setActiveTab("home")}
         >
           <Image
             src={logo}
@@ -29,24 +36,63 @@ const Navbar = () => {
         </Link>
         <div>
           <ul className="hidden md:flex items-center">
-            <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#main">Home</Link>
+            <li className="text sm hover:border-collapse">
+              <Link
+                href="/#"
+                className="p-5"
+                ref={(el) => elementsRef.current.push(el)}
+                onClick={() => setActiveTab("home")}
+              >
+                Home
+              </Link>
             </li>
-            <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#work">Work</Link>
+            <li className="text sm hover:border-collapse">
+              <Link
+                href="/#work"
+                className="p-5"
+                ref={(el) => elementsRef.current.push(el)}
+                onClick={() => setActiveTab("work")}
+              >
+                Work
+              </Link>
             </li>
-            <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#about">About</Link>
+            <li className="text sm hover:border-collapse">
+              <Link
+                href="/#about"
+                className="p-5"
+                ref={(el) => elementsRef.current.push(el)}
+                onClick={() => setActiveTab("about")}
+              >
+                About
+              </Link>
             </li>
-            <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#skills">Tools</Link>
+            <li className="text sm hover:border-collapse">
+              <Link
+                href="/#skills"
+                className="p-5"
+                ref={(el) => elementsRef.current.push(el)}
+                onClick={() => {
+                  setActiveTab("tools");
+                  console.log(activeTab);
+                }}
+              >
+                Tools
+              </Link>
             </li>
-            <li className="ml-10 text sm hover:border-collapse">
-              <Link href="/#contact">Contact</Link>
+            <li className="text sm hover:border-collapse">
+              <Link
+                href="/#contact"
+                className="p-5"
+                ref={(el) => elementsRef.current.push(el)}
+                onClick={() => setActiveTab("contact")}
+              >
+                Contact
+              </Link>
             </li>
-            <li className="ml-10 hover:border-collapse min-w-[24px] max-h-[24px]">
+            <li className="px-5 hover:border-collapse min-w-[24px] max-h-[24px]">
               <ThemeButton />
             </li>
+            <NavLine activeTab={activeTab} elementsRef={elementsRef} />
           </ul>
           {/* Mobile Menu */}
           <div onClick={handleNav} className="md:hidden">
