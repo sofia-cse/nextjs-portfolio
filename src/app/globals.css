@@ -164,7 +164,7 @@ html {
   --glow-left: none;
   --glow-right: none;
 
-  --img-filter: invert(1);
+  --img-filter: brightness(0) invert(1);
 }
 
 @layer base {

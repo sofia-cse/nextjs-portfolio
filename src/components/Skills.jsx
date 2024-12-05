@@ -18,7 +18,7 @@ const Skills = () => {
   const skillset = [
     { name: "Figma", imgSrc: figma },
     { name: "Jira", imgSrc: jira },
-    { name: "AWS", imgSrc: aws },
+    { name: "AWS", imgSrc: aws, imgStyle: "dark-image" },
     { name: "Google Cloud", imgSrc: google },
     { name: "Python", imgSrc: python },
     { name: "React", imgSrc: react },

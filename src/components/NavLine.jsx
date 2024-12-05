@@ -13,8 +13,6 @@ const NavLine = (props) => {
     setWidths(widthArray);
   }, []);
 
-  console.log(`Widths:  ${widths[0]}`);
-
   //calculate size and position for each nav element on load
   const dimensions = {
     home: { width: widths[0], x: 0 },
