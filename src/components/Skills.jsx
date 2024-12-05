@@ -7,7 +7,7 @@ import aws from "@/../public/assets/skills/aws.png";
 import python from "@/../public/assets/skills/python.png";
 import react from "@/../public/assets/skills/react.png";
 import nextjs from "@/../public/assets/skills/nextjs.png";
-import github from "@/../public/assets/skills/github.png";
+import github from "@/../public/assets/skills/github.svg";
 import tailwind from "@/../public/assets/skills/tailwind.png";
 import pendo from "@/../public/assets/skills/pendo.png";
 import userzoom from "@/../public/assets/skills/userzoom.png";
@@ -22,8 +22,8 @@ const Skills = () => {
     { name: "Google Cloud", imgSrc: google },
     { name: "Python", imgSrc: python },
     { name: "React", imgSrc: react },
-    { name: "Next.js", imgSrc: nextjs },
-    { name: "Github", imgSrc: github },
+    { name: "Next.js", imgSrc: nextjs, imgStyle: "dark-image" },
+    { name: "Github", imgSrc: github, imgStyle: "dark-image" },
     { name: "Tailwind", imgSrc: tailwind },
     { name: "Pendo", imgSrc: pendo },
     { name: "UserZoom", imgSrc: userzoom },
@@ -31,11 +31,17 @@ const Skills = () => {
   ];
 
   //define the component which displays a given skill
-  const Skill = ({ imgSrc, name }) => {
+  const Skill = ({ imgSrc, imgStyle, name }) => {
     return (
       <div className="grid grid-cols-2 gap-4 justify-center items-center hover:scale-105 ease-in duration-200">
         <div className="m-auto">
-          <Image src={imgSrc} width={64} height={64} alt={name + " logo"} />
+          <Image
+            src={imgSrc}
+            width={64}
+            height={64}
+            className={imgStyle}
+            alt={name + " logo"}
+          />
         </div>
         <div className="flex flex-col items-left justify-left">
           <h3>{name}</h3>
@@ -54,7 +60,12 @@ const Skills = () => {
         {/* grid displays each skill in the skillset array using the Skill component */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 min-h-[40%]">
           {skillset.map((skill) => (
-            <Skill key={skill.name} name={skill.name} imgSrc={skill.imgSrc} />
+            <Skill
+              key={skill.name}
+              name={skill.name}
+              imgSrc={skill.imgSrc}
+              imgStyle={skill.imgStyle}
+            />
           ))}
         </div>
       </div>

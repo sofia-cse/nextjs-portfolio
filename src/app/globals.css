@@ -87,6 +87,8 @@ html {
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --img-filter: "";
 }
 /* old dark mode query
 @media (prefers-color-scheme: dark) {
@@ -161,6 +163,8 @@ html {
 
   --glow-left: none;
   --glow-right: none;
+
+  --img-filter: invert(1);
 }
 
 @layer base {
@@ -266,6 +270,10 @@ body {
 
 .avinew img {
   max-height: 466px !important;
+}
+
+.dark-image {
+  filter: var(--img-filter);
 }
 
 /* formatting on project detail page lists */
