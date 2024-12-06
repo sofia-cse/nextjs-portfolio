@@ -86,6 +86,7 @@ const Contact = () => {
                       id="name"
                       required
                       aria-required="true"
+                      autoComplete="Full name"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -97,6 +98,7 @@ const Contact = () => {
                       className="border-2 rounded-md p-3 border-gray-500"
                       name="phone"
                       id="phone"
+                      autoComplete="Phone number"
                     />
                   </div>
                 </div>
@@ -111,6 +113,7 @@ const Contact = () => {
                     id="email"
                     required
                     aria-required="true"
+                    autoComplete="Email address"
                   />
                 </div>
                 <div className="flex flex-col">
