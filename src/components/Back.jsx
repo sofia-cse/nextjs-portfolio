@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { IoChevronBackOutline } from "react-icons/io5";
-import logo from "../../public/assets/florere.svg";
 
 const Back = () => {
   return (

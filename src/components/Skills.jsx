@@ -12,6 +12,7 @@ import tailwind from "@/../public/assets/skills/tailwind.png";
 import pendo from "@/../public/assets/skills/pendo.png";
 import userzoom from "@/../public/assets/skills/userzoom.png";
 import adobe from "@/../public/assets/skills/Adobe_Creative_Cloud.png";
+import { PropTypes } from "prop-types";
 
 const Skills = () => {
   //store all skills and their corresponding data in an array
@@ -71,6 +72,12 @@ const Skills = () => {
       </div>
     </div>
   );
+};
+
+Skills.propTypes = {
+  imgSrc: PropTypes.any.isRequired,
+  imgStyle: PropTypes.any.isRequired,
+  name: PropTypes.any.isRequired,
 };
 
 export default Skills;

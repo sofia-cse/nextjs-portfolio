@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
+import { PropTypes } from "prop-types";
 
 const NavLine = (props) => {
   const [mounted, setMounted] = useState(false);
@@ -41,6 +42,11 @@ const NavLine = (props) => {
   };
 
   return mounted && <div className="line" style={lineStyle.home} />;
+};
+
+NavLine.propTypes = {
+  elementsRef: PropTypes.any.isRequired,
+  activeTab: PropTypes.any.isRequired,
 };
 
 export default NavLine;

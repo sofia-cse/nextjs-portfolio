@@ -3,7 +3,6 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import contactImg from "../../public/assets/scream-start.webp";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {

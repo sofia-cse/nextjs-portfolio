@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import c2fImg from "../../../public/assets/projects/c2f-ios-framed.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";

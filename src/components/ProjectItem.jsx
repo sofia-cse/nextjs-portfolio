@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { PropTypes } from "prop-types";
 
 const ProjectItem = ({
   title,
@@ -29,6 +30,15 @@ const ProjectItem = ({
       </Link>
     </div>
   );
+};
+
+ProjectItem.propTypes = {
+  title: PropTypes.any.isRequired,
+  role: PropTypes.any.isRequired,
+  backgroundImg: PropTypes.any.isRequired,
+  projectUrl: PropTypes.any.isRequired,
+  arialabel: PropTypes.any.isRequired,
+  identifier: PropTypes.any.isRequired,
 };
 
 export default ProjectItem;

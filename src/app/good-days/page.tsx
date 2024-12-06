@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import gdImg from "../../../public/assets/projects/gd-txp-actions.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";

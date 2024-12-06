@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import propertyImg from "../../../public/assets/projects/creditntell-trade-area.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";

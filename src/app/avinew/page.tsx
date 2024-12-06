@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import assetImg from "../../../public/assets/projects/Avinew-Framed.png";
-import Link from "next/link";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
 import Back from "@/components/Back";

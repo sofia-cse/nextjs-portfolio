@@ -1,12 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import firmatekImg from "../../../public/assets/projects/Firmatek-Stock-Pile-Mark-Ups.png";
 import heroImg from "../../../public/assets/projects/service-drone-solutions-hero.jpg";
 import problemImg from "../../../public/assets/projects/Firmatek-screenshot-6.jpg";
 import solutionImg from "../../../public/assets/projects/Firmatek-screenshot-2-1.jpg";
-import Link from "next/link";
 import { Metadata } from "next";
-import ProjectHeader from "../../components/ProjectHeader";
 import ProjectHeaderWide from "../../components/ProjectHeaderWide";
 
 import Back from "../../components/Back";

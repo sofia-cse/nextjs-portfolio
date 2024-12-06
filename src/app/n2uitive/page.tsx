@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import n2uitiveImg from "../../../public/assets/projects/n2uitive-recording-created.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";

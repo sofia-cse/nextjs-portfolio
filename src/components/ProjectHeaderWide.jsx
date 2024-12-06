@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { PropTypes } from "prop-types";
 
 const ProjectHeader = ({
   projectName,
@@ -14,7 +14,7 @@ const ProjectHeader = ({
         <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[55vh] bg-black/50 z-10" />
         <Image
           src={projectImage}
-          alt="Header"
+          alt={identifier}
           className="absolute z-1 object-cover object-bottom"
           fill
           priority
@@ -30,6 +30,13 @@ const ProjectHeader = ({
       </div>
     </div>
   );
+};
+
+ProjectHeader.propTypes = {
+  projectName: PropTypes.any.isRequired,
+  shortDescription: PropTypes.any.isRequired,
+  projectImage: PropTypes.any.isRequired,
+  identifier: PropTypes.any.isRequired,
 };
 
 export default ProjectHeader;

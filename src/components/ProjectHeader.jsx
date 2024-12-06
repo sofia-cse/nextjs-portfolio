@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { PropTypes } from "prop-types";
 
 const ProjectHeader = ({
   projectName,
@@ -29,6 +29,13 @@ const ProjectHeader = ({
       </div>
     </div>
   );
+};
+
+ProjectHeader.propTypes = {
+  projectName: PropTypes.any.isRequired,
+  shortDescription: PropTypes.any.isRequired,
+  projectImage: PropTypes.any.isRequired,
+  identifier: PropTypes.any.isRequired,
 };
 
 export default ProjectHeader;

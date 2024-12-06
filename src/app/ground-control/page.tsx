@@ -3,11 +3,7 @@ import Image from "next/image";
 import groundImg from "../../../public/assets/projects/groundcontrol3.png";
 import heroImg from "../../../public/assets/projects/MGC_hero.jpg";
 import solutionImg from "../../../public/assets/projects/MGC_Mac_Mockup_Environmental_Mission.png";
-
-import Link from "next/link";
-import { IoChevronBackOutline } from "react-icons/io5";
 import { Metadata } from "next";
-import ProjectHeader from "@/components/ProjectHeader";
 import ProjectHeaderWide from "@/components/ProjectHeaderWide";
 
 import Back from "@/components/Back";

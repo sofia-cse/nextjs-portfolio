@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import tourImg from "../../../public/assets/projects/Tourbooks-Framed.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";

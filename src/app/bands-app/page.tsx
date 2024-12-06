@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import bandsImg from "../../../public/assets/projects/bands_wide.jpg";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
