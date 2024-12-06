@@ -72,6 +72,7 @@ const Contact = () => {
                 action="https://getform.io/f/cec7a2a2-5959-47a2-adea-d1dcc55300f9"
                 method="POST"
                 ref={formRef}
+                autoComplete="on"
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full">
                   <div className="flex flex-col">
@@ -88,14 +89,14 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="text-sm py-2" htmlFor="phone number">
+                    <label className="text-sm py-2" htmlFor="phone">
                       Phone Number
                     </label>
                     <input
                       type="tel"
                       className="border-2 rounded-md p-3 border-gray-500"
-                      name="phone number"
-                      id="phone number"
+                      name="phone"
+                      id="phone"
                     />
                   </div>
                 </div>
