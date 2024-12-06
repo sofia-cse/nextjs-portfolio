@@ -13,21 +13,22 @@
   },
   "dependencies": {
     "@types/node": "18.13.0",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
     "@vercel/analytics": "^1.0.1",
+    "@vercel/speed-insights": "^1.1.0",
     "autoprefixer": "^10.4.13",
-    "eslint": "8.34.0",
-    "eslint-config-next": "^13.3.0",
-    "next": "^13.3.0",
-    "next-themes": "^0.3.0",
+    "eslint-config-next": "^15.0.4",
+    "next": "^15.0.4",
+    "next-themes": "^0.4.4",
     "postcss": "^8.4.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "^4.7.1",
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "eslint": "9.16.0",
     "install": "^0.13.0",
     "tailwindcss": "^3.2.6"
   }

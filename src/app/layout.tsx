@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import ThemeProvider from "./utils/ThemeProvider.js";
 const akkurat = localFont({
   src: [
@@ -35,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={akkurat.className}>
+    <html lang="en" className={akkurat.className} suppressHydrationWarning>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
@@ -49,6 +50,7 @@ export default function RootLayout({
           </ThemeProvider>
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
