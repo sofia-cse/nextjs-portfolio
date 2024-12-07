@@ -6,7 +6,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import logo from "../../public/assets/florere.svg";
 import ThemeButton from "./ThemeButton.jsx";
-import NavLine from "./NavLine";
+//import NavLine from "./NavLine";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -92,7 +92,7 @@ const Navbar = () => {
             <li className="px-5 hover:border-collapse min-w-[24px] max-h-[24px]">
               <ThemeButton />
             </li>
-            <NavLine activeTab={activeTab} elementsRef={elementsRef} />
+            {/* <NavLine activeTab={activeTab} elementsRef={elementsRef} /. */}
           </ul>
           {/* Mobile Menu */}
           <div onClick={handleNav} className="md:hidden">
