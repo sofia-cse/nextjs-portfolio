@@ -56,6 +56,7 @@ NavLine.propTypes = {
   elementsRef: PropTypes.any.isRequired,
   activeTab: PropTypes.any.isRequired,
   activeSection: PropTypes.any,
+  widths: PropTypes.number,
 };
 
 export default NavLine;
