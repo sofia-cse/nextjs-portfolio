@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import logo from "../../public/assets/florere.svg";
 
 const Main = () => {
   return (
@@ -10,11 +8,10 @@ const Main = () => {
       <div className="max-w-[800px] relative w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="flex-col items-center">
           <div className="center">
-            <Image
-              src={logo}
+            <img
+              src={"/assets/florere.svg"}
               alt="Sofia Logo"
               className="mx-auto logo"
-              priority
               width={100}
               height={100}
             />

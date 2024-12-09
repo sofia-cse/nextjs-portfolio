@@ -1,6 +1,6 @@
 import React from "react";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+//import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -45,7 +45,7 @@ export default function RootLayout({
       <body className="">
         <div className="mx-auto mb-24">
           <ThemeProvider enableSystem={true} defaultTheme="system">
-            <Navbar />
+            {/*<Navbar />*/}
             <div className="mx-auto items-start">{children}</div>
           </ThemeProvider>
         </div>

@@ -1,8 +1,7 @@
 import React from "react";
-import propertyImg from "../../../public/assets/projects/creditntell-trade-area.png";
+import propertyImg from "@/../public/assets/projects/creditntell-trade-area.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Creditntell Portfolio Entry",
@@ -134,7 +133,6 @@ const page = () => {
         </div>
         <div className=""></div>
       </div>
-      <Back />
     </div>
   );
 };

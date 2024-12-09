@@ -1,8 +1,7 @@
 import React from "react";
-import assetImg from "../../../public/assets/projects/Avinew-Framed.png";
+import assetImg from "@/../public/assets/projects/Avinew-Framed.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Avinew Portfolio Entry",
@@ -104,7 +103,6 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Back />
     </div>
   );
 };

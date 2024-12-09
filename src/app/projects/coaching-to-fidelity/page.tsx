@@ -1,8 +1,7 @@
 import React from "react";
-import c2fImg from "../../../public/assets/projects/c2f-ios-framed.png";
+import c2fImg from "@/../public/assets/projects/c2f-ios-framed.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Coaching to Fidelity Portfolio Entry",
@@ -128,7 +127,6 @@ const page = () => {
         </div>
         <div className=""></div>
       </div>
-      <Back />
     </div>
   );
 };

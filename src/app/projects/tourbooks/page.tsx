@@ -1,8 +1,7 @@
 import React from "react";
-import tourImg from "../../../public/assets/projects/Tourbooks-Framed.png";
+import tourImg from "@/../public/assets/projects/Tourbooks-Framed.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Property Capsule Portfolio Entry",
@@ -47,7 +46,6 @@ const page = () => {
         </div>
         <div className=""></div>
       </div>
-      <Back />
     </div>
   );
 };

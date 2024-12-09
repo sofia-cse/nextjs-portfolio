@@ -1,12 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import heroImg from "../../../public/assets/projects/service-drone-solutions-hero.jpg";
-import problemImg from "../../../public/assets/projects/Firmatek-screenshot-6.jpg";
-import solutionImg from "../../../public/assets/projects/Firmatek-screenshot-2-1.jpg";
+import heroImg from "@/../public/assets/projects/service-drone-solutions-hero.jpg";
+import problemImg from "@/../public/assets/projects/Firmatek-screenshot-6.jpg";
+import solutionImg from "@/../public/assets/projects/Firmatek-screenshot-2-1.jpg";
 import { Metadata } from "next";
-import ProjectHeaderWide from "../../components/ProjectHeaderWide";
-
-import Back from "../../components/Back";
+import ProjectHeaderWide from "@/components/ProjectHeaderWide";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Firmatek Portfolio Entry",
@@ -153,7 +151,6 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Back />
     </div>
   );
 };

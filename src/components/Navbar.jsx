@@ -1,18 +1,22 @@
 "use client";
-import React, { useState, useRef } from "react";
-import Image from "next/image";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { PropTypes } from "prop-types";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import logo from "../../public/assets/florere.svg";
 import ThemeButton from "./ThemeButton.jsx";
-//import NavLine from "./NavLine";
+import NavLine from "./NavLine";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [nav, setNav] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
-
   const elementsRef = useRef([]);
+  const [widths, setWidths] = useState([]);
+
+  useEffect(() => {
+    const widthArray = elementsRef.current.map((el) => el?.offsetWidth);
+    setWidths(widthArray);
+  }, []);
 
   const handleNav = () => {
     setNav(!nav);
@@ -26,8 +30,8 @@ const Navbar = () => {
           aria-label="link to the top of the homepage for Sofia Martin's profile"
           onClick={() => setActiveTab("home")}
         >
-          <Image
-            src={logo}
+          <img
+            src={"/assets/florere.svg"}
             alt="Sofia Martin's logo"
             title="Sofia Martin's logo"
             width={35}
@@ -36,7 +40,9 @@ const Navbar = () => {
         </Link>
         <div>
           <ul className="hidden md:flex items-center">
-            <li className="text sm hover:border-collapse">
+            <li
+              className={props.activeSection === "home" ? "active" : "inactive"}
+            >
               <Link
                 href="/#"
                 className="p-5"
@@ -46,7 +52,9 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="text sm hover:border-collapse">
+            <li
+              className={props.activeSection === "work" ? "active" : "inactive"}
+            >
               <Link
                 href="/#work"
                 className="p-5"
@@ -56,7 +64,11 @@ const Navbar = () => {
                 Work
               </Link>
             </li>
-            <li className="text sm hover:border-collapse">
+            <li
+              className={
+                props.activeSection === "about" ? "active" : "inactive"
+              }
+            >
               <Link
                 href="/#about"
                 className="p-5"
@@ -66,20 +78,27 @@ const Navbar = () => {
                 About
               </Link>
             </li>
-            <li className="text sm hover:border-collapse">
+            <li
+              className={
+                props.activeSection === "skills" ? "active" : "inactive"
+              }
+            >
               <Link
                 href="/#skills"
                 className="p-5"
                 ref={(el) => elementsRef.current.push(el)}
                 onClick={() => {
                   setActiveTab("tools");
-                  console.log(activeTab);
                 }}
               >
                 Tools
               </Link>
             </li>
-            <li className="text sm hover:border-collapse">
+            <li
+              className={
+                props.activeSection === "contact" ? "active" : "inactive"
+              }
+            >
               <Link
                 href="/#contact"
                 className="p-5"
@@ -92,7 +111,12 @@ const Navbar = () => {
             <li className="px-5 hover:border-collapse min-w-[24px] max-h-[24px]">
               <ThemeButton />
             </li>
-            {/* <NavLine activeTab={activeTab} elementsRef={elementsRef} /. */}
+            <NavLine
+              activeTab={activeTab}
+              activeSection={props.activeSection}
+              elementsRef={elementsRef}
+              widths={widths}
+            />
           </ul>
           {/* Mobile Menu */}
           <div onClick={handleNav} className="md:hidden">
@@ -196,6 +220,10 @@ const Navbar = () => {
       </div>
     </div>
   );
+};
+
+Navbar.propTypes = {
+  activeSection: PropTypes.string,
 };
 
 export default Navbar;

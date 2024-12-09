@@ -211,6 +211,10 @@ body {
   );
 }
 
+li.active {
+  font-weight: bold;
+}
+
 /* individual class styles */
 .line {
   position: absolute;

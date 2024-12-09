@@ -14,6 +14,32 @@ import userzoom from "@/../public/assets/skills/userzoom.png";
 import adobe from "@/../public/assets/skills/Adobe_Creative_Cloud.png";
 import { PropTypes } from "prop-types";
 
+//define the component which displays a given skill
+const Skill = ({ imgSrc, imgStyle, name }) => {
+  return (
+    <div className="grid grid-cols-2 gap-4 justify-center items-center hover:scale-105 ease-in duration-200">
+      <div className="m-auto">
+        <Image
+          src={imgSrc}
+          width={64}
+          height={64}
+          className={imgStyle}
+          alt={name + " logo"}
+        />
+      </div>
+      <div className="flex flex-col items-left justify-left">
+        <h3>{name}</h3>
+      </div>
+    </div>
+  );
+};
+
+Skill.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  imgStyle: PropTypes.string,
+  name: PropTypes.string.isRequired,
+};
+
 const Skills = () => {
   //store all skills and their corresponding data in an array
   const skillset = [
@@ -30,26 +56,6 @@ const Skills = () => {
     { name: "UserZoom", imgSrc: userzoom },
     { name: "Adobe Suite", imgSrc: adobe },
   ];
-
-  //define the component which displays a given skill
-  const Skill = ({ imgSrc, imgStyle, name }) => {
-    return (
-      <div className="grid grid-cols-2 gap-4 justify-center items-center hover:scale-105 ease-in duration-200">
-        <div className="m-auto">
-          <Image
-            src={imgSrc}
-            width={64}
-            height={64}
-            className={imgStyle}
-            alt={name + " logo"}
-          />
-        </div>
-        <div className="flex flex-col items-left justify-left">
-          <h3>{name}</h3>
-        </div>
-      </div>
-    );
-  };
 
   //final output
   return (
@@ -72,12 +78,6 @@ const Skills = () => {
       </div>
     </div>
   );
-};
-
-Skills.propTypes = {
-  imgSrc: PropTypes.any.isRequired,
-  imgStyle: PropTypes.any.isRequired,
-  name: PropTypes.any.isRequired,
 };
 
 export default Skills;

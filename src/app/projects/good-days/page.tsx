@@ -1,8 +1,7 @@
 import React from "react";
-import gdImg from "../../../public/assets/projects/gd-txp-actions.png";
+import gdImg from "@/../public/assets/projects/gd-txp-actions.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Good Days Portfolio Entry",
@@ -130,7 +129,6 @@ const page = () => {
         </div>
         <div className=""></div>
       </div>
-      <Back />
     </div>
   );
 };

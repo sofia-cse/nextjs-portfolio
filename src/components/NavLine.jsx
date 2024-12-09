@@ -6,23 +6,27 @@ import { PropTypes } from "prop-types";
 const NavLine = (props) => {
   const [mounted, setMounted] = useState(false);
 
-  const [widths, setWidths] = useState([]);
-
-  useEffect(() => {
-    setMounted(true, []);
-    const widthArray = props.elementsRef.current.map((el) => el.offsetWidth);
-    setWidths(widthArray);
-  }, []);
+  {
+    //const [widths, setWidths] = useState([]);
+    useEffect(() => {
+      setMounted(true, []);
+      //const widthArray = props.elementsRef.current.map((el) => el.offsetWidth);
+      //setWidths(widthArray);
+    }, []);
+  }
 
   //calculate size and position for each nav element on load
   const dimensions = {
-    home: { width: widths[0], x: 0 },
-    work: { width: widths[1], x: widths[0] },
-    about: { width: widths[2], x: widths[0] + widths[1] },
-    tools: { width: widths[3], x: widths[0] + widths[1] + widths[2] },
+    home: { width: props.widths[0], x: 0 },
+    work: { width: props.widths[1], x: props.widths[0] },
+    about: { width: props.widths[2], x: props.widths[0] + props.widths[1] },
+    tools: {
+      width: props.widths[3],
+      x: props.widths[0] + props.widths[1] + props.widths[2],
+    },
     contact: {
-      width: widths[4],
-      x: widths[0] + widths[1] + widths[2] + widths[3],
+      width: props.widths[4],
+      x: props.widths[0] + props.widths[1] + props.widths[2] + props.widths[3],
     },
   };
 
@@ -30,7 +34,7 @@ const NavLine = (props) => {
   const originalWidth = 100;
 
   //set current width and height values to active tab
-  const activeDimensions = dimensions[props.activeTab];
+  const activeDimensions = dimensions[props.activeSection];
 
   // Resize and position background based on active tab
   const lineStyle = {
@@ -41,12 +45,17 @@ const NavLine = (props) => {
     },
   };
 
-  return mounted && <div className="line" style={lineStyle.home} />;
+  return (
+    mounted && (
+      <div className={`line ${props.activeSection}`} style={lineStyle.home} />
+    )
+  );
 };
 
 NavLine.propTypes = {
   elementsRef: PropTypes.any.isRequired,
   activeTab: PropTypes.any.isRequired,
+  activeSection: PropTypes.any,
 };
 
 export default NavLine;

@@ -1,12 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import groundImg from "../../../public/assets/projects/groundcontrol3.png";
-import heroImg from "../../../public/assets/projects/MGC_hero.jpg";
-import solutionImg from "../../../public/assets/projects/MGC_Mac_Mockup_Environmental_Mission.png";
+import groundImg from "@/../public/assets/projects/groundcontrol3.png";
+import heroImg from "@/../public/assets/projects/MGC_hero.jpg";
+import solutionImg from "@/../public/assets/projects/MGC_Mac_Mockup_Environmental_Mission.png";
 import { Metadata } from "next";
 import ProjectHeaderWide from "@/components/ProjectHeaderWide";
-
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Measure Ground Control Portfolio Entry",
@@ -111,7 +109,6 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Back />
     </div>
   );
 };

@@ -1,8 +1,7 @@
 import React from "react";
-import n2uitiveImg from "../../../public/assets/projects/n2uitive-recording-created.png";
+import n2uitiveImg from "@/../public/assets/projects/n2uitive-recording-created.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | n2uitive Portfolio Entry",
@@ -135,7 +134,6 @@ const page = () => {
         </div>
         <div className=""></div>
       </div>
-      <Back />
     </div>
   );
 };

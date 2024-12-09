@@ -1,8 +1,7 @@
 import React from "react";
-import assetImg from "../../../public/assets/projects/assetmanager6.png";
+import assetImg from "@/../public/assets/projects/assetmanager6.png";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | VTS Asset Manager Portfolio Entry",
@@ -141,7 +140,6 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Back />
     </div>
   );
 };

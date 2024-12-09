@@ -1,8 +1,7 @@
 import React from "react";
-import bandsImg from "../../../public/assets/projects/bands_wide.jpg";
+import bandsImg from "@/../public/assets/projects/bands_wide.jpg";
 import { Metadata } from "next";
 import ProjectHeader from "@/components/ProjectHeader";
-import Back from "@/components/Back";
 
 export const metadata: Metadata = {
   title: "Sofia Martin | Bands App Portfolio Entry",
@@ -131,7 +130,6 @@ const page = () => {
         </div>
         <div className=""></div>
       </div>
-      <Back />
     </div>
   );
 };
