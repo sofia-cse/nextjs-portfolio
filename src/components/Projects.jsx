@@ -3,7 +3,7 @@ import propertyImg from "../../public/assets/projects/creditntell-trade-area.png
 import gdImg from "../../public/assets/projects/gd-txp-actions.png";
 import avinewImg from "../../public/assets/projects/Avinew-Framed.png";
 import n2uitiveImg from "../../public/assets/projects/n2uitive-recording-created.png";
-import firmatekImg from "../../public/assets/projects/Firmatek-Stock-Pile-Mark-Ups.png";
+import firmatekImg from "../../public/assets/projects/Firmatek-Stock-Pile-Mark-Ups-cropped.png";
 import bandsImg from "../../public/assets/projects/bands_wide.jpg";
 import assetImg from "../../public/assets/projects/assetmanager6.png";
 import groundImg from "../../public/assets/projects/groundcontrol3.png";
@@ -16,7 +16,7 @@ const Projects = () => {
     <div id="work" className="w-full pt-20">
       <div className="mx-auto px-4 pb-16 md:px-12">
         <h2 className="mb-8 text-center lg:text-left">Selected Work</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-12">
           <ProjectItem
             title="Firmatek: Materials Inventory Data Portal"
             role="A comprehensive platform for aerial data reporting, enabling users to survey stockpiles using orthophotos and Lidar scan data."

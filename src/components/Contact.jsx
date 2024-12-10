@@ -23,7 +23,7 @@ const Contact = () => {
             <div className="h-full">
               <div className="text-center md:text-left">
                 <Image
-                  className="hover:scale-105 ease-in duration-300 m-auto lg:pt-6 pb-4"
+                  className="rounded-md hover:scale-105 ease-in duration-300 m-auto lg:mt-14 mb-4"
                   src={contactImg}
                   alt="Contact image of Drew Barrymore on the phone from the opening scene of the original Scream movie"
                 />
@@ -81,7 +81,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      className="border-2 rounded-md p-3 border-gray-500"
+                      className="border rounded-md p-3 border-gray-500"
                       name="name"
                       id="name"
                       required
@@ -95,7 +95,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="tel"
-                      className="border-2 rounded-md p-3 border-gray-500"
+                      className="border rounded-md p-3 border-gray-500"
                       name="phone"
                       id="phone"
                       autoComplete="Phone number"
@@ -108,7 +108,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="border-2 rounded-md p-3 border-gray-500"
+                    className="border rounded-md p-3 border-gray-500"
                     name="email"
                     id="email"
                     required
@@ -122,7 +122,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="border-2 rounded-md p-3 border-gray-500"
+                    className="border rounded-md p-3 border-gray-500"
                     name="subject"
                     id="subject"
                   />
@@ -134,7 +134,7 @@ const Contact = () => {
                   <textarea
                     type="text"
                     rows="4"
-                    className="border-2 rounded-md p-3 border-gray-500"
+                    className="border rounded-md p-3 border-gray-500"
                     name="message"
                     id="message"
                     required

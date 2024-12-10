@@ -17,16 +17,22 @@ const NavLine = (props) => {
 
   //calculate size and position for each nav element on load
   const dimensions = {
-    home: { width: props.widths[0], x: 0 },
-    work: { width: props.widths[1], x: props.widths[0] },
-    about: { width: props.widths[2], x: props.widths[0] + props.widths[1] },
+    home: { width: props.widths[0], x: 0, display: "block" },
+    work: { width: props.widths[1], x: props.widths[0], display: "block" },
+    about: {
+      width: props.widths[2],
+      x: props.widths[0] + props.widths[1],
+      display: "block",
+    },
     tools: {
       width: props.widths[3],
       x: props.widths[0] + props.widths[1] + props.widths[2],
+      display: "block",
     },
     contact: {
       width: props.widths[4],
       x: props.widths[0] + props.widths[1] + props.widths[2] + props.widths[3],
+      display: "block",
     },
   };
 
@@ -37,19 +43,15 @@ const NavLine = (props) => {
   const activeDimensions = dimensions[props.activeSection];
 
   // Resize and position background based on active tab
-  const lineStyle = {
-    home: {
-      transform: `translateX(${activeDimensions.x}px) scaleX(${
-        activeDimensions.width / originalWidth
-      })`,
-    },
-  };
 
-  return (
-    mounted && (
-      <div className={`line ${props.activeSection}`} style={lineStyle.home} />
-    )
-  );
+  const activeStyle = {
+    transform: `translateX(${activeDimensions?.x}px) scaleX(${
+      activeDimensions?.width / originalWidth
+    })`,
+    //wait until dimensions are calulated to display to avoid animation from origin on refresh or navigation
+    display: `${activeDimensions?.display ?? "none"}`,
+  };
+  return mounted && <div className="nav_activeBar" style={activeStyle} />;
 };
 
 NavLine.propTypes = {

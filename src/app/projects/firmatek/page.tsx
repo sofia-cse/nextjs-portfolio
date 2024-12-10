@@ -58,7 +58,7 @@ const page = () => {
               alt=""
               width={550}
               height={350}
-              className="object-contain w-full h-auto"
+              className="object-contain w-full h-auto rounded-sm projectdetail-shadow"
             />
           </div>
         </div>
@@ -95,7 +95,7 @@ const page = () => {
               alt=""
               width={550}
               height={350}
-              className="object-contain w-full h-auto"
+              className="object-contain w-full h-auto rounded-sm projectdetail-shadow"
             />
           </div>
         </div>

@@ -8,12 +8,14 @@ import ThemeButton from "./ThemeButton.jsx";
 import NavLine from "./NavLine";
 
 const Navbar = (props) => {
+  const [mounted, setMounted] = useState(false);
   const [nav, setNav] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
   const elementsRef = useRef([]);
   const [widths, setWidths] = useState([]);
 
   useEffect(() => {
+    setMounted(true, []);
     const widthArray = elementsRef.current.map((el) => el?.offsetWidth);
     setWidths(widthArray);
   }, []);
@@ -80,7 +82,7 @@ const Navbar = (props) => {
             </li>
             <li
               className={
-                props.activeSection === "skills" ? "active" : "inactive"
+                props.activeSection === "tools" ? "active" : "inactive"
               }
             >
               <Link
@@ -108,15 +110,17 @@ const Navbar = (props) => {
                 Contact
               </Link>
             </li>
-            <li className="px-5 hover:border-collapse min-w-[24px] max-h-[24px]">
+            <li className="px-5">
               <ThemeButton />
             </li>
-            <NavLine
-              activeTab={activeTab}
-              activeSection={props.activeSection}
-              elementsRef={elementsRef}
-              widths={widths}
-            />
+            {mounted && (
+              <NavLine
+                activeTab={activeTab}
+                activeSection={props.activeSection}
+                elementsRef={elementsRef}
+                widths={widths}
+              />
+            )}
           </ul>
           {/* Mobile Menu */}
           <div onClick={handleNav} className="md:hidden">
