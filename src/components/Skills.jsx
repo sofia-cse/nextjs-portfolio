@@ -14,7 +14,7 @@ import userzoom from "@/../public/assets/skills/userzoom.png";
 import adobe from "@/../public/assets/skills/Adobe_Creative_Cloud.png";
 import postgreSQL from "@/../public/assets/skills/postgreSQL.svg";
 import vercel from "@/../public/assets/skills/vercel.svg";
-import pytorch from "@/../public/assets/skills/pytorch.svg";
+import pytorch from "@/../public/assets/skills/PyTorch.svg";
 import typescript from "@/../public/assets/skills/typescript.svg";
 import { PropTypes } from "prop-types";
 
