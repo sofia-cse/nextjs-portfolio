@@ -5,6 +5,9 @@ import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ThemeProvider from "./utils/ThemeProvider.js";
+import { NavContextProvider } from "@/app/utils/NavContextProvider";
+import Navbar from "@/components/Navbar";
+
 const akkurat = localFont({
   src: [
     {
@@ -45,8 +48,11 @@ export default function RootLayout({
       <body className="">
         <div className="mx-auto mb-24">
           <ThemeProvider enableSystem={true} defaultTheme="system">
-            {/*<Navbar />*/}
-            <div className="mx-auto items-start">{children}</div>
+            <NavContextProvider>
+              <Navbar />
+              <div></div>
+              <div className="mx-auto items-start">{children}</div>
+            </NavContextProvider>
           </ThemeProvider>
         </div>
         <Analytics />

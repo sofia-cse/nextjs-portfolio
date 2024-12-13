@@ -18,7 +18,7 @@ html {
   --background-end-rgb: 255, 255, 255;
 */
   --foreground-rgb: 23, 23, 23;
-  --background-start-rgba: 162, 132, 251, 0.1;
+  --background-start-rgba: 162, 132, 251, 0.04;
   --background-end-rgba: 194, 175, 253, 0.1;
 
   --base: 255, 255, 255;
@@ -29,7 +29,7 @@ html {
 
   --border-color: #cecece;
 
-  --backgroundHover: rgb(247, 247,247);
+  --backgroundHover: rgb(247, 247, 247);
 
   /*--primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -92,7 +92,8 @@ html {
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-  --table-box-shadow: 0 14px 66px rgba(0,0,0,.07),0 10px 17px rgba(0,0,0,.03),0 4px 7px rgba(0,0,0,.05);
+  --table-box-shadow: 0 14px 66px rgba(0, 0, 0, 0.07),
+    0 10px 17px rgba(0, 0, 0, 0.03), 0 4px 7px rgba(0, 0, 0, 0.05);
 
   --card-box-shadow: 4px 4px 0px 0px #d2d2f9;
 
@@ -176,7 +177,8 @@ html {
   --glow-left: none;
   --glow-right: none;
 
-  --table-box-shadow: 0 14px 66px hsla(0, 0%, 96%, .07), 0 10px 17px hsla(0, 0%, 96%, .03), 0 4px 7px hsla(0, 0%, 96%, .05);
+  --table-box-shadow: 0 14px 66px hsla(0, 0%, 96%, 0.07),
+    0 10px 17px hsla(0, 0%, 96%, 0.03), 0 4px 7px hsla(0, 0%, 96%, 0.05);
 
   --card-box-shadow: 4px 4px 0px 0px #d2d2f9;
 
@@ -223,12 +225,24 @@ body {
   background-color: rgba(var(--background-start-rgba));
 }
 
-svg:hover {
+#main svg:hover {
   color: rgb(var(--accent));
 }
 
-li.inactive {
+.active {
+  color: rgb(var(--accent));
+}
+
+.inactive {
   color: var(--inactive);
+}
+
+.theme-controls {
+  border-color: var(--border-color);
+}
+
+.inactive:hover {
+  color: rgb(var(--foreground-rgb));
 }
 
 /* individual class styles */
@@ -296,6 +310,10 @@ li.inactive {
   filter: var(--img-filter);
 }
 
+.projectdetail-shadow {
+  box-shadow: var(--card-box-shadow);
+}
+
 /* formatting on project detail page lists */
 ol {
   list-style-type: decimal;
@@ -342,7 +360,7 @@ ol {
   border-radius: 50%;
 }
 
-#work::before,
+/*#work::before,
 #skills::before {
   content: "";
   max-width: 60%;
@@ -353,14 +371,11 @@ ol {
   z-index: -1;
   position: absolute;
   filter: blur(24px);
-}
-
-#work::before {
-  margin-top: -400px;
-}
-
-#skills::before {
   margin-top: 70px;
+}
+
+/*#work::before {
+  margin-top: -400px;
 }
 
 #about::before {
@@ -375,8 +390,4 @@ ol {
   z-index: -1;
   position: absolute;
   filter: blur(24px);
-}
-
-.projectdetail-shadow {
-  box-shadow: var(--card-box-shadow);
-}
+}*/

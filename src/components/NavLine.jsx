@@ -7,7 +7,7 @@ const NavLine = (props) => {
   const [mounted, setMounted] = useState(false);
 
   {
-    //const [widths, setWidths] = useState([]);
+    //const [links, setWidths] = useState([]);
     useEffect(() => {
       setMounted(true, []);
       //const widthArray = props.elementsRef.current.map((el) => el.offsetWidth);
@@ -17,21 +17,21 @@ const NavLine = (props) => {
 
   //calculate size and position for each nav element on load
   const dimensions = {
-    home: { width: props.widths[0], x: 0, display: "block" },
-    work: { width: props.widths[1], x: props.widths[0], display: "block" },
+    home: { width: props.links[0], x: 0, display: "block" },
+    work: { width: props.links[1], x: props.links[0], display: "block" },
     about: {
-      width: props.widths[2],
-      x: props.widths[0] + props.widths[1],
+      width: props.links[2],
+      x: props.links[0] + props.links[1],
       display: "block",
     },
     tools: {
-      width: props.widths[3],
-      x: props.widths[0] + props.widths[1] + props.widths[2],
+      width: props.links[3],
+      x: props.links[0] + props.links[1] + props.links[2],
       display: "block",
     },
     contact: {
-      width: props.widths[4],
-      x: props.widths[0] + props.widths[1] + props.widths[2] + props.widths[3],
+      width: props.links[4],
+      x: props.links[0] + props.links[1] + props.links[2] + props.links[3],
       display: "block",
     },
   };
@@ -40,7 +40,7 @@ const NavLine = (props) => {
   const originalWidth = 100;
 
   //set current width and height values to active tab
-  const activeDimensions = dimensions[props.activeSection];
+  const activeDimensions = dimensions[props.activeNav];
 
   // Resize and position background based on active tab
 
@@ -51,14 +51,18 @@ const NavLine = (props) => {
     //wait until dimensions are calulated to display to avoid animation from origin on refresh or navigation
     display: `${activeDimensions?.display ?? "none"}`,
   };
-  return mounted && <div className="nav_activeBar" style={activeStyle} />;
+  return (
+    mounted && (
+      <div className={`nav_activeBar ${props.activeNav}`} style={activeStyle} />
+    )
+  );
 };
 
 NavLine.propTypes = {
   elementsRef: PropTypes.any.isRequired,
-  activeTab: PropTypes.any.isRequired,
+  activeNav: PropTypes.any.isRequired,
   activeSection: PropTypes.any,
-  widths: PropTypes.number,
+  links: PropTypes.number,
 };
 
 export default NavLine;

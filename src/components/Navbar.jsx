@@ -1,23 +1,33 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { PropTypes } from "prop-types";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import ThemeButton from "./ThemeButton.jsx";
 import NavLine from "./NavLine";
+import { useNavContext } from "@/app/utils/NavContextProvider";
+import { usePathname } from "next/navigation";
 
-const Navbar = (props) => {
+const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [nav, setNav] = useState(false);
-  const [activeTab, setActiveTab] = useState("home");
   const elementsRef = useRef([]);
-  const [widths, setWidths] = useState([]);
+  const [links, SetLinks] = useState([]);
+  const { activeNav, setActiveNav } = useNavContext();
+  const pathname = usePathname();
+  const parsedpath = pathname.split("/")[1];
 
   useEffect(() => {
     setMounted(true, []);
-    const widthArray = elementsRef.current.map((el) => el?.offsetWidth);
-    setWidths(widthArray);
+
+    //if user lands on project page from external link or direct URL entry, set nav to projects
+    if (parsedpath === "projects") {
+      setActiveNav("work");
+    }
+
+    //store each link ref in an array
+    const linksArray = elementsRef.current.map((el) => el?.offsetWidth);
+    SetLinks(linksArray);
   }, []);
 
   const handleNav = () => {
@@ -30,7 +40,7 @@ const Navbar = (props) => {
         <Link
           href="/#"
           aria-label="link to the top of the homepage for Sofia Martin's profile"
-          onClick={() => setActiveTab("home")}
+          onClick={() => setActiveNav("home")}
         >
           <img
             src={"/assets/florere.svg"}
@@ -40,96 +50,82 @@ const Navbar = (props) => {
             height={35}
           />
         </Link>
-        <div>
-          <ul className="hidden md:flex items-center">
-            <li
-              className={props.activeSection === "home" ? "active" : "inactive"}
-            >
+        <div className="flex">
+          <ul className="hidden md:flex w-full items-center">
+            <li className={activeNav === "home" ? "active" : "inactive"}>
               <Link
                 href="/#"
                 className="p-5"
                 ref={(el) => elementsRef.current.push(el)}
-                onClick={() => setActiveTab("home")}
+                onClick={() => setActiveNav("home")}
               >
                 Home
               </Link>
             </li>
-            <li
-              className={props.activeSection === "work" ? "active" : "inactive"}
-            >
+            <li className={activeNav === "work" ? "active" : "inactive"}>
               <Link
                 href="/#work"
                 className="p-5"
                 ref={(el) => elementsRef.current.push(el)}
-                onClick={() => setActiveTab("work")}
+                onClick={() => setActiveNav("work")}
               >
                 Work
               </Link>
             </li>
-            <li
-              className={
-                props.activeSection === "about" ? "active" : "inactive"
-              }
-            >
+            <li className={activeNav === "about" ? "active" : "inactive"}>
               <Link
                 href="/#about"
                 className="p-5"
                 ref={(el) => elementsRef.current.push(el)}
-                onClick={() => setActiveTab("about")}
+                onClick={() => setActiveNav("about")}
               >
                 About
               </Link>
             </li>
-            <li
-              className={
-                props.activeSection === "tools" ? "active" : "inactive"
-              }
-            >
+            <li className={activeNav === "tools" ? "active" : "inactive"}>
               <Link
                 href="/#skills"
                 className="p-5"
                 ref={(el) => elementsRef.current.push(el)}
                 onClick={() => {
-                  setActiveTab("tools");
+                  setActiveNav("tools");
                 }}
               >
                 Tools
               </Link>
             </li>
-            <li
-              className={
-                props.activeSection === "contact" ? "active" : "inactive"
-              }
-            >
+            <li className={activeNav === "contact" ? "active" : "inactive"}>
               <Link
                 href="/#contact"
                 className="p-5"
                 ref={(el) => elementsRef.current.push(el)}
-                onClick={() => setActiveTab("contact")}
+                onClick={() => setActiveNav("contact")}
               >
                 Contact
               </Link>
             </li>
-            <li className="px-5">
-              <ThemeButton />
-            </li>
+
             {mounted && (
               <NavLine
-                activeTab={activeTab}
-                activeSection={props.activeSection}
+                activeNav={activeNav}
+                activeSection={activeNav}
                 elementsRef={elementsRef}
-                widths={widths}
+                links={links}
               />
             )}
           </ul>
-          {/* Mobile Menu */}
-          <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu
-              size={25}
-              title="hamburger menu icon"
-              aria-label="button to open the navigation side menu"
-            />
+          <div className="flex justify-center w-full md:w-fit md:pl-5">
+            <ThemeButton />
           </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <div onClick={handleNav} className="md:hidden">
+          <AiOutlineMenu
+            size={25}
+            title="hamburger menu icon"
+            aria-label="button to open the navigation side menu"
+          />
         </div>
       </div>
       <div
@@ -148,9 +144,6 @@ const Navbar = (props) => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <div className="px-5">
-                <ThemeButton />
-              </div>
               <div onClick={handleNav} className="cursor-pointer">
                 <AiOutlineClose
                   size={25}
@@ -224,10 +217,6 @@ const Navbar = (props) => {
       </div>
     </div>
   );
-};
-
-Navbar.propTypes = {
-  activeSection: PropTypes.string,
 };
 
 export default Navbar;

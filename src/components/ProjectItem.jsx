@@ -17,6 +17,7 @@ const ProjectItem = ({
         <div className="flex flex-col items-start justify-start h-full min-h-full w-full">
           <div className="w-full project-image-wrapper">
             <Image
+              priority
               src={backgroundImg}
               alt="Project Image"
               className="object-contain h-full max-h-[530px]"
