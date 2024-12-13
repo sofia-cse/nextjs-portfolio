@@ -36,22 +36,24 @@ const Navbar = () => {
 
   return (
     <div className="nav-top w-full h-16 z-[100] sticky top-0 backdrop-blur">
-      <div className="container mx-auto flex justify-between items-center w-full h-full px-2 2xl:px-8">
-        <Link
-          href="/#"
-          aria-label="link to the top of the homepage for Sofia Martin's profile"
-          onClick={() => setActiveNav("home")}
-        >
-          <img
-            src={"/assets/florere.svg"}
-            alt="Sofia Martin's logo"
-            title="Sofia Martin's logo"
-            width={35}
-            height={35}
-          />
-        </Link>
+      <div className="container mx-auto flex justify-between items-center w-full h-full px-4 2xl:px-8">
+        <div className="w-full md:flex md:w-fit">
+          <Link
+            href="/#"
+            aria-label="link to the top of the homepage for Sofia Martin's profile"
+            onClick={() => setActiveNav("home")}
+          >
+            <img
+              src={"/assets/florere.svg"}
+              alt="Sofia Martin's logo"
+              title="Sofia Martin's logo"
+              width={35}
+              height={35}
+            />
+          </Link>
+        </div>
         <div className="flex">
-          <ul className="hidden md:flex w-full items-center">
+          <nav className="hidden md:flex w-full items-center list-none">
             <li className={activeNav === "home" ? "active" : "inactive"}>
               <Link
                 href="/#"
@@ -113,14 +115,14 @@ const Navbar = () => {
                 links={links}
               />
             )}
-          </ul>
-          <div className="flex justify-center w-full md:w-fit md:pl-5">
+          </nav>
+          <div className="w-full md:w-fit md:flex justify-center md:pl-5">
             <ThemeButton />
           </div>
         </div>
 
         {/* Mobile Menu */}
-        <div onClick={handleNav} className="md:hidden">
+        <div onClick={handleNav} className="w-full flex justify-end md:hidden">
           <AiOutlineMenu
             size={25}
             title="hamburger menu icon"
@@ -138,12 +140,12 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "nav-side md:hidden fixed right-0 top-0 px-2 py-6  w-[65%] sm:w-[60%] md:w-[45%] h-screen ease-in duration-500"
+              ? "nav-side md:hidden fixed right-0 top-0 px-4 py-5  w-[65%] sm:w-[60%] md:w-[45%] h-screen ease-in duration-500"
               : "hidden"
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full items-center justify-end">
               <div onClick={handleNav} className="cursor-pointer">
                 <AiOutlineClose
                   size={25}

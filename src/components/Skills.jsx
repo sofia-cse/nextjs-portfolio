@@ -12,6 +12,10 @@ import tailwind from "@/../public/assets/skills/tailwind.png";
 import pendo from "@/../public/assets/skills/pendo.png";
 import userzoom from "@/../public/assets/skills/userzoom.png";
 import adobe from "@/../public/assets/skills/Adobe_Creative_Cloud.png";
+import postgreSQL from "@/../public/assets/skills/postgreSQL.svg";
+import vercel from "@/../public/assets/skills/vercel.svg";
+import pytorch from "@/../public/assets/skills/pytorch.svg";
+import typescript from "@/../public/assets/skills/typescript.svg";
 import { PropTypes } from "prop-types";
 
 //define the component which displays a given skill
@@ -23,7 +27,9 @@ const Skill = ({ imgSrc, imgStyle, name }) => {
           src={imgSrc}
           width={64}
           height={64}
-          className={imgStyle}
+          className={
+            imgStyle === "invertDark" ? "dark:brightness-0 dark:invert" : ""
+          }
           alt={name + " logo"}
         />
       </div>
@@ -43,15 +49,19 @@ Skill.propTypes = {
 const Skills = () => {
   //store all skills and their corresponding data in an array
   const skillset = [
-    { name: "Figma", imgSrc: figma },
-    { name: "Jira", imgSrc: jira },
-    { name: "AWS", imgSrc: aws, imgStyle: "dark-image" },
-    { name: "Google Cloud", imgSrc: google },
-    { name: "Python", imgSrc: python },
     { name: "React", imgSrc: react },
-    { name: "Next.js", imgSrc: nextjs, imgStyle: "dark-image" },
-    { name: "Github", imgSrc: github, imgStyle: "dark-image" },
+    { name: "Next.js", imgSrc: nextjs, imgStyle: "invertDark" },
+    { name: "Python", imgSrc: python },
+    { name: "PostgreSQL", imgSrc: postgreSQL },
+    { name: "PyTorch", imgSrc: pytorch },
+    { name: "AWS", imgSrc: aws, imgStyle: "invertDark" },
+    { name: "Google Cloud", imgSrc: google },
+    { name: "Vercel", imgSrc: vercel, imgStyle: "invertDark" },
+    { name: "Typescript", imgSrc: typescript },
     { name: "Tailwind", imgSrc: tailwind },
+    { name: "Figma", imgSrc: figma },
+    { name: "Github", imgSrc: github, imgStyle: "invertDark" },
+    { name: "Jira", imgSrc: jira },
     { name: "Pendo", imgSrc: pendo },
     { name: "UserZoom", imgSrc: userzoom },
     { name: "Adobe Suite", imgSrc: adobe },

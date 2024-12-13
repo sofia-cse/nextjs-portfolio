@@ -11,183 +11,98 @@ html {
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
-:root {
-  /*
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-*/
-  --foreground-rgb: 23, 23, 23;
-  --background-start-rgba: 162, 132, 251, 0.04;
-  --background-end-rgba: 194, 175, 253, 0.1;
+@layer base {
+  :root {
+    --foreground-rgb: 23, 23, 23;
+    --background-start-rgba: 162, 132, 251, 0.04;
+    --background-end-rgba: 194, 175, 253, 0.1;
 
-  --base: 255, 255, 255;
+    --base: 255, 255, 255;
 
-  --accent: 163, 132, 250;
+    --accent: 163, 132, 250;
 
-  --inactive: rgb(102, 102, 102);
+    --inactive: rgb(102, 102, 102);
 
-  --border-color: #cecece;
+    --border-color: #cecece;
 
-  --backgroundHover: rgb(247, 247, 247);
+    --backgroundHover: rgb(247, 247, 247);
 
-  /*--primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );*/
+    --primary-glow: radial-gradient(
+      circle at 50%,
+      color(display-p3 0.827451 0.156863 0.231373 / 0.1) 0%,
+      transparent 70%
+    );
 
-  --primary-glow: radial-gradient(
-    circle at 50%,
-    color(display-p3 0.827451 0.156863 0.231373 / 0.1) 0%,
-    transparent 70%
-  );
+    --glow-left: radial-gradient(
+      farthest-corner at 0% 50%,
+      color(display-p3 0.827451 0.156863 0.231373 / 0.1) 0%,
+      transparent 70%
+    );
 
-  --glow-left: radial-gradient(
-    farthest-corner at 0% 50%,
-    color(display-p3 0.827451 0.156863 0.231373 / 0.1) 0%,
-    transparent 70%
-  );
+    --glow-right: radial-gradient(
+      circle farthest-corner at 100% 50%,
+      color(display-p3 0.827451 0.156863 0.231373 / 0.1) 0%,
+      transparent 70%
+    );
 
-  --glow-right: radial-gradient(
-    circle farthest-corner at 100% 50%,
-    color(display-p3 0.827451 0.156863 0.231373 / 0.1) 0%,
-    transparent 70%
-  );
+    --secondary-glow: radial-gradient(
+      ellipse at 50%,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 70%
+    );
 
-  --secondary-glow: radial-gradient(
-    ellipse at 50%,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0) 70%
-  );
+    --callout-rgb: 238, 240, 241;
+    --callout-border-rgb: 172, 175, 176;
+    --card-rgb: 180, 185, 188;
+    --card-border-rgb: 131, 134, 135;
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  /* --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );*/
+    --table-box-shadow: 0 14px 66px rgba(0, 0, 0, 0.07),
+      0 10px 17px rgba(0, 0, 0, 0.03), 0 4px 7px rgba(0, 0, 0, 0.05);
 
-  --tile-border: conic-gradient(
-    #d3283b90,
-    #d3283b40,
-    #d3283b30,
-    #d3283b20,
-    #d3283b10,
-    #d3283b10,
-    #d3283b90
-  );
+    --card-box-shadow: 4px 4px 0px 0px #d2d2f9;
+  }
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-
-  --table-box-shadow: 0 14px 66px rgba(0, 0, 0, 0.07),
-    0 10px 17px rgba(0, 0, 0, 0.03), 0 4px 7px rgba(0, 0, 0, 0.05);
-
-  --card-box-shadow: 4px 4px 0px 0px #d2d2f9;
-
-  --img-filter: "";
-}
-/* old dark mode query
-@media (prefers-color-scheme: dark) {
-  html {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgba: 0, 0, 0, 0;
+  [data-theme="dark"] {
+    --foreground-rgb: 226, 232, 240;
+    --background-start-rgba: 0, 0, 0, 1;
     --background-end-rgba: 0, 0, 0, 0;
 
-    --base: 34, 34, 34;
+    --base: 0, 0, 0;
 
-    --border-color: #ffffff;
+    --accent: 163, 132, 250;
 
-    --backgroundHover: rgba(255, 115, 36, 0.01);
+    --inactive: rgb(136, 136, 136);
 
-    --primary-glow: radial-gradient(color(display-p3 1 0.5 0), transparent);
-    --secondary-glow: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    --border-color: #ffffff20;
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
+    --backgroundHover: rgba(10, 10, 10, 1);
+
+    --primary-glow: radial-gradient(
+      circle at 50%,
+      color(display-p3 0.827451 0.156863 0.231373 / 0.188235) 0%,
+      transparent 70%
     );
+    --secondary-glow: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+
+    --glow-left: none;
+    --glow-right: none;
+
+    --table-box-shadow: 0 14px 66px hsla(0, 0%, 96%, 0.07),
+      0 10px 17px hsla(0, 0%, 96%, 0.03), 0 4px 7px hsla(0, 0%, 96%, 0.05);
+
+    --card-box-shadow: 4px 4px 0px 0px #d2d2f9;
   }
-}
-*/
 
-[data-theme="dark"] {
-  --foreground-rgb: 226, 232, 240;
-  --background-start-rgba: 0, 0, 0, 1;
-  --background-end-rgba: 0, 0, 0, 0;
-
-  --base: 0, 0, 0;
-
-  --accent: 163, 132, 250;
-
-  --inactive: rgb(136, 136, 136);
-
-  --border-color: #ffffff20;
-
-  --backgroundHover: rgba(10, 10, 10, 1);
-
-  --primary-glow: radial-gradient(
-    circle at 50%,
-    color(display-p3 0.827451 0.156863 0.231373 / 0.188235) 0%,
-    transparent 70%
-  );
-  --secondary-glow: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-
-  --tile-start-rgb: 2, 13, 46;
-  --tile-end-rgb: 2, 5, 19;
-  --tile-border: conic-gradient(
-    #ffffff80,
-    #ffffff40,
-    #ffffff30,
-    #ffffff20,
-    #ffffff10,
-    #ffffff10,
-    #ffffff80
-  );
-
-  --callout-rgb: 20, 20, 20;
-  --callout-border-rgb: 108, 108, 108;
-  --card-rgb: 100, 100, 100;
-  --card-border-rgb: 200, 200, 200;
-
-  --glow-left: none;
-  --glow-right: none;
-
-  --table-box-shadow: 0 14px 66px hsla(0, 0%, 96%, 0.07),
-    0 10px 17px hsla(0, 0%, 96%, 0.03), 0 4px 7px hsla(0, 0%, 96%, 0.05);
-
-  --card-box-shadow: 4px 4px 0px 0px #d2d2f9;
-
-  --img-filter: brightness(0) invert(1);
-}
-
-@layer base {
   body {
     @apply tracking-wide;
+    color: rgb(var(--foreground-rgb));
+    background-color: rgba(var(--background-start-rgba));
   }
 
   h1,
@@ -218,11 +133,6 @@ html {
   button:hover {
     @apply shadow-xl transition ease-in-out duration-300;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: rgba(var(--background-start-rgba));
 }
 
 #main svg:hover {
@@ -304,10 +214,6 @@ body {
 
 .avinew img {
   max-height: 466px !important;
-}
-
-.dark-image {
-  filter: var(--img-filter);
 }
 
 .projectdetail-shadow {
