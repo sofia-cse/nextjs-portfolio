@@ -16,10 +16,18 @@ import postgreSQL from "@/../public/assets/skills/postgreSQL.svg";
 import vercel from "@/../public/assets/skills/vercel.svg";
 import pytorch from "@/../public/assets/skills/PyTorch.svg";
 import typescript from "@/../public/assets/skills/typescript.svg";
-import { PropTypes } from "prop-types";
+//import { PropTypes } from "prop-types";
 
 //define the component which displays a given skill
-const Skill = ({ imgSrc, imgStyle, name }) => {
+const Skill = ({
+  name,
+  imgSrc,
+  imgStyle,
+}: {
+  name: string;
+  imgSrc: string;
+  imgStyle?: string;
+}) => {
   return (
     <div className="grid grid-cols-2 gap-4 justify-center items-center hover:scale-105 ease-in duration-200">
       <div className="m-auto">
@@ -38,12 +46,6 @@ const Skill = ({ imgSrc, imgStyle, name }) => {
       </div>
     </div>
   );
-};
-
-Skill.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
-  imgStyle: PropTypes.string,
-  name: PropTypes.string.isRequired,
 };
 
 const Skills = () => {

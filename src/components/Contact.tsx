@@ -14,7 +14,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full">
+    <div className="w-full">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <h2 className="py-4 pb-8 text-center lg:text-left">Get In Touch</h2>
         <div className="md:grid lg:grid-cols-5 gap-8">
@@ -132,8 +132,7 @@ const Contact = () => {
                     Message <span className="text-red"> *</span>
                   </label>
                   <textarea
-                    type="text"
-                    rows="4"
+                    rows={4}
                     className="border rounded-md p-3 border-gray-500"
                     name="message"
                     id="message"

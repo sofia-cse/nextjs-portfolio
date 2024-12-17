@@ -1,12 +1,16 @@
 import React from "react";
-import Image from "next/image";
-import { PropTypes } from "prop-types";
+import Image, { StaticImageData } from "next/image";
 
 const ProjectHeader = ({
   projectName,
   shortDescription,
   projectImage,
   identifier,
+}: {
+  projectName: string;
+  shortDescription: string;
+  projectImage: StaticImageData;
+  identifier: string;
 }) => {
   return (
     <div className="projectheader mt-[0px]">
@@ -15,6 +19,7 @@ const ProjectHeader = ({
         <Image
           src={projectImage}
           alt={identifier}
+          placeholder="blur"
           className="absolute z-1 object-cover object-bottom"
           fill
           priority
@@ -30,13 +35,6 @@ const ProjectHeader = ({
       </div>
     </div>
   );
-};
-
-ProjectHeader.propTypes = {
-  projectName: PropTypes.any.isRequired,
-  shortDescription: PropTypes.any.isRequired,
-  projectImage: PropTypes.any.isRequired,
-  identifier: PropTypes.any.isRequired,
 };
 
 export default ProjectHeader;

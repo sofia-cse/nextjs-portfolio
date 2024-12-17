@@ -100,7 +100,7 @@ html {
   }
 
   body {
-    @apply tracking-wide;
+    /*@apply tracking-wide;*/
     color: rgb(var(--foreground-rgb));
     background-color: rgba(var(--background-start-rgba));
   }

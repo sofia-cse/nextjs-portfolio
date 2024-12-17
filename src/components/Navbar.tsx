@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import ThemeButton from "./ThemeButton.jsx";
+import ThemeButton from "./ThemeButton";
 import NavLine from "./NavLine";
 import { useNavContext } from "@/app/utils/NavContextProvider";
 import { usePathname } from "next/navigation";
@@ -11,23 +11,22 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [nav, setNav] = useState(false);
-  const elementsRef = useRef([]);
-  const [links, SetLinks] = useState([]);
+  const elementsRef = useRef<(HTMLAnchorElement | null)[]>([]);
+  const [linkWidths, SetLinkWidths] = useState<number[]>([]);
   const { activeNav, setActiveNav } = useNavContext();
   const pathname = usePathname();
-  const parsedpath = pathname.split("/")[1];
+  const parsedpath = pathname?.split("/")[1];
 
   useEffect(() => {
-    setMounted(true, []);
+    setMounted(true);
 
     //if user lands on project page from external link or direct URL entry, set nav to projects
     if (parsedpath === "projects") {
       setActiveNav("work");
     }
 
-    //store each link ref in an array
-    const linksArray = elementsRef.current.map((el) => el?.offsetWidth);
-    SetLinks(linksArray);
+    //update linkwidths with mapping of each ref width
+    SetLinkWidths(elementsRef.current.map((el) => el!.offsetWidth));
   }, []);
 
   const handleNav = () => {
@@ -58,7 +57,9 @@ const Navbar = () => {
               <Link
                 href="/#"
                 className="p-5"
-                ref={(el) => elementsRef.current.push(el)}
+                ref={(el) => {
+                  elementsRef.current.push(el);
+                }}
                 onClick={() => setActiveNav("home")}
               >
                 Home
@@ -68,7 +69,9 @@ const Navbar = () => {
               <Link
                 href="/#work"
                 className="p-5"
-                ref={(el) => elementsRef.current.push(el)}
+                ref={(el) => {
+                  elementsRef.current.push(el);
+                }}
                 onClick={() => setActiveNav("work")}
               >
                 Work
@@ -78,7 +81,9 @@ const Navbar = () => {
               <Link
                 href="/#about"
                 className="p-5"
-                ref={(el) => elementsRef.current.push(el)}
+                ref={(el) => {
+                  elementsRef.current.push(el);
+                }}
                 onClick={() => setActiveNav("about")}
               >
                 About
@@ -88,7 +93,9 @@ const Navbar = () => {
               <Link
                 href="/#skills"
                 className="p-5"
-                ref={(el) => elementsRef.current.push(el)}
+                ref={(el) => {
+                  elementsRef.current.push(el);
+                }}
                 onClick={() => {
                   setActiveNav("tools");
                 }}
@@ -100,7 +107,9 @@ const Navbar = () => {
               <Link
                 href="/#contact"
                 className="p-5"
-                ref={(el) => elementsRef.current.push(el)}
+                ref={(el) => {
+                  elementsRef.current.push(el);
+                }}
                 onClick={() => setActiveNav("contact")}
               >
                 Contact
@@ -108,12 +117,7 @@ const Navbar = () => {
             </li>
 
             {mounted && (
-              <NavLine
-                activeNav={activeNav}
-                activeSection={activeNav}
-                elementsRef={elementsRef}
-                links={links}
-              />
+              <NavLine activeNav={activeNav} linkWidths={linkWidths} />
             )}
           </nav>
           <div className="w-full md:w-fit md:flex justify-center md:pl-5">

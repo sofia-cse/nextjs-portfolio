@@ -2,10 +2,8 @@ import React from "react";
 import Image from "next/image";
 import logo from "../../public/assets/florere.svg";
 import { Metadata } from "next";
-//mport { NavContextProvider } from "@/app/utils/NavContextProvider";
-//import Navbar from "@/components/Navbar";
 
-import HomeContent from "./../components/HomeContent";
+import MainWrapper from "./../components/MainWrapper";
 
 export const metadata: Metadata = {
   title: "Sofia Martin",
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="">
-      <HomeContent />
+      <MainWrapper />
       <div className="container mx-auto mt-4">
         <div className="mb-4 flex-col items-center">
           <Image

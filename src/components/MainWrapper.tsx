@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import Main from "../components/Main";
+import Intro from "../components/Intro";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
@@ -38,33 +38,31 @@ const HomeContent = () => {
       skillsRef.current,
       contactRef.current,
     ];
-    sections.forEach((section) => observer.observe(section));
+    sections.forEach((section) => section && observer.observe(section));
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      sections.forEach((section) => section && observer.unobserve(section));
     };
   }, []);
 
   return (
-    <div>
-      <div className="container mx-auto">
-        <div id="home" ref={homeRef}>
-          <Main />
-        </div>
-        <div id="work" ref={workRef}>
-          <Projects />
-        </div>
-        <div id="about" ref={aboutRef}>
-          <About />
-        </div>
-        <div id="tools" ref={skillsRef}>
-          <Skills />
-        </div>
-        <div id="contact" ref={contactRef}>
-          <Contact />
-        </div>
-      </div>
-    </div>
+    <main className="container mx-auto">
+      <section id="home" ref={homeRef}>
+        <Intro />
+      </section>
+      <section id="work" ref={workRef}>
+        <Projects />
+      </section>
+      <section id="about" ref={aboutRef}>
+        <About />
+      </section>
+      <section id="tools" ref={skillsRef}>
+        <Skills />
+      </section>
+      <section id="contact" ref={contactRef}>
+        <Contact />
+      </section>
+    </main>
   );
 };
 

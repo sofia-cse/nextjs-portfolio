@@ -4,7 +4,7 @@ import avatar from "../../public/assets/cartoon_avatar.png";
 
 const About = () => {
   return (
-    <div id="about" className="w-full min-h-screen flex items-center p-2">
+    <div className="w-full min-h-screen flex items-center p-2">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <div className="max-w-[1240px] m-auto md:grid">
           <h2 className="py-2 md:py-6 block text-center lg:text-left">

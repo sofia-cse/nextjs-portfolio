@@ -13,7 +13,7 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div id="work" className="w-full pt-20">
+    <div className="w-full pt-20">
       <div className="mx-auto px-4 pb-16 md:px-12">
         <h2 className="mb-8 text-center lg:text-left">Selected Work</h2>
         <div className="grid md:grid-cols-2 gap-12">

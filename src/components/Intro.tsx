@@ -2,9 +2,9 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-const Main = () => {
+const Intro = () => {
   return (
-    <div id="main" className="w-full h-[70vh] text-center">
+    <div className="w-full h-[70vh] text-center">
       <div className="max-w-[800px] relative w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="flex-col items-center">
           <div className="center">
@@ -55,4 +55,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Intro;
