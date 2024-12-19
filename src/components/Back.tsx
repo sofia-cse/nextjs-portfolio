@@ -4,12 +4,20 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { IoChevronBackOutline } from "react-icons/io5";
 
-const Back = ({ referer }: { referer: string | null }) => {
+const Back = ({
+  referer,
+  host,
+}: {
+  referer: string | null;
+  host: string | null;
+}) => {
   const router = useRouter();
   const pathName = usePathname();
   const isInternalReferer =
-    referer?.includes("localhost:3000/") && !referer?.includes(pathName!);
+    referer?.includes(host!) && !referer?.includes(pathName!);
   console.log(isInternalReferer);
+  const parsedpath = pathName?.split("/")[0];
+  console.log(parsedpath);
 
   const handleBack = () => {
     if (isInternalReferer) {

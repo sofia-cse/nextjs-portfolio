@@ -9,11 +9,12 @@ export default async function ProjectsLayout({
 }) {
   const headersList = await headers();
   const referer = headersList.get("referer");
+  const host = headersList.get("host");
 
   return (
     <div>
       {children}
-      <Back referer={referer} />
+      <Back referer={referer} host={host} />
     </div>
   );
 }
