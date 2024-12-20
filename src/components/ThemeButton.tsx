@@ -13,37 +13,37 @@ const ThemeButton = () => {
 
   if (!mounted) {
     return (
-      <div className="flex flex-row gap-4 p-2 border rounded-full theme-controls">
-        <GiSun className="inactive w-5 h-5" />
-        <RiComputerLine className="inactive w-5 h-5" />
-        <GiMoonBats className="inactive w-5 h-5" />
+      <div className="theme-controls flex flex-row gap-4 rounded-full border p-2">
+        <GiSun className="inactive h-5 w-5" />
+        <RiComputerLine className="inactive h-5 w-5" />
+        <GiMoonBats className="inactive h-5 w-5" />
       </div>
     );
   }
 
   return (
-    <div className="flex flex-row gap-4 p-2 border rounded-full theme-controls">
+    <div className="theme-controls flex flex-row gap-4 rounded-full border p-2">
       <GiSun
         className={
           theme === "system" || theme === "dark"
-            ? "inactive w-5 h-5"
-            : "active w-5 h-5"
+            ? "inactive h-5 w-5"
+            : "active h-5 w-5"
         }
         onClick={() => setTheme("light")}
       />
       <RiComputerLine
         className={
           theme === "light" || theme === "dark"
-            ? "inactive w-5 h-5"
-            : "active w-5 h-5"
+            ? "inactive h-5 w-5"
+            : "active h-5 w-5"
         }
         onClick={() => setTheme("system")}
       />
       <GiMoonBats
         className={
           theme === "system" || theme === "light"
-            ? "inactive w-5 h-5"
-            : "active w-5 h-5"
+            ? "inactive h-5 w-5"
+            : "active h-5 w-5"
         }
         onClick={() => setTheme("dark")}
       />

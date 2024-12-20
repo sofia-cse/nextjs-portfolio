@@ -29,7 +29,7 @@ const Skill = ({
   imgStyle?: string;
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-4 justify-center items-center hover:scale-105 ease-in duration-200">
+    <div className="grid grid-cols-2 items-center justify-center gap-4 duration-200 ease-in hover:scale-105">
       <div className="m-auto">
         <Image
           src={imgSrc}
@@ -41,7 +41,7 @@ const Skill = ({
           alt={name + " logo"}
         />
       </div>
-      <div className="flex flex-col items-left justify-left">
+      <div className="items-left justify-left flex flex-col">
         <h3>{name}</h3>
       </div>
     </div>
@@ -71,13 +71,13 @@ const Skills = () => {
 
   //final output
   return (
-    <div id="skills" className="w-full md:h-screen p-2 py-20">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+    <div id="skills" className="w-full p-2 py-20 md:h-screen">
+      <div className="mx-auto flex h-full max-w-[1240px] flex-col justify-center">
         <h2 className="pb-12 text-center lg:text-left">
           Tools I&#39;m Working With
         </h2>
         {/* grid displays each skill in the skillset array using the Skill component */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 min-h-[40%]">
+        <div className="grid min-h-[40%] gap-8 md:grid-cols-2 lg:grid-cols-4">
           {skillset.map((skill) => (
             <Skill
               key={skill.name}

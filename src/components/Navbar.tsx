@@ -44,8 +44,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav-top w-full h-16 z-[100] sticky top-0 before:backdrop-blur before:w-full before:absolute before:-z-10 before:h-full">
-      <div className="container mx-auto flex justify-between items-center w-full h-full px-4 2xl:px-8">
+    <div className="nav-top sticky top-0 z-[100] h-16 w-full before:absolute before:-z-10 before:h-full before:w-full before:backdrop-blur">
+      <div className="container mx-auto flex h-full w-full items-center justify-between px-4 2xl:px-8">
         <div className="w-full md:flex md:w-fit">
           <Link
             href="/#"
@@ -62,7 +62,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex">
-          <nav className="hidden md:flex w-full items-center list-none">
+          <nav className="hidden w-full list-none items-center md:flex">
             {navItems.map((item, index) => (
               <li
                 key={item.id}
@@ -84,12 +84,12 @@ const Navbar = () => {
               <NavLine activeNav={activeNav} linkWidths={linkWidths} />
             )}{" "}
           </nav>
-          <div className="w-full md:w-fit md:flex justify-center md:pl-5">
+          <div className="w-full justify-center md:flex md:w-fit md:pl-5">
             <ThemeButton />
           </div>
         </div>
         {/* Mobile Menu */}
-        <div onClick={handleNav} className="w-full flex justify-end md:hidden">
+        <div onClick={handleNav} className="flex w-full justify-end md:hidden">
           <AiOutlineMenu
             size={25}
             title="hamburger menu icon"
@@ -100,14 +100,14 @@ const Navbar = () => {
       <div
         className={
           mobileNavOpen
-            ? "md:hidden absolute opacity-100 right-0 top-0 w-full h-screen bg-[black]/70 ease-in duration-200 before:backdrop-blur-sm before:w-full before:absolute before:h-full"
+            ? "absolute right-0 top-0 h-screen w-full bg-[black]/70 opacity-100 duration-200 ease-in before:absolute before:h-full before:w-full before:backdrop-blur-sm md:hidden"
             : "absolute opacity-0 before:backdrop-blur-[0px]"
         }
       >
         <div
           className={
             mobileNavOpen
-              ? "nav-side md:hidden absolute right-0 top-0 px-4 py-5  w-[65%] sm:w-[60%] md:w-[45%] h-screen"
+              ? "nav-side absolute right-0 top-0 h-screen w-[65%] px-4 py-5 sm:w-[60%] md:hidden md:w-[45%]"
               : "absolute right-0 px-4 py-5"
           }
         >
@@ -122,8 +122,8 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="py-4 px-5 flex flex-col">
-            <nav className="text-sm list-none">
+          <div className="flex flex-col px-5 py-4">
+            <nav className="list-none text-sm">
               {navItems.map((item) => (
                 <li
                   key={item.id}
@@ -141,8 +141,8 @@ const Navbar = () => {
             </nav>
             <div className="pt-40">
               <p>Let&#39;s Connect</p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="p-3 cursor-pointer">
+              <div className="my-4 flex w-full items-center justify-between sm:w-[80%]">
+                <div className="cursor-pointer p-3">
                   <Link
                     href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                     target="blank"
@@ -151,7 +151,7 @@ const Navbar = () => {
                     <FaLinkedinIn title="LinkedIn icon" />
                   </Link>
                 </div>
-                <div className="p-3 cursor-pointer">
+                <div className="cursor-pointer p-3">
                   <Link
                     href="https://github.com/sofia-cse"
                     target="blank"
@@ -160,7 +160,7 @@ const Navbar = () => {
                     <FaGithub title="Github icon" />
                   </Link>
                 </div>
-                <div onClick={handleNav} className="p-3 cursor-pointer">
+                <div onClick={handleNav} className="cursor-pointer p-3">
                   <Link
                     href="/#contact"
                     aria-label="anchor link to Sofia Martin's contact form"

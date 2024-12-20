@@ -1,15 +1,18 @@
 import React from "react";
 import Back from "@/components/Back";
-import { headers } from "next/headers";
+//import { headers } from "next/headers";
+import { referer, host } from "../utils/headersData";
 
-export default async function ProjectsLayout({
+export default function ProjectsLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const headersList = await headers();
+  {
+    /*const headersList = await headers();
   const referer = headersList.get("referer");
-  const host = headersList.get("host");
+  const host = headersList.get("host");*/
+  }
 
   return (
     <div>

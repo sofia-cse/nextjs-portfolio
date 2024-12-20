@@ -5,7 +5,7 @@ const NavLine = ({
   activeNav,
   linkWidths,
 }: {
-  activeNav: keyof typeof dimensions;
+  activeNav: string;
   linkWidths: number[];
 }) => {
   //calculate size and position for each nav element on load
@@ -41,7 +41,7 @@ const NavLine = ({
   const originalWidth = 100;
 
   //set current width and height values to active tab
-  const activeDimensions = dimensions[activeNav];
+  const activeDimensions = dimensions[activeNav as keyof typeof dimensions];
 
   // Resize and position background based on active tab
 

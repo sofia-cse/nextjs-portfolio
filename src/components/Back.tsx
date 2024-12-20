@@ -15,11 +15,8 @@ const Back = ({
   const pathName = usePathname();
   const isInternalReferer =
     referer?.includes(host!) && !referer?.includes(pathName!);
-  console.log(isInternalReferer);
-  const parsedpath = pathName?.split("/")[0];
-  console.log(parsedpath);
 
-  const handleBack = () => {
+  const handleGoBack = () => {
     if (isInternalReferer) {
       router.back();
     } else {
@@ -27,12 +24,12 @@ const Back = ({
     }
   };
   return (
-    <div className="max-w-[1240px] mx-auto p-2 pt-8">
+    <div className="mx-auto max-w-[1240px] p-2 pt-8">
       <div
-        className="underline py-4 pb-24 hover:cursor-pointer"
-        onClick={handleBack}
+        className="py-4 pb-24 underline hover:cursor-pointer"
+        onClick={handleGoBack}
       >
-        <IoChevronBackOutline size={18} className="inline mr-1" />
+        <IoChevronBackOutline size={18} className="mr-1 inline" />
         Back To My Work
       </div>
     </div>

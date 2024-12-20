@@ -4,22 +4,22 @@ import avatar from "../../public/assets/cartoon_avatar.png";
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen flex items-center p-2">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <div className="max-w-[1240px] m-auto md:grid">
-          <h2 className="py-2 md:py-6 block text-center lg:text-left">
+    <div className="flex min-h-screen w-full items-center p-2">
+      <div className="m-auto w-full max-w-[1240px] px-2 py-16">
+        <div className="m-auto max-w-[1240px] md:grid">
+          <h2 className="block py-2 text-center md:py-6 lg:text-left">
             Hi, I&apos;m Sofia!
           </h2>
         </div>
-        <div className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8">
-          <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 order-2">
+        <div className="m-auto max-w-[1240px] grid-cols-3 gap-8 lg:grid">
+          <div className="order-2 m-auto flex h-auto w-full items-center justify-center p-4 duration-300 ease-in hover:scale-105">
             <Image
-              className="max-w-[60%] md:max-w-[200px] lg:max-w-[300px] rounded-full"
+              className="max-w-[60%] rounded-full md:max-w-[200px] lg:max-w-[300px]"
               src={avatar}
               alt="Photo of Sofia Martin"
             />
           </div>
-          <div className="col-span-2 order-1 text-lg">
+          <div className="order-1 col-span-2 text-lg">
             <p className="py-2">
               I&apos;m a native Californian and UCSD alum (go Tritons!).
             </p>
