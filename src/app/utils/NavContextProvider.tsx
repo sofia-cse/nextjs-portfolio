@@ -2,7 +2,7 @@
 import React, { createContext, useState, useContext } from "react";
 
 interface ActiveNavContextType {
-  activeNav: string | null;
+  activeNav: string;
   setActiveNav: React.Dispatch<React.SetStateAction<string>>;
 }
 
@@ -11,7 +11,7 @@ const NavContext = createContext<ActiveNavContextType | undefined>(undefined);
 
 // 2. Create the provider component
 const NavContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [activeNav, setActiveNav] = useState<string>("null");
+  const [activeNav, setActiveNav] = useState<string>("home");
 
   return (
     <NavContext.Provider value={{ activeNav, setActiveNav }}>
