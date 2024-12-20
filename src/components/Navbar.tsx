@@ -44,12 +44,14 @@ const Navbar = () => {
   };
 
   const barStyleBase =
-    "nav-top fixed top-0 z-[100] flex w-full flex-col bg-[black]/90 backdrop-blur-lg";
+    "nav-top fixed top-0 z-[100] flex w-full flex-col bg-[rgba(var(--base))]/75 backdrop-blur";
 
   return (
     <div
       className={
-        !mobileNavOpen ? barStyleBase : barStyleBase + " h-full md:h-fit"
+        !mobileNavOpen
+          ? barStyleBase
+          : barStyleBase + " h-full bg-[black]/90 backdrop-blur-lg md:h-fit"
       }
       style={
         mobileNavOpen
