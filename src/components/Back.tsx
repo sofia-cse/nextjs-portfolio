@@ -13,11 +13,13 @@ const Back = ({
 }) => {
   const router = useRouter();
   const pathName = usePathname();
-  const isInternalReferer =
-    referer?.includes(host!) && !referer?.includes(pathName!);
+  const isInternalReferer = () =>
+    referer && host
+      ? referer.includes(host) && !referer?.includes(pathName!)
+      : false;
 
   const handleGoBack = () => {
-    if (isInternalReferer) {
+    if (isInternalReferer()) {
       router.back();
     } else {
       router.push("/#work");
