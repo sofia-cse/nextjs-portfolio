@@ -19,12 +19,6 @@ const HomeContent = () => {
   const { setActiveNav } = useNavContext();
   const elementsRef = useRef<(HTMLElement | null)[]>([]);
 
-  const homeRef = useRef(null);
-  const workRef = useRef(null);
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const contactRef = useRef(null);
-
   useEffect(() => {
     const options = {
       root: null,
@@ -39,16 +33,6 @@ const HomeContent = () => {
         }
       });
     }, options);
-
-    {
-      /*const sections = [
-      homeRef.current,
-      workRef.current,
-      aboutRef.current,
-      skillsRef.current,
-      contactRef.current,
-    ]*/
-    }
 
     const sections = elementsRef.current;
     console.log(sections);
@@ -75,22 +59,6 @@ const HomeContent = () => {
           {item.label}
         </section>
       ))}
-
-      <section id="home" ref={homeRef}>
-        <Intro />
-      </section>
-      <section id="work" ref={workRef}>
-        <Projects />
-      </section>
-      <section id="about" ref={aboutRef}>
-        <About />
-      </section>
-      <section id="tools" ref={skillsRef}>
-        <Skills />
-      </section>
-      <section id="contact" ref={contactRef}>
-        <Contact />
-      </section>
     </main>
   );
 };
