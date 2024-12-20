@@ -1,6 +1,8 @@
+import React from "react";
 import { headers } from "next/headers";
+import Back from "@/components/Back";
 
-const GoBack = async () => {
+export default async function GoBack() {
   async function getHeaders() {
     //const headersList = await headers();
     const referer = await (await headers()).get("referer");
@@ -14,7 +16,9 @@ const GoBack = async () => {
   const referer = (await getHeaders()).referer;
   const host = (await getHeaders()).host;
 
-  return { referer, host };
-};
-export const referer = (await GoBack()).referer;
-export const host = (await GoBack()).host;
+  return (
+    <div>
+      <Back referer={referer} host={host} />
+    </div>
+  );
+}

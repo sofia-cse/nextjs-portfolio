@@ -11,7 +11,7 @@ const NavContext = createContext<ActiveNavContextType | undefined>(undefined);
 
 // 2. Create the provider component
 const NavContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [activeNav, setActiveNav] = useState<string>("home");
+  const [activeNav, setActiveNav] = useState<string>("");
 
   return (
     <NavContext.Provider value={{ activeNav, setActiveNav }}>
