@@ -43,9 +43,21 @@ const Navbar = () => {
     setNav(!mobileNavOpen);
   };
 
+  const barStyleBase =
+    "nav-top fixed top-0 z-[100] flex w-full flex-col bg-[black]/90 backdrop-blur-lg";
+
   return (
-    <div className="nav-top sticky top-0 z-[100] h-16 w-full before:absolute before:-z-10 before:h-full before:w-full before:backdrop-blur">
-      <div className="container mx-auto flex h-full w-full items-center justify-between px-4 2xl:px-8">
+    <div
+      className={
+        !mobileNavOpen ? barStyleBase : barStyleBase + " h-full md:h-fit"
+      }
+      style={
+        mobileNavOpen
+          ? { transition: "height 0s 0s ease-out allow-discrete" }
+          : { transition: "height 0s 150ms ease-out allow-discrete" }
+      }
+    >
+      <div className="container mx-auto flex h-16 w-full items-center justify-between px-4 2xl:px-8">
         <div className="w-full md:flex md:w-fit">
           <Link
             href="/#"
@@ -90,84 +102,71 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         <div onClick={handleNav} className="flex w-full justify-end md:hidden">
-          <AiOutlineMenu
-            size={25}
-            title="hamburger menu icon"
-            aria-label="button to open the navigation side menu"
-          />
+          {!mobileNavOpen ? (
+            <AiOutlineMenu
+              size={25}
+              title="hamburger menu icon"
+              aria-label="button to open the navigation side menu"
+            />
+          ) : (
+            <AiOutlineClose
+              size={25}
+              title="close icon"
+              aria-label="button to close the navigation sidebar"
+            />
+          )}
         </div>
       </div>
+
       <div
-        className={
-          mobileNavOpen
-            ? "absolute right-0 top-0 h-screen w-full bg-[black]/70 opacity-100 duration-200 ease-in before:absolute before:h-full before:w-full before:backdrop-blur-sm md:hidden"
-            : "absolute opacity-0 before:backdrop-blur-[0px]"
-        }
+        className={mobileNavOpen ? "flex w-full flex-col md:hidden" : "hidden"}
+        style={{ transition: "all 0s 150ms allow-discrete" }}
       >
-        <div
-          className={
-            mobileNavOpen
-              ? "nav-side absolute right-0 top-0 h-screen w-[65%] px-4 py-5 sm:w-[60%] md:hidden md:w-[45%]"
-              : "absolute right-0 px-4 py-5"
-          }
-        >
-          <div>
-            <div className="flex w-full items-center justify-end">
-              <div onClick={handleNav} className="cursor-pointer">
-                <AiOutlineClose
-                  size={25}
-                  title="close icon"
-                  aria-label="button to close the navigation sidebar"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col px-5 py-4">
-            <nav className="list-none text-sm">
-              {navItems.map((item) => (
-                <li
-                  key={item.id}
-                  className={
-                    activeNav === item.id
-                      ? "active" + " py-4 text-sm"
-                      : "inactive" + " py-4 text-sm"
-                  }
+        <div className="flex flex-col px-5 py-4">
+          <nav className="list-none">
+            {navItems.map((item) => (
+              <li
+                key={item.id}
+                className={
+                  activeNav === item.id
+                    ? "active" + " py-4"
+                    : "inactive" + " py-4"
+                }
+              >
+                <Link href={item.href} onClick={() => setNav(false)}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </nav>
+          <div className="pt-40">
+            <p>Let&#39;s Connect</p>
+            <div className="my-4 flex w-[50%] items-center justify-between">
+              <div className="cursor-pointer">
+                <Link
+                  href="https://www.linkedin.com/in/sofiabrainerdmartin/"
+                  target="blank"
+                  aria-label="link to Sofia Martin's LinkedIn profile"
                 >
-                  <Link href={item.href} onClick={() => setNav(false)}>
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </nav>
-            <div className="pt-40">
-              <p>Let&#39;s Connect</p>
-              <div className="my-4 flex w-full items-center justify-between sm:w-[80%]">
-                <div className="cursor-pointer p-3">
-                  <Link
-                    href="https://www.linkedin.com/in/sofiabrainerdmartin/"
-                    target="blank"
-                    aria-label="link to Sofia Martin's LinkedIn profile"
-                  >
-                    <FaLinkedinIn title="LinkedIn icon" />
-                  </Link>
-                </div>
-                <div className="cursor-pointer p-3">
-                  <Link
-                    href="https://github.com/sofia-cse"
-                    target="blank"
-                    aria-label="link to Sofia Martin's Github profile"
-                  >
-                    <FaGithub title="Github icon" />
-                  </Link>
-                </div>
-                <div onClick={handleNav} className="cursor-pointer p-3">
-                  <Link
-                    href="/#contact"
-                    aria-label="anchor link to Sofia Martin's contact form"
-                  >
-                    <AiOutlineMail title="envelope icon" />
-                  </Link>
-                </div>
+                  <FaLinkedinIn title="LinkedIn icon" />
+                </Link>
+              </div>
+              <div className="cursor-pointer p-3">
+                <Link
+                  href="https://github.com/sofia-cse"
+                  target="blank"
+                  aria-label="link to Sofia Martin's Github profile"
+                >
+                  <FaGithub title="Github icon" />
+                </Link>
+              </div>
+              <div onClick={handleNav} className="cursor-pointer">
+                <Link
+                  href="/#contact"
+                  aria-label="anchor link to Sofia Martin's contact form"
+                >
+                  <AiOutlineMail title="envelope icon" />
+                </Link>
               </div>
             </div>
           </div>

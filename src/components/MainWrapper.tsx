@@ -7,8 +7,17 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import { useNavContext } from "@/app/utils/NavContextProvider";
 
+const sectionItems = [
+  { label: <Intro />, href: "/#", id: "home" },
+  { label: <Projects />, href: "/#work", id: "work" },
+  { label: <About />, href: "/#about", id: "about" },
+  { label: <Skills />, href: "/#skills", id: "tools" },
+  { label: <Contact />, href: "/#contact", id: "contact" },
+];
+
 const HomeContent = () => {
   const { setActiveNav } = useNavContext();
+  const elementsRef = useRef<(HTMLElement | null)[]>([]);
 
   const homeRef = useRef(null);
   const workRef = useRef(null);
@@ -31,13 +40,19 @@ const HomeContent = () => {
       });
     }, options);
 
-    const sections = [
+    {
+      /*const sections = [
       homeRef.current,
       workRef.current,
       aboutRef.current,
       skillsRef.current,
       contactRef.current,
-    ];
+    ]*/
+    }
+
+    const sections = elementsRef.current;
+    console.log(sections);
+
     sections.forEach((section) => section && observer.observe(section));
 
     return () => {
@@ -47,6 +62,20 @@ const HomeContent = () => {
 
   return (
     <main className="container mx-auto">
+      {sectionItems.map((item, index) => (
+        <section
+          key={item.id}
+          className={item.href}
+          id={item.id}
+          ref={(el) => {
+            elementsRef.current[index] = el; // Correctly assign refs by index
+          }}
+          onClick={() => setActiveNav(item.id)}
+        >
+          {item.label}
+        </section>
+      ))}
+
       <section id="home" ref={homeRef}>
         <Intro />
       </section>

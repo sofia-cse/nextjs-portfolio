@@ -3,7 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import ThemeProvider from "./utils/ThemeProvider.js";
+import { ThemeProvider } from "next-themes";
 import { NavContextProvider } from "@/app/utils/NavContextProvider";
 import Navbar from "@/components/Navbar";
 
@@ -50,6 +50,7 @@ export default function RootLayout({
             enableSystem={true}
             defaultTheme="system"
             attribute="data-theme"
+            disableTransitionOnChange
           >
             <NavContextProvider>
               <Navbar />

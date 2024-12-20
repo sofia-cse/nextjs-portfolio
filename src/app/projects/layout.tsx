@@ -1,5 +1,5 @@
 import React from "react";
-import GoBack from "@/app/utils/GoBack";
+import GoBack from "@/components/GoBack";
 
 export default function ProjectsLayout({
   children,

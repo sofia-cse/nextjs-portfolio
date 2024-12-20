@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import figma from "@/../public/assets/skills/figma.png";
 import jira from "@/../public/assets/skills/atlassian_jira.png";
 import google from "@/../public/assets/skills/google_cloud.png";
@@ -25,23 +25,24 @@ const Skill = ({
   imgStyle,
 }: {
   name: string;
-  imgSrc: string;
+  imgSrc: StaticImageData;
   imgStyle?: string;
 }) => {
+  const baseImageStyle = "w-16 h-auto";
   return (
     <div className="grid grid-cols-2 items-center justify-center gap-4 duration-200 ease-in hover:scale-105">
       <div className="m-auto">
         <Image
           src={imgSrc}
-          width={64}
-          height={64}
           className={
-            imgStyle === "invertDark" ? "dark:brightness-0 dark:invert" : ""
+            imgStyle === "invertDark"
+              ? `+ dark:brightness-0 dark:invert ${baseImageStyle}`
+              : baseImageStyle
           }
           alt={name + " logo"}
         />
       </div>
-      <div className="items-left justify-left flex flex-col">
+      <div className="items-left justify-left flex w-32 flex-col">
         <h3>{name}</h3>
       </div>
     </div>
@@ -71,13 +72,13 @@ const Skills = () => {
 
   //final output
   return (
-    <div id="skills" className="w-full p-2 py-20 md:h-screen">
-      <div className="mx-auto flex h-full max-w-[1240px] flex-col justify-center">
+    <div id="skills" className="flex w-full p-2 py-20 md:min-h-screen">
+      <div className="mx-auto flex max-w-[1240px] flex-col justify-center self-stretch">
         <h2 className="pb-12 text-center lg:text-left">
           Tools I&#39;m Working With
         </h2>
         {/* grid displays each skill in the skillset array using the Skill component */}
-        <div className="grid min-h-[40%] gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid h-full gap-8 md:auto-rows-fr md:grid-cols-2 lg:grid-cols-4">
           {skillset.map((skill) => (
             <Skill
               key={skill.name}
