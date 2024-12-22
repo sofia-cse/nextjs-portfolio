@@ -56,7 +56,7 @@ const Navbar = () => {
       style={
         mobileNavOpen
           ? { transition: "height 0s 0s ease-out allow-discrete" }
-          : { transition: "height 0s 150ms ease-out allow-discrete" }
+          : { transition: "height 0s 50ms ease-out allow-discrete" }
       }
     >
       <div className="container mx-auto flex h-16 w-full items-center justify-between px-4 2xl:px-8">
@@ -122,7 +122,7 @@ const Navbar = () => {
 
       <div
         className={mobileNavOpen ? "flex w-full flex-col md:hidden" : "hidden"}
-        style={{ transition: "all 0s 150ms allow-discrete" }}
+        style={{ transition: "all 0s 50ms allow-discrete" }}
       >
         <div className="flex flex-col px-5 py-4">
           <nav className="list-none">
