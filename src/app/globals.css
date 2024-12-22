@@ -13,13 +13,13 @@ html {
 
 @layer base {
   :root {
-    --foreground-rgb: 23, 23, 23;
-    --background-start-rgba: 162, 132, 251, 0.04;
+    --foreground-rgb: rgb(23, 23, 23);
+    --background-rgb: rgb(255, 255, 255);
     --background-end-rgba: 194, 175, 253, 0.1;
 
     --base: 255, 255, 255;
 
-    --accent: 163, 132, 250;
+    --accent: rgb(163, 132, 250);
 
     --inactive: rgb(102, 102, 102);
 
@@ -64,13 +64,13 @@ html {
   }
 
   [data-theme="dark"] {
-    --foreground-rgb: 226, 232, 240;
-    --background-start-rgba: 0, 0, 0, 1;
+    --foreground-rgb: rgb(226, 232, 240);
+    --background-rgb: rgb(0, 0, 0);
     --background-end-rgba: 0, 0, 0, 0;
 
     --base: 0, 0, 0;
 
-    --accent: 163, 132, 250;
+    --accent: rgb(163, 132, 250);
 
     --inactive: rgb(136, 136, 136);
 
@@ -101,8 +101,7 @@ html {
 
   body {
     /*@apply tracking-wide;*/
-    color: rgb(var(--foreground-rgb));
-    background-color: rgba(var(--background-start-rgba));
+    @apply bg-[--background-rgb] text-slate-900 dark:text-slate-200;
   }
 
   h1,
@@ -127,24 +126,19 @@ html {
   }
 
   button {
-    @apply rounded-md bg-[rgb(var(--accent))] uppercase text-white;
+    @apply rounded-md bg-[--accent] uppercase text-white;
   }
 
   button:hover {
     @apply shadow-xl transition duration-300 ease-in-out;
   }
-}
 
-#main svg:hover {
-  color: rgb(var(--accent));
-}
-
-.active {
-  color: rgb(var(--accent));
-}
-
-.inactive {
-  color: var(--inactive);
+  .active {
+    @apply text-[--accent];
+  }
+  .inactive {
+    @apply text-[--inactive];
+  }
 }
 
 .theme-controls {
@@ -161,7 +155,7 @@ html {
   width: 100px;
   height: 2px;
   bottom: 0;
-  background-color: rgb(var(--accent));
+  background-color: var(--accent);
   transform-origin: 0 0 0;
   transition: transform 0.15s;
 }

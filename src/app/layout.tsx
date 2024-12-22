@@ -45,7 +45,7 @@ export default function RootLayout({
       */}
       <head />
       <body className="">
-        <div className="mx-auto mb-24">
+        <div className="mx-auto pb-4 pt-16">
           <ThemeProvider
             enableSystem={true}
             defaultTheme="system"

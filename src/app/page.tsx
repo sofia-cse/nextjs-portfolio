@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
-import logo from "../../public/assets/florere.svg";
+
 import { Metadata } from "next";
 import MainWrapper from "./../components/MainWrapper";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sofia Martin",
@@ -14,17 +14,7 @@ export default function Home() {
   return (
     <div className="">
       <MainWrapper />
-      <div className="container mx-auto mt-4">
-        <div className="mb-4 flex-col items-center">
-          <Image
-            src={logo}
-            alt="Sofia Flower Logo"
-            className="mx-auto"
-            width={60}
-            height={60}
-          />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }

@@ -44,6 +44,9 @@ importers:
       react-icons:
         specifier: ^5.4.0
         version: 5.4.0(react@19.0.0)
+      react-snow-overlay:
+        specifier: ^1.0.10
+        version: 1.0.10(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -1534,6 +1537,13 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-snow-overlay@1.0.10:
+    resolution: {integrity: sha512-OwPRQpqwIzlugY9vGVppvKTilD6pC9LFUxNj3rrNAUZHMvg9xCNfkSL18Zq+a0OwHbgvU9ypyvfFw9tjpwP92g==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
 
   react@19.0.0:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
@@ -3349,6 +3359,11 @@ snapshots:
       react: 19.0.0
 
   react-is@16.13.1: {}
+
+  react-snow-overlay@1.0.10(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   react@19.0.0: {}
 

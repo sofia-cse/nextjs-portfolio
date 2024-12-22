@@ -3,7 +3,6 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import contactImg from "../../public/assets/scream-start.webp";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -152,18 +151,6 @@ const Contact = () => {
               </form>
             </div>
           </div>
-        </div>
-        <div className="flex justify-center pt-12">
-          <a
-            href="/#main"
-            aria-label="link to the top of Sofia Martin's Website"
-          >
-            <HiOutlineChevronDoubleUp
-              className="m-auto text-[#a284fb]"
-              size={25}
-              title="chevron icon"
-            />
-          </a>
         </div>
       </div>
     </div>

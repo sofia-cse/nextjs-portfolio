@@ -1,10 +1,12 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SnowOverlay } from "react-snow-overlay";
 
 const Intro = () => {
   return (
     <div className="h-[70vh] w-full text-center">
+      <SnowOverlay />
       <div className="relative mx-auto flex h-full w-full max-w-[800px] items-center justify-center p-2">
         <div className="flex-col items-center">
           <div className="center">
@@ -22,7 +24,7 @@ const Intro = () => {
             <span className="inline-block">Data Enthusiast</span>
           </p>
           <div className="m-auto flex max-w-[330px] items-center justify-between py-4">
-            <div className="cursor-pointer p-3">
+            <div className="cursor-pointer p-3 hover:text-[--accent]">
               <a
                 href="https://www.linkedin.com/in/sofiabrainerdmartin/"
                 target="blank"
@@ -31,7 +33,7 @@ const Intro = () => {
                 <FaLinkedinIn size={18} title="LinkedIn icon" />
               </a>
             </div>
-            <div className="cursor-pointer p-3">
+            <div className="cursor-pointer p-3 hover:text-[--accent]">
               <a
                 href="https://github.com/sofia-cse"
                 target="blank"
@@ -40,7 +42,7 @@ const Intro = () => {
                 <FaGithub size={18} title="Github icon" />
               </a>
             </div>
-            <div className="cursor-pointer p-3">
+            <div className="cursor-pointer p-3 hover:text-[--accent]">
               <a
                 href="/#contact"
                 aria-label="Anchor link to Sofia Martin's contact form"
