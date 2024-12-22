@@ -8,17 +8,17 @@ const ProjectItem = ({
   backgroundImg,
   projectUrl,
   arialabel,
-  identifier,
+  twClasses,
 }: {
   title: string;
   role?: string;
   backgroundImg: StaticImageData;
   projectUrl: string;
   arialabel: string;
-  identifier: string;
+  twClasses: string;
 }) => {
   return (
-    <div className={identifier}>
+    <div className={twClasses}>
       <Link href={projectUrl} aria-label={arialabel} className="h-full w-fit">
         <div className="flex h-full min-h-full w-full flex-col items-start justify-start">
           <div className="project-image-wrapper w-full">

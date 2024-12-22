@@ -23,7 +23,7 @@ const Projects = () => {
             backgroundImg={firmatekImg}
             projectUrl="/projects/firmatek"
             arialabel="Learn more more about Sofia's involvement in the Firmatek project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
           <ProjectItem
             title="Measure: Ground Control"
@@ -31,7 +31,7 @@ const Projects = () => {
             backgroundImg={groundImg}
             projectUrl="/projects/ground-control"
             arialabel="Learn more more about Sofia's involvement in the Ground Control project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
           <ProjectItem
             title="Avinew: ADAS Integration"
@@ -39,7 +39,7 @@ const Projects = () => {
             backgroundImg={avinewImg}
             projectUrl="/projects/avinew"
             arialabel="Learn more more about Sofia's involvement in the avinew project"
-            identifier="projectitem avinew"
+            twClasses="projectitem avinew"
           />
           <ProjectItem
             title="n2uitive: Insurtech"
@@ -47,7 +47,7 @@ const Projects = () => {
             backgroundImg={n2uitiveImg}
             projectUrl="/projects/n2uitive"
             arialabel="Learn more more about Sofia's involvement in the n2uitive project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
           <ProjectItem
             title="Good Days: Health Care"
@@ -55,7 +55,7 @@ const Projects = () => {
             backgroundImg={gdImg}
             projectUrl="/projects/good-days"
             arialabel="Learn more more about Sofia's involvement in the Good Days project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
           <ProjectItem
             title="Bands: Social Streaming App"
@@ -63,7 +63,7 @@ const Projects = () => {
             backgroundImg={bandsImg}
             projectUrl="/projects/bands-app"
             arialabel="Learn more more about Sofia's involvement in the Bands App project"
-            identifier="projectitem flex justify-center bands"
+            twClasses="projectitem flex justify-center bands"
           />
           <ProjectItem
             title="Coaching to Fidelity: Education App"
@@ -71,7 +71,7 @@ const Projects = () => {
             backgroundImg={c2fImg}
             projectUrl="/projects/coaching-to-fidelity"
             arialabel="Learn more more about Sofia's involvement in the Coaching to Fidelity project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
           <ProjectItem
             title="VTS: Property Asset Manager"
@@ -79,7 +79,7 @@ const Projects = () => {
             backgroundImg={assetImg}
             projectUrl="/projects/asset-manager"
             arialabel="Learn more more about Sofia's involvement in the Asset Manager project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
           <ProjectItem
             title="Creditntel: Property Analytics"
@@ -87,7 +87,7 @@ const Projects = () => {
             backgroundImg={propertyImg}
             projectUrl="/projects/creditntell"
             arialabel="Learn more more about Sofia's involvement in the Creditntell project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
           <ProjectItem
             title="Property Capsule: Digital Tourbooks"
@@ -95,7 +95,7 @@ const Projects = () => {
             backgroundImg={tourImg}
             projectUrl="/projects/tourbooks"
             arialabel="Learn more more about Sofia's involvement in the Tourbooks project"
-            identifier="projectitem"
+            twClasses="projectitem"
           />
         </div>
       </div>

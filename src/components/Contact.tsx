@@ -14,15 +14,15 @@ const Contact = () => {
 
   return (
     <div className="w-full">
-      <div className="m-auto w-full max-w-[1240px] px-2 py-16">
-        <h2 className="py-4 pb-8 text-center lg:text-left">Get In Touch</h2>
+      <div className="m-auto mb-4 w-full max-w-[1240px] px-2 pt-16">
+        <h2 className="mb-8 text-center lg:text-left">Get In Touch</h2>
         <div className="gap-8 md:grid lg:grid-cols-5">
           {/* left */}
           <div className="co-span-3 h-full w-full px-4 lg:col-span-2 lg:px-0">
             <div className="h-full">
               <div className="text-center md:text-left">
                 <Image
-                  className="m-auto mb-4 rounded-md duration-300 ease-in hover:scale-105 lg:mt-14"
+                  className="m-auto mb-4 rounded-md duration-300 ease-in hover:scale-105 lg:mt-10"
                   src={contactImg}
                   alt="Contact image of Drew Barrymore on the phone from the opening scene of the original Scream movie"
                 />
@@ -65,7 +65,7 @@ const Contact = () => {
             </div>
           </div>
           {/* right */}
-          <div className="col-span-3 h-auto w-full lg:p-4">
+          <div className="col-span-3 h-auto w-full lg:px-4">
             <div className="px-4">
               <form
                 action="https://getform.io/f/cec7a2a2-5959-47a2-adea-d1dcc55300f9"

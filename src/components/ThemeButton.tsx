@@ -13,7 +13,7 @@ const ThemeButton = () => {
 
   if (!mounted) {
     return (
-      <div className="theme-controls flex flex-row gap-4 rounded-full border p-2">
+      <div className="flex flex-row gap-4 rounded-full border p-2">
         <GiSun className="inactive h-5 w-5" />
         <RiComputerLine className="inactive h-5 w-5" />
         <GiMoonBats className="inactive h-5 w-5" />
@@ -22,7 +22,7 @@ const ThemeButton = () => {
   }
 
   return (
-    <div className="theme-controls flex flex-row gap-4 rounded-full border p-2">
+    <div className="flex flex-row gap-4 rounded-full border border-[--border-color] p-2">
       <GiSun
         className={
           theme === "system" || theme === "dark"

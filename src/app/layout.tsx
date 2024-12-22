@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "next-themes";
 import { NavContextProvider } from "@/app/utils/NavContextProvider";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const akkurat = localFont({
   src: [
@@ -57,6 +58,7 @@ export default function RootLayout({
               <div></div>
               <div className="mx-auto items-start">{children}</div>
             </NavContextProvider>
+            <Footer />
           </ThemeProvider>
         </div>
         <Analytics />
