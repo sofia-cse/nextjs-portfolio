@@ -25,6 +25,10 @@ const Back = ({
       router.push("/#work");
     }
   };
+
+  //replace with label for page user is going back to if necessary
+  const backLabel = "Back";
+
   return (
     <div className="mx-auto max-w-[1240px] p-2 pt-8">
       <div
@@ -32,7 +36,7 @@ const Back = ({
         onClick={handleGoBack}
       >
         <IoChevronBackOutline size={18} className="mr-1 inline" />
-        Back To My Work
+        {backLabel} To My Work
       </div>
     </div>
   );

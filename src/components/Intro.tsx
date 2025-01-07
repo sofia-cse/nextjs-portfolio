@@ -1,12 +1,10 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SnowOverlay } from "react-snow-overlay";
 
 const Intro = () => {
   return (
     <div className="h-[70vh] w-full text-center">
-      <SnowOverlay />
       <div className="relative mx-auto flex h-full w-full max-w-[800px] items-center justify-center p-2">
         <div className="flex-col items-center">
           <div className="center">
